@@ -331,6 +331,228 @@
                 <li>wbr</li>
             </ul>
             <br>
+            
+            <!-- Question 4-->
 
+            <h2>Q-4. What are HTML Entities? </h2><hr>
+            <p>Invisible and reserved characters that would otherwise be read as HTML code are shown using an HTML entity. It is a sentence that starts with an ampersand (&) and finishes with a semicolon.</p>
+
+            <p>The less-than symbol () is often interpreted by HTML as a tag. HTML allows you to write, as can be seen in the example above, to represent the less-than sign as text.</p>
+
+            <h4>Useful HTML entities</h4>
+
+            <p> 
+
+            &nbsp;  &nbsp;- non-breaking space &nbsp;(& nbsp;) <br><br>
+
+            &lt;  &nbsp;- less than sign  &nbsp;(& lt;) <br><br>
+
+            &gt;  &nbsp;- greater than sign &nbsp; (& gt;)<br><br>
+            
+            &amp;  &nbsp;- ampersand &nbsp;(& amp;)<br><br>
+
+            &quot;  &nbsp;- double quotation mark &nbsp; (& quot;)<br><br>
+
+            &apos;  &nbsp;- single quotation mark &nbsp; (& apos;)<br><br>
+            
+            &cent;  &nbsp;- cent sign &nbsp; (& cent;)<br><br>
+
+            &pound;  &nbsp;- pound sign &nbsp; (& pound;)<br><br>
+
+            &yen;  &nbsp;- yen sign &nbsp; (& yen;)<br><br>
+
+            &euro;  &nbsp;- euro sign &nbsp; (& euro;)<br><br>
+
+            &copy;  &nbsp;- copyright &nbsp; (& copy;)<br><br>
+
+            &reg;  &nbsp;- registered trademark &nbsp; (& reg;) <br><br></p> 
+
+            <br>
+        <!-- Question 5-->
+
+            <h2>Q-5. What are different types of lists in HTML? </h2><hr>
+
+            <p>Lists are used to put together relevant pieces of information so that they are easily readable and clearly related to one another. Lists are essential components in contemporary web development and are regularly used for both navigation and general content.</p>
+
+            <h4>The three list types</h4>
+
+            <ul>
+                <li><b>unordered list</b></li>  <p> -used to arrange a collection of connected elements without regard to order.</p>
+                <li><b>ordered list</b></li>  <p> - used to show name/value pairs, such as words and definitions, in a</p> 
+                <li><b>description list</b></li>  <p> - certain order and to group a set of related objects.</p>
+            </ul>
+
+            <h4>Unordered list</h4>
+            <P>When a group of elements can be arranged in any order, unordered (bulleted) lists are utilized. A shopping list is an illustration:</P>
+            <ul>
+                <li>milk</li>
+                <li> bread</li>
+                <li>butter</li>
+                <li> coffee beans</li>
+            </UL>
+
+
+            <h4>Unordered list Markup</h4>
+
+            <p>Unordered lists are composed of one set of <b>&lt;ul&gt; &lt;/ul&gt;</b> tags followed by one or more sets of <b>&lt;li&gt; &lt;/li&gt;</b> tags:</p>
+
+            <div style="background-color: #D3D3D3;">
+                
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; bread &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; cofee beans &lt;/li&gt;<br>
+                &nbsp; &nbsp;  &lt;li&gt; milk &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; butter &lt;/li&gt;<br>
+            &lt;/ul&gt;
+            
+            </div>
+
+            <h4>Ordered lists</h4>
+            <p>In order to present a list of things that must be in a particular sequence, ordered (numbered) lists are utilized. An illustration would be a recipe:
+            </p>
+            <ul>
+            <li> 1.assemble the ingredients</li>
+            <li>2. Combine ingredients.</li> 
+            <li>3. Ingredients should be placed in a baking dish and baked for one hour.</li>
+            <li>4. Take the oven out.</li>
+            <li>5. 10 minutes should be given for standing.</li>
+            <li>6. Serve</li>
+            </ul>
+
+            <p>Ordered lists can be displayed in a variety of ways. Decimal numbers are typically the default in browsers, however there are additional options as well:</p>
+
+            <ul>
+                <li>Letters</li>
+                <ul>
+                    <li>Lowercase ascii letters (a, b, c…)</li>
+                    <li>Uppercase ascii letters (A, B, C…).</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>Numbers</li>
+                <ul>
+                    <li>Decimal numbers (1, 2, 3…)</li>
+                    <li> Roman numerals (i, ii, iii…)</li>
+                </ul>
+            </ul>
+
+            <h4>Ordered list markup</h4>
+
+            <p>Ordered lists use one set of <b>&lt;ul&gt; &lt;/ul&gt;</b> tags wrapped around one or more sets of <b>&lt;li&gt; &lt;/li&gt;</b> tags: </p>
+
+            </p>
+
+            <div style="background-color: #D3D3D3;">
+                
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; assemble the ingredients &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt;Combine ingredients. &lt;/li&gt;<br>
+                &nbsp; &nbsp;  &lt;li&gt;  Ingredients should be placed in a baking dish and baked for one hour. &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; Take the oven out. &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; 10 minutes should be given for standing. &lt;/li&gt;<br>
+                &nbsp;&nbsp; &lt;li&gt; Serve &lt;/li&gt;<br>
+
+            &lt;/ul&gt;
+            
+            </div>
+
+            <h4>Description lists</h4>
+            <p>Definition lists, which were renamed to description lists in HTML5, are lists that link particular names and values. Examples include the elements in an ingredient list and their brief descriptions, the writers of articles, and the years that they won competitions. There must be at least one name and at least one value in each pair regardless of how many name-value groupings you have.</p>
+            <p> Since they are versatile, description lists allow you to link several values to a single name or vice versa. <br> You may demonstrate each meaning of the word "coffee," for instance, one after the other:</p>
+
+
+            <dl>
+                <dt><b>coffee</b></dt>
+                <dl>
+                    <dd> <b>a coffee-based beverage that has been ground and roasted</b></dd>
+                    <dd> <b>an iced coffee</b></dd>
+                    <dd><b>a social event where medium- to dark-brown coffee is drank</b></dd>
+                </dl>
+            </dl>
+
+            <h4>Description list markup
+            </h4>
+            <p>One or more groups of <b>&lt;dt&gt; &lt;/dt&gt;</b> (name) and <b>&lt;dd&gt; &lt;/dd&gt;</b> (value) tags are wrapped around one or more sets of <b>&lt;dl&gt; &lt;/dl&gt;</b> (description list) tags. It is required to match at least one dt with at least one dd, with the dt always coming first in the source sequence.</p>
+
+            <p>A simple description list of single names with single values would look like this:</p>
+
+
+            <div style="background-color: #D3D3D3;">
+                
+                &lt;dl&gt;<br>
+                &nbsp;&nbsp; &lt;dt&gt; Name &lt;/dt&gt;<br>
+                &nbsp;&nbsp; &lt;dd&gt;Value &lt;/dd&gt;<br>
+                &nbsp; &nbsp;  &lt;dt&gt;  Name &lt;/dt&gt;<br>
+                &nbsp;&nbsp; &lt;dd&gt; Value &lt;/dd&gt;<br>
+            
+            &lt;/dl&gt;
+            
+            </div>
+
+            <br>
+
+            <!-- Question 6 -->
+
+            <h2>Q-6. What is the ‘class’ attribute in HTML?</h2><hr>
+            <p>An element's classnames can be set using the class attribute in HTML. You can use CSS to operate with the given class name and point to a stylesheet.</p>
+            <p>This is an example of how to use the class attribute in HTML.</p>
+
+            <h4>Example</h4>
+            <fieldset style="background-color: #D3D3D3;">
+                <legend><b>Live Demo</b></legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            h2.demo {<br>
+            color: orange;<br>
+            background-color: black;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1Resources/h1&gt;
+                &lt;h2 class="demo">Text Tutorials&lt;/h1&gt;<br>
+                &lt;h2 class="demo">Video Tutorials&lt;/h1&gt;<br>
+                &lt;h2 class="demo">Interview Questions and Answers&lt;/h1&gt;<br>
+                &lt;h2 class="demo">Online Quiz&lt;/h1&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            </fieldset>
+
+            <br>
+
+            <h4>Output</h4>
+
+            <table border="1">
+                <tr>
+                    <td>
+            <html>
+                <head>
+                <style>
+                h2.demo {
+                color: orange;
+                background-color: black;
+                }
+                </style>
+            </head>
+            <body>
+                <h1>Resources</h1>
+                <h2 class="demo">Text Tutorials</h1>
+                <h2 class="demo">Video Tutorials</h1>
+                <h2 class="demo">Interview Questions and Answers</h1>
+                <h2 class="demo">Online Quiz</h1>
+            </body>
+            </html></table></td></tr></table>
+            <br>
+
+            <p>The element "h2" has a class name set in the example above.</p>
+
+            <div style="background-color: #D3D3D3;"><br>
+            &lt;h2 class="demo"&gt; Text Tutorials &lt;/h1&gt;<br>
+            &lt;h2 class="demo"&gt; Video Tutorials &lt;/h1&gt;<br>
+            </div>
+            <br>
+            
 </body>
 </html>
