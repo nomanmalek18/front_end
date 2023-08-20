@@ -1,25 +1,49 @@
 *{
-    
     margin: 0;
     padding: 0;
+    
 }
 .nav-menu{
-    background-color: rgb(42 115 165 / 62%);
+    background-color: Maroon;
     height: 50px;
 }
 .ul-menu{
     text-decoration: none;
     list-style: none;
+    padding: 12px ;
 }
 
 .li-menu{
     display: inline;
     font-size: 20px;
     text-align: justify;
-    margin: 5px 5px;
-
+    padding: 5px;
+    border-radius: 5px;
+}
+.a-menu{
+    color: cadetblue;
+    text-decoration: none;
 }
 
-.a-menu{
+/* other file style  */
+
+.aside-bar{
+    height: 137vh;
+    width: 40vh; 
+    background-color: rgb(50, 53, 162);   
+    text-decoration: none;
+    list-style: none;
+    padding: 12px;
+}
+
+.ul-li{
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+    
+}
+
+.li-a{
+    color: rgba(95, 158, 160, 0.872);
     text-decoration: none;
 }
