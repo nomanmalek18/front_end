@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    
     background-image: url(../TutorialSite/images/pxfuel.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -15,8 +14,8 @@ body{
     position: absolute;
     margin-top: 6px;
     margin-left: 34px;
-    height: 75px;
-    width: 86px;
+    height: 65px;
+    width: 73px;
     border: 3px solid black ; 
     border-radius: 10px;
 }
@@ -43,12 +42,28 @@ body{
     color: white;
     text-decoration: none;
 }
-
+.container{
+    margin-top: 10px;
+}
+.iframe-class{
+    overflow: hidden;
+    display: flex;   
+    padding: 25px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+} 
+.div-iframe{
+    /* margin: 50px;
+    padding: 50px; */
+    height: 50px;
+    width: 100px;
+}
 /* other file style  */
 
 .aside-bar{
     height: 810px;
-    width: 222px; 
+    width: 248px; 
     text-decoration: none;
     list-style: none;
     background-attachment: fixed;
