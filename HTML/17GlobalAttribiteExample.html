@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>global attributes example</title>
 </head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;   
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 101, 41);
+            
+        }
+        .back-ground{
+            width: 150vmin;
+            height: 500vmin;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+        }
+    </style>
 <body>
-    <fieldset>
+    <div class="back-ground">
         <legend>global attributes example</legend>
         <h3>accesskey</h3>
             <p>The accesskey global attribute provides a hint for generating a keyboard shortcut for the current element</p>
@@ -39,6 +60,6 @@
         <hr>
 
         
-    </fieldset>
+    </div>
 </body>
 </html>

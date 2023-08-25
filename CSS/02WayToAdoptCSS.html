@@ -8,11 +8,33 @@
         /* Comment means code not going to be executed it will help to other develper for understanding the code */
         /* selector{ property:value; } */
         h1{ color: rgb(109, 33, 230); }
+
+            /* body and background style */
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;   
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(41, 101, 241);
+        }
+        .back-ground{
+            width: 150vmin;
+            height: 255vmin;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+        }
     </style>
+    
 </head>
 <body>
-    <fieldset>
-        <legend>Way To Adopt CSS</legend>
+    <div class="back-ground">
+        <h1>Way To Adopt CSS</h1>
         <h2>Include CSS in a webpage</h2>
     <ul>
         <li><strong>Inline CSS</strong>: Styles added directly to the HTML element. </li>
@@ -36,6 +58,6 @@
     <h5>External</h5>
     <p>most usefull, external page with .css extension, with link tag</p>
 
-    </fieldset>    
+    </div>    
 </body>
 </html>

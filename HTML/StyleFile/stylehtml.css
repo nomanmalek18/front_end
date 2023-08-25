@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 101, 41);
+}
+.html-background{
+    width: 150vmin;
+    height: 255vmin;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}

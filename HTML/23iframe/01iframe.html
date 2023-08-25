@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
 </head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;   
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 101, 41);
+            
+        }
+        .back-ground{
+            width: 150vmin;
+            height: 500vmin;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+        }
+    </style>
 <body>
-    <fieldset>
-        <legend>iframe</legend>
+    <div class="back-ground">
+        <h2>iframe</h2>
         <p>
             The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another HTML page into the current one.
         </p><hr>
         
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14685.716905942067!2d72.515484!3d23.0447203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b767b0a48ed%3A0x713f82e619ac7868!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1690341148912!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    </fieldset>
+    </div>
 </body>
 </html>
