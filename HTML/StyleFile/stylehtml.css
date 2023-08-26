@@ -9,10 +9,198 @@ body{
     justify-content: center;
     background-color: rgb(240, 101, 41);
 }
-.html-background{
+.preRequi{
     width: 150vmin;
-    height: 255vmin;
+    height: 140vmin;
     background-color: #fff;
     padding: 50px;
+    margin: 50px;
     border-radius: 20px;
+}
+.htmlintro{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.structurehtml{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.besictags{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.tag-element{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.heading-para{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.wrappertag{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.symentic{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.Void-elements{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.Detial-summray{    
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.images{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.image-path{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.Example-Base{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.block-element{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.inline-element{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.list{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.global-attri{
+
+}
+.globel-attre-exl{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.block-quote{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.figure{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.atl-tag{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.tables{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.from-intro{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.iframe{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.media-tag{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;   
 }
