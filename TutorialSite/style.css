@@ -19,7 +19,6 @@ body{
     border: 3px solid black ; 
     border-radius: 10px;
 }
-
 .nav-menu{
     
     height: 50px;
@@ -51,26 +50,22 @@ body{
     overflow: hidden;
     display: flex;   
     padding: 25px;
-    width: 100%;
+    width: 25%;
     height: 100vh;
     position: fixed;
 } 
-.div-iframe{
-    /* margin: 50px;
-    padding: 50px; */
-    height: 50px;
-    width: 100px;
-}
+
 /* other file style  */
 
 .row{
     /* border: 2px solid wheat; */
-    width: 45vmin;
-    background-color: lightblue;
+    height: auto    ;
+    width: 100%;
+    background-color: lightskyblue;
     border-radius: 25px;
 }
 .aside-bar{
-    height: 810px;
+    height: 830px;
     width: 248px; 
     text-decoration: none;
     list-style: none;
@@ -88,4 +83,11 @@ body{
 .li-a{
     color: black;
     text-decoration: none;
+}
+
+.iframe{
+    /* height: 300px; */
+    width: 230vmin;
+    justify-content: center;
+    align-items: center;
 }

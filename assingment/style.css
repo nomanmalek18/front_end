@@ -12,11 +12,11 @@ body{
 .img-logo {
     height: 15vmin;
     margin:40px 0px 0px 35px;
-
+    
 }
 .container{
     width: 150vmin;
-    height: 255vmin;
+    height: auto;
     background-color: #fff;
     margin: 20px;
     padding: 10px;
@@ -49,7 +49,91 @@ body{
 }
 .question-1 ul {
     border: 2vmin solid #144272;
-    padding: 5.2vmin;
+    padding: 1.2vmin;
     margin: 3vmin;
     background-color: honeydew;
 }
+.question-1 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+
+}
+.question-3 {
+    padding: 25px;
+    margin: 5px;
+}
+.question-3 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    transition: 2s;
+    margin-bottom:  1.2vmin;
+    margin-top: -4vmin;
+}
+
+.question-3 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.question-3 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}
+table {
+    border: 1px solid #144272;
+    border-collapse: collapse;
+    margin-bottom: 8vmin;
+}
+
+table tr th {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+table tr td {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+.question-4 {
+    padding: 25px;
+    margin: 5px;
+}
+.question-4 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    transition: 2s;
+    margin-bottom:  1.2vmin;
+    margin-top: -4vmin;
+}
+.question-4 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.question-4 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}
+.question-4 ul {
+    margin-bottom: 4vmin;
+}
+
+.question-4 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 14vmin;
+} 
+
