@@ -7,8 +7,6 @@ body{
     background-image: url(../TutorialSite/images/pxfuel.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
-  
 }
 .div-nav img{
     position: absolute;
@@ -97,3 +95,4 @@ body{
     justify-content: center;
     align-items: center;
 }
+
