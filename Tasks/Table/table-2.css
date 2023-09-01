@@ -13,29 +13,32 @@ table tr td{
     border: 1px solid black;
 }
 table{
+    
     text-align: center;
     margin: o auto;
     border-collapse: collapse;
     height: 300px;
-    width: 100%;
+    width: 500px;
 }
-.empty{
-    border-right-style:none ;
-    border-left-style: none;
-    background-color: white;
-}
+
 .labal{
     padding-top: 10px;
     vertical-align: top;
     font-weight: bold;
     color: green;
-    border-right-style:none ;
-    border-left-style: none;
-
+    
+    
 }
 .dg{
     background-color: darkseagreen;
 }
 .sky{
     background-color: lightskyblue;
+}
+.rd{
+    color: red;
+    font-weight: bold;
+}
+.yel{
+    background-color: yellow;
 }
