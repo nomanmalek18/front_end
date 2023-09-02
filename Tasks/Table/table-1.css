@@ -7,13 +7,12 @@ h2{
     text-align: center;
     margin-top: 5px;
 }
-.container{
-    width: 50%;
-    margin: 10px auto;
-    align-items: center;
-}
+
 table{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     border-collapse: collapse;
     margin: 0 auto;
     height: 300px;
@@ -21,6 +20,7 @@ table{
 }
 
 tr td{
+    
     align-items: center;
     border: 2px solid black;
     border-collapse: collapse;
