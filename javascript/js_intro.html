@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
     <script src="srcript.js"></script>
+    <link rel="shortcut icon" href="../TutorialSite/images/js.png" type="image/x-icon">
 </head>
     <style>
-            
-        body{
+        *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;   
+            box-sizing: border-box;
         }
         body{
             display: flex;
@@ -19,18 +19,78 @@
             justify-content: center;
             background-color: rgb(240, 219, 79);
         }
-        .back-ground{
+        .img-logo {
+            height: 15vmin;
+            margin:40px 0px 0px 35px;
+        }
+        .container{
             width: 150vmin;
-            height: 255vmin;
+            height: auto;
             background-color: #fff;
-            padding: 50px;
-            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .container-items{
+            padding: 25px;
+            margin: 5px;
+        }
+        h2 {
+            font-size: 5vmin;
+            color: #27374D;
+            margin-bottom:  1.8vmin;
+            margin-top: 5vmin;
+        }
+        h3 {
+            font-size: 3vmin;
+            color: #144272;
+            margin: 0 3vmin;
+        }
+        .container-items p {
+            font-size: 3vmin;
+            color: #144272;
+            margin: 1.5vmin 5vmin;
+        }
+        .output {
+            background-color: #27374D;
+            padding: 5px;
+            margin: 1.5vmin 2vmin;
+            border-radius: 5px; 
+        }
+        .output p{
+            font-size: 3vmin;
+            font-weight: bold;
+            color: #fff;
         }
     </style>
 
 <body>
-    <div class="back-ground">
-        <h1>JavaScript Introduction</h1>
+    <div class="container">
+        <div id="img">
+            <img src="../assingment/img/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+            <h2>JavaScript Introduction</h2>
+                <h3>JavaScript</h3>
+                <p>Client Side Scripting Lang</p>
+                <p>not able to connect with DB</p>
+                <p>Updated JS = ECMAScript </p>
+
+                <img src="../javascript/image/jsvsts.jfif" alt="">
+
+                <noscript>please turn on JavaScript from ur browser settings</noscript>
+                <p>console.log() developer option for debug our code</p>
+                <p>vari+able</p>
+                <div class="output">
+                        <p>console.log("called")</p>
+                        <p>console.log(checking);</p> 
+                        <p>console.log(test);</p> 
+                        <p>let test ="hello"</p> 
+                        <p>var  checking = "anything"</p> 
+                        <p>console.log(test);</p> 
+                        <p>console.log(checking);</p>                    
+                </div>
+        </div>
     </div>
 </body>
 </html>
