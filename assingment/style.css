@@ -249,7 +249,6 @@ img:hover {
 .question-6 h2 {
     font-size: 5vmin;
     color: #27374D;
-    transition: 2s;
     margin-bottom:  1.8vmin;
     margin-top: 5vmin;
 }
@@ -258,7 +257,7 @@ img:hover {
     color: #144272;
     margin: 1.5vmin 5vmin;
 }
-.viz {
+.viz-1 {
     height: 7.5vmin;
     width: 130vmin;
     background-color: #27374D;
@@ -334,6 +333,395 @@ img:hover {
 }
 .question-7 h2{
     font-size: 5vmin;
+    color: #27374D;    
+}
+.question-7 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.box1 {
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 63vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+    line-height: 4vmin;
+}
+.output{
+    height: 30vmin;
+    width: 40vmin;
+    border: 1px solid #27374D;
+    background-image: url(../assingment/img/canada-city.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    margin: 4vmin 3vmin 9vmin 3vmin;
+    transition: 1s ease-in;
+
+}
+.output:hover {
+    transform: scale(1.1);
+}
+
+/* Question-8 Start   */
+.question-8{
+    margin: 25px;
+    padding: 5px;
+}
+.question-8 h2 {
+    font-size: 5vmin;
     color: #27374D;
+}
+.question-8 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.right1 {
+    width: 60vmin;
+    height: 30vmin;
+    border: 1px solid gray;
+    margin-top: 4vmin;
+    border-radius: 5px;
+    background-color: #27374D;
+    background-image: url("../assingment/img/opacity-img.jpg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.right2 {
+    width: 60vmin;
+    height: 30vmin;
+    border: 1px solid gray;
+    margin-top: 4vmin;
+    border-radius: 5px;
+    background-color: #27374D;
+    margin-left: 1vmin;
+    background-image: url("../assingment/img/opacity-img.jpg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: bottom right;
+}
+
+.right3 {
+    width: 60vmin;
+    height: 30vmin;
+    border: 1px solid gray;
+    margin-top: 4vmin;
+    border-radius: 5px;
+    background-color: #27374D;
+    margin-left: 7vmin;
+    background-image: url("../assingment/img/opacity-img.jpg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center center;
+}
+
+.left1 {
+    margin: 4vmin 0 4vmin 3vmin;
     
 }
+
+.left1 h4 {
+    background-color: yellow;
+    width: 36vmin;
+    height: 4.5vmin;
+    padding-top: 0.8vmin;
+    padding-left: 1.8vmin;
+    font-size: 2.5vmin;
+    margin-left: 5vmin;
+}
+
+.left2 {
+    margin: 4vmin 0 4vmin 3vmin;
+    
+}
+
+.left2 h4 {
+    background-color: yellow;
+    width: 41vmin;
+    height: 4.5vmin;
+    padding-top: 0.8vmin;
+    padding-left: 1.8vmin;
+    font-size: 2.5vmin;
+    margin-left: 5vmin;
+}
+
+.left3 {
+    margin: 4vmin 0 4vmin 3vmin;
+    
+}
+
+.left3 h4 {
+    background-color: yellow;
+    width: 42vmin;
+    height: 4.5vmin;
+    padding-top: 0.8vmin;
+    padding-left: 1.8vmin;
+    font-size: 2.5vmin;
+    margin-left: 5vmin;
+   
+}
+
+/* == Question-8 End == */
+
+/* == Question-9 Start== */
+.question-9{
+    margin: 25px;
+    padding: 5px;
+}
+.question-9 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+.question-9 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.viz-2 {
+    height: 7.5vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.box2 {
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 104vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+    line-height: 4vmin;
+}
+.div-documents{
+    height: 55vmin;
+    width: 130vmin;
+    margin: 4vmin 3vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+/* == Question-9 End== */
+
+/* == Question-10 Start== */
+
+.question-10{
+    margin: 25px;
+    padding: 5px;
+}
+.question-10 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+.question-10 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.box3 {
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 30vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+}
+
+.box3 p {
+    color: #fff;
+}
+/* == Question-10 End == */
+/* == Question-11 start == */
+.question-11{
+    margin: 25px;
+    padding: 5px;
+}
+.question-11 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+.question-11 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.box4 {
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 25vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+}
+
+.box5 {
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 145vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 10px;
+    padding: 5vmin;
+    line-height: 4vmin;
+}
+
+.box6 {
+    margin: 4vmin 3vmin;
+    height: 35vmin;
+    width: 50vmin;
+    background-color: #27374D;
+    margin: 5% auto;
+}
+
+#box {
+    background: black;
+    color:white;
+    text-align: center;
+    width: 30vmin;
+    margin: 5% auto;
+}
+
+#box h3 {
+    color: #fff;
+}
+/* == Question-11 End == */
+/* == Question-12 Start == */
+
+.question-12{
+    margin: 25px;
+    padding: 5px;
+}
+.question-12 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+.question-12 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-12 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.question-12 li{
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+
+
+/* == Question-13 Start == */
+
+.question-13 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-13 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-13 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-13 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.viz-0{
+    height: 7.5vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.viz1 {
+    width: 50vmin;
+    height: 15vmin;
+    background-color: #27374D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vmin 0 7vmin 42vmin;
+}
+
+.box8 {
+margin: 4vmin 3vmin;
+height: 38vmin;
+width: 50vmin;
+background-color: #27374D;
+margin: 5% auto;
+color: #fff;
+font-size: 3.5vmin;
+padding: 3vmin;
+}
+
+.viz2 {
+    width: 50vmin;
+    height: 15vmin;
+    background-color: #27374D;
+    color: #fff;
+    padding: 10px;
+    font-size: 3.5vmin;
+    justify-content: center;
+    margin: 5vmin 0 5vmin 42vmin;
+    
+}
+
+.viz3 {
+    width: 60vmin;
+    height: 35vmin;
+    background-color: #27374D;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vmin 0 5vmin 42vmin;
+    font-size: 3.5vmin;
+}
+
+/* == Question-13 End == */
+
+
