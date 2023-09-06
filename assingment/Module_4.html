@@ -586,7 +586,7 @@
         <!-- == Qestion-12 end == -->
         <!-- == Question-13 Start== -->
         <div class="question-13">
-            <h2>Q.13 • What are the ways to integrate CSS as a web page?</h2>
+            <h2>Q.13 What are the ways to integrate CSS as a web page?</h2>
 
             <h3>1. Inline-Style</h3>
             <p>The first way to incorporate CSS into HTML is using a technique known as inline-styling. When CSS rules are added directly into HTML elements (tags), this is referred to as inline styling.</p>
@@ -661,9 +661,264 @@
         <!-- == Qestion-13 end == -->
 
         <!-- == Qestion-14 Start == -->
-        <div class="question-14"></div>
-    
+        <div class="question-14"> 
+            <h2>Q.14 What is embedded style sheets</h2>
+            <p>When you use the style> element to incorporate style sheet data into an HTML document, this is referred to as embedding style sheets. You accomplish this by including the style sheet data within the style> and /style> tags in the document's head.
+            </p>
 
+            <h3>Syntax</h3>
+
+            <p>For embedded style sheets, the CSS syntax is the same as for conventional CSS code.</p>
+
+            <p>Simply insert the following code in your HTML document between the head> and /head> tags to use it, for instance:</p>
+
+            <div class="container1">
+                &ltstyle&gt; <br>
+                   &nbsp; &nbsp; p { <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: georgia, serif; <br> 
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: x-small; <br>
+                        &nbsp; &nbsp; &nbsp; }<br>
+                        &nbsp; &nbsp; hr {
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ff9900; <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 1px; <br>
+                         &nbsp; &nbsp; &nbsp; }<br>
+                         &nbsp; &nbsp; a:hover {<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ff0000; <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;<br>
+                         &nbsp; &nbsp; &nbsp; }<br>
+                 &lt/style&gt;<br>
+            </div>
+            
+            <h3>Demo</h3>
+
+            <div class="box10">
+                <p>This paragraph tag has been preset using embedded style sheets. Same for the horizontal rule below and the hyperlink under that. </p>
+                <p>Also see <a href="/css/external_style_sheets.cfm" target="_blank">external style sheets</a></p>
+            </div>
+
+         </div>
+        <!-- == Qestion-14 End == -->
+        <!-- == Qestion-15 Start == -->
+         <div class="question-15">
+            <h2>Q.15 What are the external style sheets?</h2>
+
+            <h3>1. Create the Style Sheet</h3>
+
+            <p>Here's an example of some CSS code.</p>
+
+            <div class="box10">
+                body { <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: darkslategrey;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: azure;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.1em;<br>
+                }<br>
+                h1 {<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: coral;<br>
+                }<br>
+                #intro {<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.3em;<br>
+                }<br>
+                .colorful {<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: orange;<br>
+                }<br>
+            </div>
+
+            <h3>2. Link to the Style Sheet from the HTML Documents</h3>
+
+            <p>Add the following code between the <head></head> tags of all HTML documents that you want to reference the external style sheet. This code uses the HTML <link> element to link to the external style sheet.</p>
+
+            <div class="viz">
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </div>
+
+            <p>So, a basic example of a web page using this style sheet might look something like this:</p>
+
+            <div class="box11">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp; &nbsp; &nbsp; &lt;head&gt;<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;title&gt;My Example&lt;/title&gt;<br>
+                &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                &nbsp; &nbsp; &nbsp; &lt;/head&gt;<br>
+                &nbsp; &nbsp; &nbsp; &lt;body&gt;<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;External Styles&lt;/h1&gt;<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p id="intro"&gt;Allow you to define styles for the whole website.&lt;/p&gt;<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="colorful"&gt;This has a style applied via a class.&lt;/p&gt;<br>
+                &nbsp; &nbsp; &nbsp; &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+         </div>
+        <!-- == Qestion-15 End == -->
+        <!-- == Qestion-16 Start == -->
+        <div class="question-16">
+                <h2>Q.16. What are the advantages and disadvantages of using external style sheets?</h2>
+    
+                <h3>Advantages and Disadvantages of CSS</h3>
+    
+                <p> Cascading Style Sheets (CSS) are a type of style sheet language that give web designers control over how an internet site interacts with web browsers, including how its HTML documents are formatted and displayed.</p>
+    
+                <p>CSS, often known as cascading sheets, is a text-based coding language that describes how websites are formatted and how they interact with web browsers. The language enables web designers to control a wide range of style features, including layout, colour, and fonts, which in turn affects how HTML documents are formatted and displayed.</p>
+    
+                <h3>Advantages of CSS:</h3>
+    
+                <ul>
+                    <li>With CSS, you only need to declare a repeating style for an element once and use it repeatedly because CSS will automatically apply the necessary styles.</li>
+                    <li>The primary benefit of CSS is that it applies style uniformly across various websites. Multiple locations can be controlled by a single instruction, which is beneficial.</li>
+                    <li>For each page, web designers should add a few lines of programming to increase site speed.</li>
+                    <li>Because a change to one line of code impacts the entire website and maintenance time, cascading sheets simplify both website construction and maintenance.</li>
+                    <li>Because it is less complicated, the effort is drastically decreased.</li>
+                    <li>Changes that are consistent and spontaneous are formed.</li>
+                    <li>Devices can easily read CSS updates. There is a need for responsive web design because consumers use a wide variety of smart devices to visit websites online.</li>
+                    <li>It is capable of shifting position. It assists us in figuring out how the positions of the web elements that are present on the page have changed.</li>
+                    <li>These significant values of inconsequential tags that blend in with a jumble of pages represent the bandwidth savings.</li>
+                    <li>The user can easily customise the online page</li>
+                    <li>It lessens the size of the file transfer.</li>
+                </ul>
+    
+                <h3>Disadvantages of CSS:</h3>
+    
+                <ul>
+                    <li>CSS, from CSS 1 to CSS3, causes misunderstanding among web browsers.</li>
+                    <li>What works with one browser may not always work with another when it comes to CSS. The programme must be tested for compatibility by web developers using a variety of browsers.</li>
+                    <li>The availability of security is limited.</li>
+                    <li>If any compatibility issues arise after making the changes, we must verify them. All browsers are affected by the same change.</li>
+                    <li>The world of programming languages is challenging for novices and those who are not developers. Different CSS levels, such as CSS, CSS 2, and CSS 3, can be very confusing.</li>
+                    <li>compatibility with various browsers (some support styles sheets, while others do not).</li>
+                    <li>On various browsers, CSS functions differently. CSS is supported in different ways by IE and Opera.</li>
+                    <li>When utilising CSS, cross-browser difficulties could arise.</li>
+                    <li>Confusion is brought on by the several tiers, which are confusing to newbies and non-developers.</li>
+                </ul>
+        </div>
+        <!-- == Question-16 End == -->
+        <!-- == Question-17 Start == -->
+    
+        <div class="question-17">
+            <h2>Q.17 What is the meaning of the CSS selector?</h2>
+
+            <p>The collection of characters and special symbols known as CSS selectors tells the browser which CSS properties should be applied to which HTML element. CSS selectors employ the HTML element's attributes, class name, kind of tag (such as header, div, etc.), and id name (which starts with #) to choose which ones to select. The subject of the selector is the HTML element(s) that the selector has chosen.
+            </p>
+
+            <p>To "find" (or choose) the HTML components you want to style, CSS selectors are employed.</p>
+
+            <p>CSS selectors can be categorised into one of five groups:</p>
+            
+
+            <ul style="margin: 4vmin 0 4vmin 5vmin;">
+                <li>Select components using <b>simple selectors</b> (based on name, id, and class)</li>
+                <li>Combinator selectors</b> (which choose elements based on how closely they are related to one another)</li>
+                <li>Elements can be chosen using <b>pseudo-class selectors</b> based on a specific state.</li>
+                <li>Selecting and styling <b>pseudo-elements</b> (a portion of an element)</li>
+                <li>Elements can be chosen based on an attribute or attribute value using <b>attribute selectors.</b></li>
+            </ul>
+
+            <p>We'll go over the most fundamental CSS selectors on this page.</p>
+
+        </div>
+    <!-- == Question-17 End == -->
+    <!-- == Question-18 Start == -->
+
+        <div class="question-18">
+
+            <h2>Q.18 What are the media types allowed by CSS?</h2>
+
+            <h3>CSS3 Introduced Media Queries</h3>
+
+            <p>CSS3's media queries expanded on the concept of media types introduced in CSS2 by looking at a device's capabilities rather than its type.
+            </p>
+
+            <p>Media queries can be used to check many things, such as:</p>
+
+            <ul>
+                <li>Viewport dimensions: width and height</li>
+                <li>Device dimensions: width and height</li>
+                <li>The tablet or phone's orientation—is it in landscape or portrait mode?
+                    resolution</li>
+            </ul>
+
+            <p>A common method for distributing a customised style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones) is to use media queries. </p>
+
+            <h3>Media Query Syntax</h3>
+            <p>A media type and one or more expressions that can resolve to true or false make up a media query.</p>
+
+            <div class="viz4"> 
+                @media not|only mediatype and (expressions) { <br>
+                    &nbsp;CSS-Code; <br>
+                } <br>
+            </div>
+
+            <p>If the media type supplied matches the type of device the document is being displayed on and all of the media query's expressions are true, the result of the query is true. A media query that returns true applies the associated style sheet or style rules in accordance with the standard cascade rules.</p>
+
+            <p>The media type is optional, and the all type will be presumed unless the not or only operators are used.</p>
+
+            <p>Additionally, you can use various stylesheets for various media:</p>
+
+            <div class="viz">
+                &lt;link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"&gt;
+            </div>
+
+            <h3 style="margin: 5vmin 0;">CSS3 Media Types</h3>
+
+            <center><table> 
+                <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>all</td>
+                    <td>Used for all media type devices</td>
+                </tr>
+                <tr>
+                    <td>print</td>
+                    <td>Used for printers</td>
+                </tr>
+                <tr>
+                    <td>screen</td>
+                    <td>Used for computer screens, tablets, smart-phones etc.</td>
+                </tr>
+                <tr>
+                    <td>speech</td>
+                    <td>Used for screenreaders that "reads" the page out loud</td>
+                </tr>
+            </table>
+        </center>
+
+            <h3>Media Queries Simple Examples</h3>
+
+            <p>Including an alternative CSS section right inside your style sheet is one approach to leverage media queries.</p>
+
+            <p>The background colour in the example below is changed to lightgreen if the viewport is 480 pixels wide or more (pink if the viewport is less than 480 pixels wide):</p>
+
+            <div class="box01">
+                @media screen and (min-width: 480px) {<br>
+                    &nbsp; &nbsp; body {<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;background-color: lightgreen;<br>
+                        &nbsp; &nbsp;}<br>
+                } <br>
+            </div>
+
+        </div>
+
+        <!-- == Question-18 End == -->
+        <!-- == Question-19 Start == -->
+        <div class="question-19">
+
+            <h2>Q.19 What is the rule set?</h2>
+
+            <p>Multiple affirmations to various parts or sections of the document make up a CSS ruleset. The goal is to apply a number of characteristics for various distinct qualities to a single component or specific group of components in the associated HTML page. </p>
+
+            <h3 style="margin-bottom: 5vmin;">Visualization of CSS Ruleset :</h3>
+
+            <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210818153202/CSSrulesetImage.png" alt="" width="550px"></center>
+
+            <p style="margin-top: 5vmin;">In addition to "container" indicating the name of the selector, the "." at the beginning denotes that the rule defined will be a class. In a declaration block, which contains some CSS properties and their corresponding values, "first-child" similarly denotes the pseudo-class, and items enclosed in curly brackets are declaration block elements. When the selector name is called on the main HTML page, the CSS ruleset will be applied.</p>
+
+            <p>The foundation of the CSS stylesheet is the CSS Ruleset.</p>
+
+        </div>
+        <!-- == Question-19 Start == -->
+
+
+    
     </div>    
 </body>
 </html>

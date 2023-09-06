@@ -723,5 +723,225 @@ padding: 3vmin;
 }
 
 /* == Question-13 End == */
+/* == Question-14 Start == */
+.question-14 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-14 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-14 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-14 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.container1 {
+    margin: 4vmin 3vmin;
+    height: 71vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 5% auto;
+    color: #fff;
+    font-size: 3.5vmin;
+    padding: 3vmin;
+    line-height: 5vmin;
+}
+.box10 {
+    margin: 4vmin 3vmin;
+    height: 31vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 5% auto;
+    padding: 3vmin;
+    line-height: 5vmin;
+}
+ 
+.box10 p {
+    color: #ff9900;
+    font-size: 3.5vmin;
+}
+
+a:hover {
+    color: LimeGreen; 
+    text-decoration: none;
+}
+
+/* == Question-14 End == */
+/* == Question-15 Start == */
+.question-15 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-15 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-15 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-15 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+
+.box10 {
+    margin: 4vmin 3vmin;
+    height: 76vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 5% auto;
+    padding: 3vmin;
+    color: #fff;
+    font-size: 3.5vmin;
+}
+
+.box11 {
+    margin: 4vmin 3vmin;
+    height: 66vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    margin: 5% auto;
+    padding: 3vmin;
+    color: #fff;
+    font-size: 3.5vmin;
+    line-height: 5vmin;
+}
+/* == Question-15 End == */
+/* == Question-16 Start == */
 
 
+.question-16 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-16 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-16 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-16 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.question-16 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+/* == Question-16 End == */
+/* == Question-17 Start == */
+.question-17 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-17 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-17 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-17 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.question-17 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+
+/* == Question-17 End == */
+/* == Question-18 Start == */
+.question-18 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-18 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-18 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-18 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+}   
+.question-18 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+
+.viz4 {
+    width: 130vmin;
+    height: 16vmin;
+    background-color: #27374D;
+    padding: 15px;
+    color: #fff;
+    margin: 5vmin 0 5vmin 3vmin;
+    line-height: 4vmin;
+}
+
+.box01 {
+    height: 25vmin;
+    width: 120vmin;
+    background-color: #27374D;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 2vmin 3vmin;
+    color: #fff;
+    font-size: 3.5vmin;
+    border-left: 8px solid orange;
+}
+
+/* == Question-18 End == */
+/* == Question-19 Start == */
+.question-19 {
+    margin: 25px;
+    padding: 5px;}
+
+.question-19 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+}
+
+.question-19 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-19 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 4vmin 3vmin;
+} 
+
+/* == Question-19 End == */
