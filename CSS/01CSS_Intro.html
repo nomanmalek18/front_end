@@ -6,7 +6,7 @@
     <title>CSS Introduction</title>
 </head>
     <style>
-        body{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;   
@@ -17,60 +17,75 @@
             justify-content: center;
             background-color: rgb(41, 101, 241);
         }
-        .back-ground{
+        .container{
             width: 150vmin;
-            height: 255vmin;
+            height: auto;
             background-color: #fff;
-            padding: 50px;
-            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .back-ground{
+            /* font-size: 5vmin; */
+            padding: 25px;
+            margin: 5px;
+            color: #27374D;
+        }
+        .img-logo {
+            height: 15vmin;
+            margin:40px 0px 0px 35px;
         }
     </style>
     
 <body>
-    <div class="back-ground">
-        <h1>CSS Introduction</h1>
-        <h2>CSS</h2><hr>
-            <h3>what is a CSS</h3>
-            <p>
-                CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be displayed on      screen, paper, or in other media
-            </p><hr>
-
-        <h3>Casecading Stylesheet</h3>
-            <p>CSS (Cascading Style Sheets) is a styling language used to add style to a webpage.</p>
-            <p>HTML provides structure and adds content to a webpage, while CSS enhances the visual presentation of that content through various styles.</p>
-            <p>CSS use for make our HTML structure atractive and beutify</p><hr>
-
-        <h3>CSS Syntax</h3>
-        <pre>
-            selector {
-                property1: value;
-                property2: value;
-            }
-        </pre><hr>
-
-        <h3>types of css</h3>
-        <ol>
-            <li>Inline CSS</li>
-            <li>Internal CSS</li>
-            <li>External CSS</li>
-        </ol><hr>
-
-        <ul>
-            <li>
-                <code>selector</code> - specifies the HTML element that we want to apply the styles
-            </li>
-            <li>
-                <code>property1</code> <strong>/</strong> <code>property2</code>- specifies the attribute of HTML elements that we want to change (color, background, and so on)
-            </li>
-            <li>
-                <code>value</code> - specifies the new value you want to assign to the property (color of the text to red, background to gray, and so on)
-            </li>
-        </ul><hr>
-
-        <h3>Comments in CSS    \</h3>
-            <p>/* this is css comment */</p>
+    <div class="container">
+        <div class="back-ground">
+            <div id="img">
+                <img src="../assingment/img/css.logo.png" class="img-logo" alt="" srcset="">
+            </div>
+            <h2>CSS Introduction</h2><br>
             
-    </div>
+                <h3>what is a CSS</h3>
+                <p>
+                    CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be displayed on      screen, paper, or in other media
+                </p><hr>
 
+            <h3>Casecading Stylesheet</h3>
+                <p>CSS (Cascading Style Sheets) is a styling language used to add style to a webpage.</p>
+                <p>HTML provides structure and adds content to a webpage, while CSS enhances the visual presentation of that content through various styles.</p>
+                <p>CSS use for make our HTML structure atractive and beutify</p><hr>
+
+            <h3>CSS Syntax</h3>
+            <pre>
+                selector {
+                    property1: value;
+                    property2: value;
+                }
+            </pre><hr>
+
+            <h3>types of css</h3>
+            <ol>
+                <li>Inline CSS</li>
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+            </ol><hr>
+
+            <ul>
+                <li>
+                    <code>selector</code> - specifies the HTML element that we want to apply the styles
+                </li>
+                <li>
+                    <code>property1</code> <strong>/</strong> <code>property2</code>- specifies the attribute of HTML elements that we want to change (color, background, and so on)
+                </li>
+                <li>
+                    <code>value</code> - specifies the new value you want to assign to the property (color of the text to red, background to gray, and so on)
+                </li>
+            </ul><hr>
+
+            <h3>Comments in CSS    \</h3>
+                <p>/* this is css comment */</p>
+                
+        </div>
+    </div>
 </body>
 </html>

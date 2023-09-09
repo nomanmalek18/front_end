@@ -138,6 +138,12 @@ body{
     border-radius: 20px;
 }
 .global-attri{
+    width: 150vmin;
+    height: 150vmin;
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
 
 }
 .globel-attre-exl{
@@ -150,7 +156,7 @@ body{
 }
 .block-quote{
     width: 150vmin;
-    height: 150vmin;
+    height: 100vmin;
     background-color: #fff;
     padding: 50px;
     margin: 50px;
@@ -203,4 +209,9 @@ body{
     padding: 50px;
     margin: 50px;
     border-radius: 20px;   
+}
+.img-logo {
+    height: 15vmin;
+    margin:40px 0px 0px 35px;
+    
 }

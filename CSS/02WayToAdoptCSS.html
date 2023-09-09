@@ -11,7 +11,7 @@
 
             /* body and background style */
 
-        body{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;   
@@ -22,42 +22,49 @@
             justify-content: center;
             background-color: rgb(41, 101, 241);
         }
-        .back-ground{
+        .container{
             width: 150vmin;
-            height: 255vmin;
+            height: auto;
             background-color: #fff;
-            padding: 50px;
-            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .back-ground{
+            padding: 25px;
+            margin: 5px;
+            color: #27374D;
         }
     </style>
     
 </head>
 <body>
-    <div class="back-ground">
-        <h1>Way To Adopt CSS</h1>
-        <h2>Include CSS in a webpage</h2>
-    <ul>
-        <li><strong>Inline CSS</strong>: Styles added directly to the HTML element. </li>
-        <li><strong>Internal CSS</strong>: Styles defined at the <code>head</code> section of the document.</li>
-        <li><strong>External CSS</strong>: Styles defined in a separate file.</li>
-    </ul><hr>
+    <div class="container">
+        <div class="back-ground">
+            <h1>Way To Adopt CSS</h1>
+            <h2>Include CSS in a webpage</h2>
+        <ul>
+            <li><strong>Inline CSS</strong>: Styles added directly to the HTML element. </li>
+            <li><strong>Internal CSS</strong>: Styles defined at the <code>head</code> section of the document.</li>
+            <li><strong>External CSS</strong>: Styles defined in a separate file.</li>
+        </ul><hr>
 
-    <h3 style="color: rgb(42, 165, 81);font-size: 36px;">Example of inline CSS</h3>
-        <p>Inline CSS within a tag with the help of style attribute, not recommanded by W3c</p>
-        <p style="color: rgb(42, 165, 81);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugit sit nisi. Rerum adipisci temporibus laudantium consequatur sit delectus harum.</p>
-    
-    <h4>Example of Internal CSS</h4>
-    <h1>exmaple</h1>
-        <pre>
-            &lt;style&gt;
-                h4{ color: green; }
-            &lt;style&gt;
-        </pre>
-    <h1>Internal CSS for all same tags in entire page, with the help of style tag, mostly we write it at head (not mandetory)</h1>
+        <h3 style="color: rgb(42, 165, 81);font-size: 36px;">Example of inline CSS</h3>
+            <p>Inline CSS within a tag with the help of style attribute, not recommanded by W3c</p>
+            <p style="color: rgb(42, 165, 81);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugit sit nisi. Rerum adipisci temporibus laudantium consequatur sit delectus harum.</p>
+        
+        <h4>Example of Internal CSS</h4>
+        <h1>exmaple</h1>
+            <pre>
+                &lt;style&gt;
+                    h4{ color: green; }
+                &lt;style&gt;
+            </pre>
+        <h1>Internal CSS for all same tags in entire page, with the help of style tag, mostly we write it at head (not mandetory)</h1>
 
-    <h5>External</h5>
-    <p>most usefull, external page with .css extension, with link tag</p>
-
+        <h5>External</h5>
+        <p>most usefull, external page with .css extension, with link tag</p>
+        </div>
     </div>    
 </body>
 </html>
