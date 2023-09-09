@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 101, 241);
+
+}
+.container{
+    width: 150vmin;
+    height: auto;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.img-logo {
+    height: 15vmin;
+    margin:40px 0px 0px 35px;
+}
+                                        /* == CSS-introduction Start == */
+
+.CSS-introduction{    
+    padding: 25px;
+    margin: 5px;
+}
+.CSS-introduction h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    transition: 2s;
+    margin-bottom:  1.8vmin;
+    margin-top: 5vmin;
+}
+
+.CSS-introduction p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.CSS-introduction h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
+.example {
+    font-size: 3vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 40vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 5px;
+}
+.example h3 {
+    margin: 0 4vmin;
+    padding: 3vmin 0;
+    color: #fff;
+}
+
+.example p {
+    color: #fff;
+}
+
+.box {
+    height: 18vmin;
+    width: 120vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+.CSS-introduction ul {
+    margin: 1.5vmin 5vmin;
+    /* border: 2vmin solid #144272;  */
+    /* padding: 1.2vmin; */
+    /* margin: 3vmin; */
+    /* background-color: honeydew; */
+}
+.CSS-introduction li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+
+}
+                                        /* == CSS-introduction End == */

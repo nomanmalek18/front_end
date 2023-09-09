@@ -4,71 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Introduction</title>
+    <link rel="stylesheet" href="styleFile/styleCSS.css">
 </head>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;   
-        }
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(41, 101, 241);
-        }
-        .container{
-            width: 150vmin;
-            height: auto;
-            background-color: #fff;
-            margin: 20px;
-            padding: 10px;
-            border-radius: 25px;
-        }
-        .back-ground{
-            /* font-size: 5vmin; */
-            padding: 25px;
-            margin: 5px;
-            color: #27374D;
-        }
-        .img-logo {
-            height: 15vmin;
-            margin:40px 0px 0px 35px;
-        }
-    </style>
-    
+
 <body>
     <div class="container">
-        <div class="back-ground">
+        <div class="CSS-introduction">
             <div id="img">
                 <img src="../assingment/img/css.logo.png" class="img-logo" alt="" srcset="">
             </div>
-            <h2>CSS Introduction</h2><br>
+            <h2>CSS Introduction</h2>
             
                 <h3>what is a CSS</h3>
                 <p>
                     CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be displayed on      screen, paper, or in other media
-                </p><hr>
+                </p>
+                
 
             <h3>Casecading Stylesheet</h3>
                 <p>CSS (Cascading Style Sheets) is a styling language used to add style to a webpage.</p>
                 <p>HTML provides structure and adds content to a webpage, while CSS enhances the visual presentation of that content through various styles.</p>
-                <p>CSS use for make our HTML structure atractive and beutify</p><hr>
-
-            <h3>CSS Syntax</h3>
-            <pre>
-                selector {
-                    property1: value;
-                    property2: value;
-                }
-            </pre><hr>
+                <p>CSS use for make our HTML structure atractive and beutify</p>
+               
+            <div class="example">
+                <h3>CSS Syntax</h3>
+                        <div class="box">
+                        selector &#10100; <br>
+                            &nbsp; &nbsp; &nbsp; property1: value;<br>
+                            &nbsp; &nbsp; &nbsp;property2: value; <br>
+                            &#10101;
+                        </div>
+            </div>
 
             <h3>types of css</h3>
             <ol>
                 <li>Inline CSS</li>
                 <li>Internal CSS</li>
                 <li>External CSS</li>
-            </ol><hr>
+            </ol>
 
             <ul>
                 <li>
@@ -80,7 +53,7 @@
                 <li>
                     <code>value</code> - specifies the new value you want to assign to the property (color of the text to red, background to gray, and so on)
                 </li>
-            </ul><hr>
+            </ul>
 
             <h3>Comments in CSS    \</h3>
                 <p>/* this is css comment */</p>
