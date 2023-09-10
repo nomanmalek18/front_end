@@ -52,6 +52,7 @@ body{
 }
 
                 /* == preRequi End == */
+                /* == html intro Start == */
 
 
 .htmlintro{
@@ -79,194 +80,188 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+                /* == html intro End == */
+                /* == stucturehtml Start == */
+
 
 .structurehtml{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;   
 }
-.besictags{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+.structurehtml h2{
+    text-align: center;
+    font-size: 5vmin;
+    color: #144272;
+    transition: 2s;
+    margin-bottom:  3.5vmin;
+    margin-top: 5vmin;
 }
-.tag-element{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+.structurehtml p{
+    font-size: 3vmin;
+    color: #27374D;
+    margin: 1.5vmin 5vmin;
+    padding: 10px;
+    border-radius: 10px;
 }
-.heading-para{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.wrappertag{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.symentic{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.Void-elements{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.Detial-summray{    
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.images{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.image-path{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.Example-Base{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.block-element{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.inline-element{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.list{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
-}
-.global-attri{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+                /* == stucturehtml End == */
+                /* == besictags Start == */
 
+.besictags{
+    padding: 25px;
+    margin: 5px;
 }
+.besictags h2{
+    font-size: 5vmin;
+    color: #144272;
+    transition: 2s;
+    margin-bottom:  3.5vmin;
+    margin-top: 5vmin;
+}
+.besictags p{
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.heading{
+    border: 10px solid #144272;
+    background-color: cadetblue;
+}
+                /* == besictags End == */
+                /* == tag-element start == */
+
+.tag-element{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == tag-element End == */
+                /* == heading-para Start == */
+
+.heading-para{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == heading-para End == */
+                /* == wrappertag Start == */
+
+.wrappertag{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == wrappertag End == */
+                /* == symetictags Start == */
+
+.symentic{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == symetictags End == */
+                /* == Void-elements Start == */
+
+.Void-elements{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == Void-elements End == */
+                /* == Detial-summray start == */
+
+.Detial-summray{    
+    padding: 25px;
+    margin: 5px;
+}
+                /* == Detial-summray End == */
+                /* == images start == */
+
+.images{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == images End == */
+                /* == image-path start == */
+
+.image-path{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == Example-Base start == */
+                /* == image-path End == */
+.Example-Base{
+    padding: 25px;
+    margin: 5px;
+}
+                /* == Example-Base end == */
+                /* == block-element start == */
+
+.block-element{
+    padding: 25px;
+    margin: 5px;
+}
+                            /* == block-element end == */
+                            /* == inline-element start == */
+.inline-element{
+    padding: 25px;
+    margin: 5px;
+}
+                            /* == inline-element end == */
+                            /* == list start == */
+.list{
+    padding: 25px;
+    margin: 5px;
+}
+                            /* == list end == */
+                            /* == global-attri start == */
+.global-attri{
+    padding: 25px;
+    margin: 5px;
+}
+                            /* == global-attri end == */
+                            /* == globel-attre-exl start == */
 .globel-attre-exl{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == globel-attre-exl end == */
+                            /* == block-quote start == */
 .block-quote{
-    width: 150vmin;
-    height: 100vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == block-quote end == */
+                            /* == figure start == */
 .figure{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == figure end == */
+                            /* == atl-tag start == */
 .atl-tag{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == atl-tag end == */
+                            /* == tables start == */
 .tables{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == tables end == */
+                            /* == from-intro start == */
 .from-intro{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;    
 }
+                            /* == from-intro end == */
+                            /* == iframe start == */
 .iframe{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;
+    padding: 25px;
+    margin: 5px;
 }
+                            /* == iframe end == */
+                            /* == media-tag start == */
 .media-tag{
-    width: 150vmin;
-    height: 150vmin;
-    background-color: #fff;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 20px;   
+    padding: 25px;
+    margin: 5px;
 }
-.img-logo {
-    height: 15vmin;
-    margin:40px 0px 0px 35px;
-    
-}
+                            /* == media-tag end == */
