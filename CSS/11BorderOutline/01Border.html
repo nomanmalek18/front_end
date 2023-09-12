@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border proporty in css</title>
+    <link rel="stylesheet" href="../styleFile/styleCSS.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <style>
         .custom-border{
@@ -40,43 +41,15 @@
         .border-style-outset {
             border:10px outset black; margin: 30px;  
         }
-
-        /* body style */
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;   
-        }
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(41, 101, 241);
-        }
-        .container{
-            width: 150vmin;
-            height: auto;
-            background-color: #fff;
-            margin: 20px;
-            padding: 10px;
-            border-radius: 25px;
-        }
-        .back-ground{
-         
-            padding: 25px;
-            margin: 5px;
-            color: #27374D;
-        }
-        .img-logo {
-            height: 15vmin;
-            margin:40px 0px 0px 35px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="back-ground">
+            <div id="img">
+                <img src="../image/css.logo.png" class="img-logo" alt="" srcset="">
+            </div>
+
             <h2>what is a border proporty in css</h2>
             <p>
                 The CSS border property is a shorthand notation for three other properties: border-width, border-style, and border-color. These properties define the width, line style, and color of the border of a box.
