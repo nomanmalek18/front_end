@@ -95,4 +95,37 @@ body{
     padding: 25px;
     margin: 5px;
 }
-                                        /* == Way-To-Adopt-CSS Start == */
+.example-internal-css{
+    font-size: 3vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 40vmin;
+    width: 130vmin;
+    background-color: #27374D;
+    border-radius: 5px;
+}
+.example-internal-css h3 {
+    margin: 0 4vmin;
+    padding: 3vmin 0;
+    color: #fff;
+}
+
+.example-internal-css p {
+    color: #fff;
+}
+.example-heading {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 2vmin 3vmin;
+}
+.box-internal {
+    height: 18vmin;
+    width: 120vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+                                        /* == Way-To-Adopt-CSS End == */
