@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>color property in css</title>
+    <link rel="stylesheet" href="../styleFile/styleCSS.css">
 </head>
 <body>
     <div class="container">
@@ -54,7 +55,8 @@
                         <li>color: #009900aa;</li>
                     </ul>
                 </div>
-                <p><code>&lt;rgb()&gt; </code>values</p> 
+                <div class="rgb-color">
+                    <p><code>&lt;rgb()&gt; </code>values</p> 
                     <ul>
                         <li>color: rgb(34, 12, 64, 0.6);</li>
                         <li>color: rgba(34, 12, 64, 0.6);</li>
@@ -63,6 +65,8 @@
                         <li>color: rgb(34 12 64 / 60%);</li>
                         <li>color: rgba(34.6 12 64 / 30%);</li>
                     </ul>
+                </div>
+                <div class="hsl-color">
                     <p><code>&lt;hsl()&gt; </code>values</p> 
                     <ul>
                         <li>color: hsl(30, 100%, 50%, 0.6);</li>
@@ -72,6 +76,8 @@
                         <li>color: hsl(30 100% 50% / 60%);</li>
                         <li>color: hsla(30.2 100% 50% / 60%);</li>
                     </ul>
+                </div>
+                <div class="hwb">
                     <p><code>&lt;hwb()&gt; </code>values</p> 
                     <ul>
                         <li>color: hwb(90 10% 10%);</li>
@@ -79,15 +85,18 @@
                         <li>color: hwb(90deg 10% 10%);</li>
                         <li>color: hwb(1.5708rad 60% 0%);</li>
                         <li>color: hwb(0.25turn 0% 40% / 50%);</li>
-                    </ul>    
-                <p>Global values</p>
-                <ul>
-                    <li>color: inherit;</li>
-                    <li>color: initial;</li>
-                    <li>color: revert;</li>
-                    <li>color: revert-layer;</li>
-                    <li>color: unset;</li>
-                </ul>
+                    </ul>
+                </div>
+                <div class="global-color">
+                    <p>Global values</p>
+                    <ul>
+                        <li>color: inherit;</li>
+                        <li>color: initial;</li>
+                        <li>color: revert;</li>
+                        <li>color: revert-layer;</li>
+                        <li>color: unset;</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
