@@ -3,104 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pseuso Elements</title>
 </head>
 <body>
+    <div class="container">
+        <div class="pseudo-element">
+            <h1>What is Pseudo element ?</h1>
+            <p>
+                Ans : A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected elements. For Example, Styling the first letter or line of an element, and Inserting content before or after the content of an element. All of these can be done using Pseudo Elements in CSS.
+            </p>
+            <hr>
 
-    <h1>What is Pseudo element ?</h1>
-    <p>Ans : A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected elements. For Example, Styling the first letter or line of an element, and Inserting content before or after the content of an element. All of these can be done using Pseudo Elements in CSS.</p>
-    <hr>
+            <div>
+                <p>Pseudo-elements defined by a set of CSS specifications include the following:</p>
+                <p>A</p>
+                <ul>
+                    <li><code>::after</code></li>
+                </ul>
+                <p>B</p>
+                <ul>
+                    <li><code>::backdrop</code></li>
+                    <li><code>::before</code></li>
 
-    <div>
-        <p>Pseudo-elements defined by a set of CSS specifications include the following:</p>
-        <p>A</p>
-        <ul>
-            <li><code>::after</code></li>
-        </ul>
-        <p>B</p>
-        <ul>
-            <li><code>::backdrop</code></li>
-            <li><code>::before</code></li>
+                </ul>
+                <p>C</p>
+                <ul>
+                    <li><code>::cue</code></li>
+                    <li><code>::cue-region</code></li>
+                </ul>
+                <p>F</p>
+                <ul>
+                    <li><code>::first-letter</code></li>
+                    <li><code>::first-line</code></li>
+                    <li><code>::file-selector-button</code></li>
+                </ul>
+                <p>G</p>
+                <ul>
+                    <li><code>::grammar-error</code> 
+                        <abbr title="Experimental. Expect behavior to change in the future.">
+                            <span>Experimental</span>
+                        </abbr></li>
+                </ul>
+                <p>M</p>
+                <ul>
+                    <li><code>::marker</code></li>
+                </ul>
+                <p>P</p>
+                <ul>
+                    <li><code>::part()</code></li>
+                    <li><code>::placeholder</code></li>
+                </ul>
+                <p>S</p>
+                <ul>
+                    <li><code>::selection</code></li>
+                    <li><code>::slotted()</code></li>
+                    <li><code>::spelling-error</code> 
+                        <abbr title="Experimental. Expect behavior to change in the future.">
+                            <span class="visually-hidden">Experimental</span>
+                        </abbr></li>
+                </ul>
+                <p>T</p>
+                <ul>
+                    <li><code>::target-text</code>
+                        <abbr title="Experimental. Expect behavior to change in the future.">
+                            <span>Experimental</span>
+                        </abbr></li>
+                </ul>
+            </div>
+            <ol>
+                <li><code>::before</code></li>
+                <li><code>::after</code></li>
+                <li><code>::marker</code></li>
+                <li><code>::placeholder</code></li>
+                <li><code>::first-letter</code></li>
+                <li><code>::first-line</code></li>
+            </ol>
 
-        </ul>
-        <p>C</p>
-        <ul>
-            <li><code>::cue</code></li>
-            <li><code>::cue-region</code></li>
-        </ul>
-        <p>F</p>
-        <ul>
-            <li><code>::first-letter</code></li>
-            <li><code>::first-line</code></li>
-            <li><code>::file-selector-button</code></li>
-        </ul>
-        <p>G</p>
-        <ul>
-            <li><code>::grammar-error</code> 
-                <abbr title="Experimental. Expect behavior to change in the future.">
-                    <span>Experimental</span>
-                </abbr></li>
-        </ul>
-        <p>M</p>
-        <ul>
-            <li><code>::marker</code></li>
-        </ul>
-        <p>P</p>
-        <ul>
-            <li><code>::part()</code></li>
-            <li><code>::placeholder</code></li>
-        </ul>
-        <p>S</p>
-        <ul>
-            <li><code>::selection</code></li>
-            <li><code>::slotted()</code></li>
-            <li><code>::spelling-error</code> 
-                <abbr title="Experimental. Expect behavior to change in the future.">
-                    <span class="visually-hidden">Experimental</span>
-                </abbr></li>
-        </ul>
-        <p>T</p>
-        <ul>
-            <li><code>::target-text</code>
-                <abbr title="Experimental. Expect behavior to change in the future.">
-                    <span>Experimental</span>
-                </abbr></li>
-        </ul>
+
+            <style>
+                h2::after{ content: "~ ";}
+                /* h2::before{ content: "Important Note : ";  } */
+                h2::before{ content: "~ ";  }
+                p::first-letter{
+                    font-size: 36px;
+                }
+                p::first-line{
+                    color: brown;
+                }
+                p::selection{
+                    color: white;
+                    background-color: brown;
+                }
+                input::placeholder{
+                    color: brown;
+                }
+            </style>
+
+            <h2>Title</h2>
+            <h2>Other</h2>
+            <h2>Test</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam itaque eligendi, numquam incidunt temporibus commodi necessitatibus voluptatum, ducimus, dolore ullam praesentium! Unde eaque pariatur quia consectetur fugit enim voluptatum eveniet.
+            </p>
+            <input type="text" placeholder="Enter User Name" name="" id="">
+            <mark>Test</mark>
+        </div>
     </div>
-    <ol>
-        <li><code>::before</code></li>
-        <li><code>::after</code></li>
-        <li><code>::marker</code></li>
-        <li><code>::placeholder</code></li>
-        <li><code>::first-letter</code></li>
-        <li><code>::first-line</code></li>
-    </ol>
-
-
-    <style>
-        h2::after{ content: "~ ";}
-        /* h2::before{ content: "Important Note : ";  } */
-        h2::before{ content: "~ ";  }
-        p::first-letter{
-            font-size: 36px;
-        }
-        p::first-line{
-            color: brown;
-        }
-        p::selection{
-            color: white;
-            background-color: brown;
-        }
-        input::placeholder{
-            color: brown;
-        }
-</style>
-
-    <h2>Title</h2>
-    <h2>Other</h2>
-    <h2>Test</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam itaque eligendi, numquam incidunt temporibus commodi necessitatibus voluptatum, ducimus, dolore ullam praesentium! Unde eaque pariatur quia consectetur fugit enim voluptatum eveniet.</p>
-    <input type="text" placeholder="Enter User Name" name="" id="">
-    <mark>Test</mark>
 </body>
 </html>
