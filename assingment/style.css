@@ -216,7 +216,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 40vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 5px;
 }
 
@@ -260,7 +260,7 @@ img:hover {
 .viz-1 {
     height: 7.5vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 4vmin 3vmin;
     padding: 2.5vmin 5vmin;
     font-size: 2.5vmin;
@@ -269,13 +269,13 @@ img:hover {
     letter-spacing: 1px;
 }
 
-.lalo {
+.example-of-bg {
     font-size: 2.5vmin;
     color: #fff;
     margin: 4vmin 3vmin;
     height: 78vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
     line-height: 4vmin;
@@ -295,17 +295,13 @@ img:hover {
     border-radius: 7px;
 }
 
-.example2 {
-
-}
-
-.example2 .pilo {
+.example-of-bg-2 {
     font-size: 2.5vmin;
     color: #fff;
     margin: 4vmin 3vmin;
     height: 78vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
     line-height: 4vmin;
@@ -346,7 +342,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 63vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
     line-height: 4vmin;
@@ -354,7 +350,7 @@ img:hover {
 .output{
     height: 30vmin;
     width: 40vmin;
-    border: 1px solid #27374D;
+    border: 3px solid #2267c8d2;
     background-image: url(../assingment/img/canada-city.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -392,7 +388,7 @@ img:hover {
     border: 1px solid gray;
     margin-top: 4vmin;
     border-radius: 5px;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     background-image: url("../assingment/img/opacity-img.jpg");
     background-size: 30%;
     background-repeat: no-repeat;
@@ -404,7 +400,7 @@ img:hover {
     border: 1px solid gray;
     margin-top: 4vmin;
     border-radius: 5px;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin-left: 1vmin;
     background-image: url("../assingment/img/opacity-img.jpg");
     background-size: 30%;
@@ -419,7 +415,7 @@ img:hover {
     border: 1px solid gray;
     margin-top: 4vmin;
     border-radius: 5px;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin-left: 7vmin;
     background-image: url("../assingment/img/opacity-img.jpg");
     background-size: 30%;
@@ -494,7 +490,7 @@ img:hover {
 .viz-2 {
     height: 7.5vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 4vmin 3vmin;
     padding: 2.5vmin 5vmin;
     font-size: 2.5vmin;
@@ -508,7 +504,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 104vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
     line-height: 4vmin;
@@ -517,7 +513,6 @@ img:hover {
     height: 55vmin;
     width: 130vmin;
     margin: 4vmin 3vmin;
-    background-color: #27374D;
     border-radius: 10px;
     padding: 5vmin;
     background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg");
@@ -549,7 +544,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 30vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
 }
@@ -579,7 +574,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 25vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
 }
@@ -590,7 +585,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 145vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     border-radius: 10px;
     padding: 5vmin;
     line-height: 4vmin;
@@ -600,7 +595,7 @@ img:hover {
     margin: 4vmin 3vmin;
     height: 35vmin;
     width: 50vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2 ;
     margin: 5% auto;
 }
 
@@ -667,7 +662,7 @@ img:hover {
 .viz-0{
     height: 7.5vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 4vmin 3vmin;
     padding: 2.5vmin 5vmin;
     font-size: 2.5vmin;
@@ -678,7 +673,7 @@ img:hover {
 .viz1 {
     width: 50vmin;
     height: 15vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     color: #fff;
     display: flex;
     align-items: center;
@@ -690,7 +685,7 @@ img:hover {
 margin: 4vmin 3vmin;
 height: 38vmin;
 width: 50vmin;
-background-color: #27374D;
+background-color: #2267c8d2;
 margin: 5% auto;
 color: #fff;
 font-size: 3.5vmin;
@@ -700,7 +695,7 @@ padding: 3vmin;
 .viz2 {
     width: 50vmin;
     height: 15vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     color: #fff;
     padding: 10px;
     font-size: 3.5vmin;
@@ -712,7 +707,7 @@ padding: 3vmin;
 .viz3 {
     width: 60vmin;
     height: 35vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     padding: 15px;
     color: #fff;
     display: flex;
@@ -747,7 +742,7 @@ padding: 3vmin;
     margin: 4vmin 3vmin;
     height: 71vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 5% auto;
     color: #fff;
     font-size: 3.5vmin;
@@ -758,7 +753,7 @@ padding: 3vmin;
     margin: 4vmin 3vmin;
     height: 31vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 5% auto;
     padding: 3vmin;
     line-height: 5vmin;
@@ -800,7 +795,7 @@ a:hover {
     margin: 4vmin 3vmin;
     height: 76vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 5% auto;
     padding: 3vmin;
     color: #fff;
@@ -811,7 +806,7 @@ a:hover {
     margin: 4vmin 3vmin;
     height: 66vmin;
     width: 130vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     margin: 5% auto;
     padding: 3vmin;
     color: #fff;
@@ -875,9 +870,7 @@ a:hover {
 
 /* == Question-17 End == */
 /* == Question-18 Start == */
-.question-18 {
-    margin: 25px;
-    padding: 5px;}
+.question-18 { margin: 25px; padding: 5px; }
 
 .question-18 h2 {
     font-size: 5vmin;
@@ -903,7 +896,7 @@ a:hover {
 .viz4 {
     width: 130vmin;
     height: 16vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     padding: 15px;
     color: #fff;
     margin: 5vmin 0 5vmin 3vmin;
@@ -913,7 +906,7 @@ a:hover {
 .box01 {
     height: 25vmin;
     width: 120vmin;
-    background-color: #27374D;
+    background-color: #2267c8d2;
     padding: 0vmin;
     margin: 5vmin;
     padding: 2vmin 3vmin;

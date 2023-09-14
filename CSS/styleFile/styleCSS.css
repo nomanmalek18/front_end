@@ -129,3 +129,17 @@ body{
     border-left: 5px solid orange;
 }
                                         /* == Way-To-Adopt-CSS End == */
+                                        /* == priorities Start == */
+.priorities{
+    padding: 25px;
+    margin: 5px;    
+}
+.priorities h2{
+    font-size: 5vmin;
+    margin-bottom:  1.8vmin;
+    margin-top: 5vmin;
+}
+.priorities p {
+    font-size: 3vmin;
+    margin: 1.5vmin 5vmin;
+}
