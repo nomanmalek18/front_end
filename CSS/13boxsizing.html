@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleFile/styleCSS.css">
     <style>
-        *{
-            /* box-sizing: content-box; */
+        .container-box{
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            width: 1200px;
             margin: auto;
             padding: 10px;
-            background-color: grey;
+            background-color: black;
         }
         .row{
             display: flex;
         }
-        /* img{
-            display: block;
-            margin: 0 auto;
-        } */
         .col{
             height: 300px;
             width: 300px;
-
         }
-        .box1{ margin: 10px; padding: 20px; background-color: brown; }
-        .box2{ margin: 10px; padding: 50px; background-color: rgb(63, 165, 42); }
-        .box3{ margin: 10px; padding: 60px; background-color: rgb(163, 165, 42); }
-        .box4{ margin: 10px; padding: 150px; background-color: rgb(42, 132, 165); }
-        /* .box5{ margin: 10px; padding: 160px; background-color: rgb(54, 42, 165); } */
+        .box1{margin: 10px; padding: 20px; background-color: navy; }
+        .box2{margin: 10px; padding: 20px; background-color: maroon; }
+        .box3{margin: 10px; padding: 20px; background-color: olive; }
+        .box4{margin: 10px; padding: 20px; background-color: teal; }
     </style>
 </head>
 <body>
-    <!-- <img src="fontsType.png" alt=  ""> -->
     <div class="container">
         <div class="boder-box">
-            <div class="row">
-                <div class="col box1">Col1</div>
-                <div class="col box2">Col2</div>
-                <div class="col box3">Col3</div>
-                <div class="col box4">Col4</div>
-                <!-- <div class="col box5 ">Col5</div> -->
+            <h2>what is a box-sizing in css</h2>
+            <p>
+                The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height
+            </p>
+            <div class="container-box">
+                <h2 style="color: white;">example of box-sizing</h2>
+                <div class="row">
+                    <div class="col box1">Col1</div>
+                    <div class="col box2">Col2</div>
+                    <div class="col box3">Col3</div>
+                    <div class="col box4">Col4</div>
+                </div>
             </div>
         </div>
     </div>
