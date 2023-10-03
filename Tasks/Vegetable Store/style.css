@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-header{
+    padding: 16px 0;
+}
+.container-fluid-lg{
+    padding: 0 30px;
+}
+header .top-header .row {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.border-list{
+    display: inline-block;
+    list-style-type: none;
+}
