@@ -1,0 +1,137 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.container{
+    /* width: 1448px; */
+    height: 796px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    display: flex;
+}
+.col {
+    /* padding: 15px 15px; */
+    /* flex: 1 0 0%; */
+}
+.txt-upper {
+    padding: 5px;
+    text-transform: uppercase;
+}
+.bg-color{
+    width: 100%;
+    background-color: #21243d;
+}
+.navbar{
+    letter-spacing: 5px;
+    margin-left: 170px;
+}
+.navbar ul li {
+    
+    padding: 15px;
+    display: inline-block;
+}
+a {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+.img-logo{
+    width: 150px;
+    height: 50px;
+}
+.paddi{
+    padding: 8px 0px 0px 60px;
+}
+.search-menu{
+    padding: 15px 0px 0px 360px;
+}
+#main-header{
+    width: 1448px;
+    background-image: url(assest/Image.png);    
+}
+
+.title{
+    padding-top: 150px;
+    /* padding-left: 135px; */
+    font-size: 125px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    /* text-align: center; */
+}
+.lorem{
+    /* width: 1199px; */
+    /* height: 210px; */
+    padding-top: 60px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";  
+}
+.text-box{
+    padding-left: 145px;
+    width: 50%;
+}
+
+.btn{
+    padding-top: 60px;
+}
+.btn button {
+    background-color: #21243d;
+    height: 50px;
+    width: 272px;
+    border-radius: 50px;
+    padding: 0 25px;
+    line-height: 38px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/* header end  */
+
+
+/* main  */
+
+/* section-1 start */
+
+.section-cnt{
+    width: 1448px;
+    height: 796px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-title {
+    margin-top: 50px;
+    text-align: center;
+    width: 160%;
+}
+.section-title span {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Bebas Neue";
+}
+.title2 {
+    width: 160% ;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title2 p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
