@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Prompt Confirm</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+            <noscript>your browser not enabled JS so first needs to start JS from ur browser setting</noscript>
+
+            <h2>Alert, Prompt, Confirm</h2>
+                <h3>Alert Box</h3>
+                <p>An alert box is often used if you want to make sure information comes through to the user.</p>
+                <p>When an alert box pops up, the user will have to click "OK" to proceed.</p> 
+                <div class="alert-box">
+                    <h3>Syntax :</h3>
+                    <div class="syntax">
+                        alert("I am an alert box!");
+                    </div>
+                </div>
+
+
+                <h3>Prompt Box</h3>
+                    <p>
+                        A prompt box is often used if you want the user to input a value before entering a page.                    
+                    </p>
+
+                    <p>
+                        When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+                    </p>
+                    <p>
+                        If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+                    </p>
+                    <div class="example-box">
+                        <h3>syntax :</h3>
+                        <div class="syntax">
+                            prompt("enter your age !")
+                        </div>
+                    </div>
+                    
+                    <div class="confirm">
+                        <h3>Example :</h3>
+                        <p>The window.confirm() method can be written without the window prefix.</p>
+                            <div class="confirm-code">
+                            
+                            &nbsp; &lt;!DOCTYPE html&gt;<br>
+                            &nbsp;&lt;html&gt;<br>
+                            &nbsp;&lt;head&gt;<br>
+                            &nbsp;&lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &nbsp; &nbsp; &lt;h2&gt;javascript Prompt Box&lt;/h2&gt;<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;script&gt;<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let age = prompt("enter your age ") <br><br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(age !=null){ <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     document.write(`your age is ${age}`) <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else{ <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    document.write("age fiald was blank") <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}    <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/script&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+    
+                            </div>
+    
+                    </div>
+
+
+                <h3>Confirm Box</h3>
+                <p>
+                    A confirm box is often used if you want the user to verify or accept something.
+                </p>
+                <p>
+                    When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+                </p>
+                <p>
+                    If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+                </p>
+
+                <div class="example-box">
+                    <h3>syntax :</h3>
+                    <div class="syntax">
+                        confirm("Are you sure??");
+                    </div>
+                </div>
+
+                <div class="confirm">
+                    <h3>Example :</h3>
+                    <p>The window.confirm() method can be written without the window prefix.</p>
+                        <div class="confirm-code">
+                        
+                        &nbsp; &lt;!DOCTYPE html&gt;<br>
+                        &nbsp;&lt;html&gt;<br>
+                        &nbsp;&lt;head&gt;<br>
+                        &nbsp;&lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &nbsp; &nbsp; &lt;h2&gt;javascript Confirm Box&lt;/h2&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;script&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let response = confirm("you are sure, you wnat to delete? ") <br><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(response){ <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     document.write("deleted") <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else{ <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    document.write("not deleted") <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}    <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
