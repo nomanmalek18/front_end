@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variableNaming Convesion</title>
+</head>
+
+<body>
+
+    <h1>Naming Conventions in Programming</h1>
+    <p>
+        <strong>Naming Conventions</strong><br>
+        JavaScript does not have any specific rules for naming variables; however, other languages do. Naming
+        conventions help your code stay fluent within the context of your program. This is important because you
+        want to have consistency throughout your entire program. Below you will find general rules when naming
+        your variables.
+    </p>
+    <ol>
+        <li>Variables tend to start with a letter.</li>
+        <li>Spaces are not allowed in variables</li>
+        <li>Special characters such as “!,-,@” are not allowed in the name</li>
+        <li>Digits are allowed but keep Rule number 1 in mind.</li>
+    </ol>
+    <p>Example of valid names</p>
+    <ul>
+        <li>user</li>
+        <li>total</li>
+        <li>output</li>
+        <li>results</li>
+    </ul>
+    <p>Example of invalid names</p>
+    <ul>
+        <li>Becky Johnson</li>
+        <li>output!</li>
+        <li>12Users</li>
+        <li>first-name</li>
+    </ul>
+    <p>Variable names should clearly express how the variable is going to be used. For example, the following
+        names are valid but not typically a good idea to use:</p>
+    <p>
+        tuna = 32</p>
+    <p> TheResultsFromACalculationWithALongName = ((32 + x) / 5)
+    </p>
+
+    <img
+        src="https://www.syncfusion.com/blogs/wp-content/uploads/2022/02/10-JavaScript-Naming-Conventions-Every-Developer-Should-Know.png" />
+    <h1>10 JavaScript Naming Conventions Every Developer Should Know</h1>
+        <p>June 13, 2023 UPDATED</p>
+        <p>Following standard naming conventions increases readability and makes it easier to understand your
+        code. However, many developers are not aware of how to use naming conventions correctly, and
+        sometimes they make things complicated.</p>
+        <p>In this article, I will discuss 10 JavaScript naming convention best practices you should follow.</p>
+    <h2>1. Naming Convention for Variables</h2>
+        <p>JavaScript variable names are case-sensitive. Lowercase and uppercase letters are distinct. For
+        example, you can define three unique variables to store a dog name, as follows.</p>
+
+        <ol>
+            <li>var DogName ='Scooby-Doo';</li>
+            <li>var dogName = 'Droopy';</li>
+            <li>var DOGNAME = 'Odie';</li>
+            <li>console .log( DogName); // "Scooby-Doo"</li>
+            <li>console .log(dogName); // "Droopy"</li>
+            <li>console .log(DOGNAME); // "Odie"</li>
+        </ol>
+    <p>
+        However, the most recommended way to declare JavaScript variables is with <strong>camel case</strong>
+        variable names. You can use the camel case naming convention for all types of variables in
+        JavaScript, and it will ensure that there aren't multiple variables with the same name.
+    </p>
+    <ol>
+        <p>bad:-</p>
+        <li>var dogname = 'Droopy';</li>
+        <p>bad:-</p>
+        <li>var dog_name = 'Droopy';</li>
+        <p>bad:-</p>
+        <li>var DOGNAME =<q>Droopy</q>;</li>
+        <p>bad:-</p>
+        <li>var DOG_NAME = 'Droopy';</li>
+        <p>good:-</p>
+        <li>var dogName = 'Droopy';</li>
+    </ol>
+        <p>
+        The names of variables should be self-explanatory and describe the stored value. For example, if you
+        need a variable to store a dog's name, you should use dogName instead of just Name since it is more
+        meaningful.
+    </p>
+    <ol>
+        <p>bad:-</p>
+        <li>var d = 'Scooby-Doo';</li>
+        <p>bad:-</p>
+        <li>var name = 'Scooby-Doo';</li>
+        <p>good:-</p>
+        <li>var dogName = 'Scooby-Doo';</li>
+    </ol>
+    <h2>2. Naming Convention for Booleans</h2>
+    <p>
+        When it comes to Boolean variables, we should use <strong>is</strong> or <strong>has </strong>as
+        prefixes. For example, if you need a Boolean variable to check if a dog has an owner, you should use
+        hasOwner as the variable name.</p>
+    <p>bad:-</p>
+    <li>var bark = false;</li>
+    <p>good:-</p>
+    <li>var isBark = false;</li>
+    <p>bad:-</p>
+    <li>var ideal = true;</li>
+    <p>good:-</p>
+    <li>var areIdeal = true;</li>
+    <p>bad:-</p>
+    <li>var owner = true;</li>
+    <p>good:-</p>
+    <li>var hasOwner = true;</li>
+
+    <h2>3. Naming<strong> Convention for Functions</strong></h2>
+    <p>
+        JavaScript function names are also case-sensitive. So, similar to variables, the <strong>camel
+            case</strong> approach is the recommended way to declare function names.
+        </p>
+    <p>
+        In addition to that, you should use descriptive nouns and verbs as prefixes. For example, if we
+        declare a function to retrieve a name, the function name should be getName.
+    </p>
+    <p>bad:-</p>
+    <span>function name ( dogName, ownerName ) {
+    <span>return</span> <span>'${dogName} ${ownerName}'</span>;
+    }
+
+    <p>good:-</p>
+    <span>function</span> <span>getName</span>(<span>dogName, ownerName</span>) {
+    <span>return</span> <span>'${dogName} ${ownerName}'</span>;
+    }
+    <h2>4. Naming Convention for Constants</h2>
+    <p>JavaScript constants are also case-sensitive. However, these constants should be written in
+        <strong>uppercase </strong>because they are nonchanging variables.
+    </p>
+    var</span> LEG = <span>4</span>;
+    <span>var</span> TAIL = <span>1</span>;
+    <span>var</span> MOVABLE = LEG + TAIL;</pre>
+    <p>If the variable declaration name contains more than one word, you should use
+        <strong>UPPER_SNAKE_CASE. </strong>
+    </p>
+    <span>var</span> DAYS_UNTIL_TOMORROW = <span>1</span>;</pre>
+    <p>All the constants should be defined at the start of your file, method, or class.</p>
+    <h2>5. Naming Convention for Classes</h2>
+    <p>Naming convention rules for JavaScript classes are pretty similar to functions. We have to use
+        descriptive titles that explain the class’s capabilities.</p>
+    <p>The major difference between function and class names is that we have to use <strong>Pascal
+            case</strong> for class names.</p>
+    <span>class</span> <span>DogCartoon</span> {
+    <span>constructor</span>(dogName, ownerName) {
+    <span>this</span>.dogName = dogName;
+    <span>this</span>.ownerName = ownerName;
+    }
+    }
+
+    <span>var</span> cartoon = new DogCartoon(<span>'Scooby-Doo'</span>, <span
+       >'Shaggy'</span>);</pre>
+    <h2>6. Naming Convention for Components</h2>
+    <p>JavaScript components are widely used in front-end frameworks like React. Although components are
+        used in the DOM, treating them similarly to classes and using <strong>Pascal case </strong>to define
+        names is recommended.</p>
+    // bad
+    function dogCartoon(roles) {
+    return (
+    &lt; <span>div</span> &gt;
+    &lt; <span>span</span> &gt; Dog Name: { roles<span
+        >.dogName</span> } &lt; /<span>span</span>&gt;
+    &lt; <span>span</span> &gt; Owner Name: { roles<span
+        >.ownerName</span> } &lt; /<span>span</span>&gt;
+    &lt; /<span>div</span>&gt;
+    );
+    }
+
+    // good
+    function DogCartoon(roles) {
+    return (
+    &lt; <span>div</span> &gt;
+    &lt; <span>span</span> &gt; Dog Name: { roles<span
+        >.dogName</span> } &lt; /<span>span</span>&gt;
+    &lt; <span>span</span> &gt; Owner Name: { roles<span
+        >.ownerName</span> } &lt; /<span>span</span>&gt;
+    &lt; /<span>div</span>&gt;
+    );
+    }</pre>
+    <p>Since the initial letter is always written in uppercase, a component stands out from native HTML and
+        web components when utilized.</p>
+    <span >div</span>&gt;</span>
+    <span >&lt;<span >DogCartoon</span>
+        <span >roles</span>=<span>{{</span> <span >dogName:</span>
+        '<span >Scooby-Doo</span>', <span >ownerName:</span> '<span
+            >Shaggy</span>' }}
+        /&gt;</span>
+    <span >&lt;/<span >div</span>&gt;</span></pre>
+
+    <h2>7. Naming Convention for Methods</h2>
+    <p>Although there are some differences, the structure of a JavaScript function and a method are pretty
+        similar. So, naming convention rules are the same.</p>
+    <p>We must use <strong>camel case </strong>to declare JavaScript methods and use verbs as prefixes to
+        make names more meaningful.</p>
+    <span >class</span> <span>DogCartoon</span> {
+    <span>constructor</span>(<span>dogName, ownerName</span>) {
+    <span>this</span>.<span>dogName</span> = dogName;
+    <span>this</span>.<span>ownerName</span> = ownerName;
+    }
+
+    <span>getName</span>(<span></span>) {
+    <span >return</span> <span>'${this.dogName} ${this.ownerName}'</span>;
+    }
+    }
+
+    <span >var</span> cartoon= <span >new</span> <span
+    >DogCartoon</span>(<span>'Scooby-Doo'</span>, <span
+       >'Shaggy'</span>);
+
+    <span>console</span>.<span>log</span>(cartoon.<span>getName</span>());
+    <span>// "Scooby-Doo Shaggy"</span></pre>
+    <h2>8. Naming Convention for Denoting Private Functions</h2>
+    <p>Underscores ( _ ) are widely used in languages like MySQL and PHP to define variables, functions, and
+        methods. But in JavaScript, an underscore is used to denote private variables or functions.</p>
+    <p>For example, if you have a private function name like toonName, you can denote it as a private
+        function by adding an underscore as a prefix (_toonName).</p>
+    <span >class</span> <span>DogCartoon</span> {
+    <span>constructor</span>(<span>dogName, ownerName</span>) {
+    <span>this</span>.<span>dogName</span> = dogName;
+    <span>this</span>.<span>ownerName</span> = ownerName;
+    <span>this</span>.<span>name</span> = <span
+    >_toonName</span>(dogName, ownerName);
+    }
+    <span>_toonName</span>(<span>dogName, ownerName</span>) {
+    <span >return</span> <span>`<span>${dogName}</span> <span
+        >${ownerName}</span>`</span>;
+    }
+    }
+
+    <span >var</span> cartoon = <span >new</span> <span
+    >DodCartoon</span>(<span>'Scooby-Doo'</span>, <span
+       >'Shaggy'</span>);
+
+    <p>good:-</p>
+    <span>var</span> name = cartoon.<span>name</span>;
+    <span>console</span>.<span>log</span>(name);
+    <span>// "Scooby-Doo Shaggy" </span>
+
+    <p>bad:-</p>
+    name =cartoon.<span>_toonName</span>(cartoon.<span>dogName</span>, cartoon.<span>ownerName</span>);
+    <span>console</span>.<span>log</span>(name);
+    <span>// "Scooby-Doo Shaggy"</span></pre>
+    <h2>9. Naming Convention for Global Variables</h2>
+    <p>For global JavaScript variables, there are no specific naming standards.</p>
+    <p>It is recommended to use <strong>camel case</strong> for <strong>mutable</strong> global variables
+        and <strong>uppercase </strong>for<strong> immutable </strong>global variables.</p>
+
+    <h2>10. Naming Convention for File Names</h2>
+    <p>Most web servers (Apache, Unix) are case-sensitive when it comes to handling files. For example,
+        <strong><em>flower.jpg</em></strong> isn’t <strong><em>Flower.jpg</em></strong>.
+    </p>
+    <p>On the other hand, web servers, such as Microsoft’s IIS, do not care about the case. In such servers,
+        you can use <strong><em>Flower.jpg</em></strong> or <strong><em>flower.jpg</em></strong> to access
+        <strong><em>Flower.jpg</em></strong>.
+    </p>
+    <p>However, if you switch from a case-insensitive server to a case-sensitive server, even a tiny mistake
+        can cause your website to crash.</p>
+    <p>So, it is recommended to use <strong>lowercase</strong> file names in all servers despite their
+        case-sensitive support.</p>
+    <h2>Conclusion</h2>
+    <p>
+        In this article, I discussed 10 JavaScript naming conventions that can be used to improve our coding
+        skills. As developers, we should always adhere to best practices, since that will increase
+        readability and make it easier for you and your team to understand your code.</p>
+    <p>
+        I hope those suggestions will help you improve your coding skills. Thank you for reading.</p>
+    <p>
+        The Syncfusion JavaScript suite will be the only suite you will ever need to build an
+        application. It contains over 65 high-performance, lightweight, modular, and responsive UI
+        components in a single package. Download the FREE trial and evaluate the controls today.</p>
+    <p>
+        If you have any questions or comments, you can contact us through our support forums,support
+        portal, or feedback portal. We are always happy to assist you!</p>
+
+
+</body>
+
+</html>
