@@ -15,14 +15,53 @@
         </div>
         <div class="container-items">
             <h2>Scope of Variable </h2>
-                <h3>javascript spoces</h3>
+                <!-- <h3>javascript spoces</h3>
                 <p><strong>Global Scope:-</strong> accessible everywhare</p>
                 <p><strong>local Scope:-</strong> limited accessibility</p>
                 <p><strong>block Scope:-</strong>accessible between two curly braces.</p>
-                <p><strong>function scope:-</strong>accessible inside a function</p>
+                <p><strong>function scope:-</strong>accessible inside a function</p> -->
 
-            
+                <p>a Variable is a named container with a unique name for storing date values. the statement below declares a variable with the name "car":</p>
 
+                <div class="syntax">
+                    let car; <br><br>
+                    console.log(car); // undefined 
+                </div>
+
+                <p>in javascript, variable are initailized with the value the of <em>undefined</em> when they are created. you can assign a value to a variable using the assignment operator (=) when you declere it:</p>
+
+
+                <div class="syntax">
+                    let car= "volvo" <br><br>
+                    console.log(car); // volvo 
+                </div>
+
+                <p>alwas initailize your variable before using them or you will get an error:</p>
+
+                <div class="syntax">
+                    console.log(car); //  ReferenceError: car in not defined<br><br>
+                    let car= "volvo" 
+                </div>
+
+                <p>ECMAscript 2015 (or ES6) introduced toe new ways of declating variables. <strong>let</strong> and <strong>const</strong>. the reason for the new keyword was becaues the <strong>function scoping</strong> of <em> var </em>confusing. it was one the main sourcse of bugs in javascript</p>
+
+                <h3>scope:-</h3>
+                <p>by scope, we are talking about the visibility of variables in the defferent parts of the code during runtime. or in other words which parts of code can access and modify a variable. </p>
+
+                <p>in javascript thare are two a=eay types of scope:</p>
+                <ul>
+                   <li>global scope</li>
+                   <li>local scope</li>
+                </ul>
+
+                <p>what changed with modern javascript (ES6+) is the way we are use variables in the locel scope.</p>
+
+                <img src="image/ScopeOfVariable.png" alt="" srcset="">
+
+                <h3>global scope:-</h3>
+                <p>a variable declared outside a funtion becomes global. this measns it cab be accessed and modified everywhere in the code.</p>
+
+                <p>we can declare constants in the global scope:</p>
         </div>
     </div>    
 </body>
