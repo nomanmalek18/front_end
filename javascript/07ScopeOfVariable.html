@@ -75,7 +75,7 @@
 
                     <h3>Function scope</h3>
                     <p>
-                        variable declared with the <em>var </em>keyword become local to the function. they can be accessed from within the function
+                        variable declared with the <mark><small>var </small></mark> keyword become local to the function. they can be accessed from within the function
                     </p>
 
                     <div class="example_of_scope" style="height: auto;">
@@ -92,12 +92,12 @@
                         console.log(car); // ReferenceError
                     </div>
 
-                    <p>we can see that we dont't get an error even though we access <em>car</em>befor the declaration. variable declared with the <em>var</em> keyword are <strong>hoisting -</strong> moved to the top of the function and initailized with <em>undefined</em> before the code is run. with the hoisting, they are accessible in their enclosing scope even before they are declared. </p>
+                    <p>we can see that we dont't get an error even though we access <mark><small>car</small></mark> befor the declaration. variable declared with the <mark><small>var</small></mark> keyword are <strong>hoisting -</strong> moved to the top of the function and initailized with <mark><small>undefined</small></mark> before the code is run. with the hoisting, they are accessible in their enclosing scope even before they are declared. </p>
                      <p> can you see now this can get confusing?</p>
 
 
                     <h3>Block scope:-</h3>
-                        <p>the concept of <strong>block scope </strong> was introduced in ES6 together with the new ways to declare variablesn - <em>const</em> and <em>let.</em> this means that variable is accessible between two curly braces <em>{}</em>, for example inside an <em>if</em> of  <em>for</em>,
+                        <p>the concept of <strong>block scope </strong> was introduced in ES6 together with the new ways to declare variablesn - <mark><small>const</small></mark> and <mark><small>let.</small></mark> this means that variable is accessible between two curly braces <mark><small>{}</small></mark>, for example inside an <mark><small>if</small></mark> of  <mark><small>for</small></mark>,
                         </p>
 
                         <div class="example_of_scope" style="height: auto;">
@@ -142,10 +142,10 @@
                                     <li>variables declared on the <strong>global scope</strong> are accessible everywhare in your code.</li>
                                     <li>variables declared in a <strong>local scope</strong> can not be accessed from outside that scope.
                                     </li>
-                                    <li><mark><small>const</small></mark> and <mark><small>let</small></mark> use block scope which exists between two curly braces.</li>
-                                    <li>mostly use <mark><small>const</small></mark> for variables whose values will never change.</li>
-                                    <li>for evarything else use <mark><small>let.</small></mark></li>
-                                    <li>don't use <mark><small>var</small></mark> to avoid confusing.</li>
+                                    <li><small>const</small> and <small>let</small> use block scope which exists between two curly braces.</li>
+                                    <li>mostly use <small>const</small> for variables whose values will never change.</li>
+                                    <li>for evarything else use <small>let.</small></li>
+                                    <li>don't use <small>var</small> to avoid confusing.</li>
                                 </ul>
 
         </div>
