@@ -164,3 +164,17 @@ table tr td {
     border-radius: 10px;
     letter-spacing: 1px;
 }
+
+
+/* scope example */
+.example_of_scope{
+    height: 13.5vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}

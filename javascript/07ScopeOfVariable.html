@@ -21,29 +21,29 @@
                 <p><strong>block Scope:-</strong>accessible between two curly braces.</p>
                 <p><strong>function scope:-</strong>accessible inside a function</p> -->
 
-                <p>a Variable is a named container with a unique name for storing date values. the statement below declares a variable with the name "car":</p>
+                <p>a Variable is a named container with a unique name for storing date values. the statement below <strong>declares</strong> a variable with the name "car":</p>
 
-                <div class="syntax">
+                <div class="example_of_scope">
                     let car; <br><br>
                     console.log(car); // undefined 
                 </div>
 
-                <p>in javascript, variable are initailized with the value the of <em>undefined</em> when they are created. you can assign a value to a variable using the assignment operator (=) when you declere it:</p>
+                <p>in javascript, variable are <strong>initailized</strong> with the value the of <mark><small>undefined</small></mark> when they are created. you can assign a value to a variable using the assignment operator (=) when you declere it:</p>
 
 
-                <div class="syntax">
+                <div class="example_of_scope">
                     let car= "volvo" <br><br>
                     console.log(car); // volvo 
                 </div>
 
                 <p>alwas initailize your variable before using them or you will get an error:</p>
 
-                <div class="syntax">
+                <div class="example_of_scope">
                     console.log(car); //  ReferenceError: car in not defined<br><br>
                     let car= "volvo" 
                 </div>
 
-                <p>ECMAscript 2015 (or ES6) introduced toe new ways of declating variables. <strong>let</strong> and <strong>const</strong>. the reason for the new keyword was becaues the <strong>function scoping</strong> of <em> var </em>confusing. it was one the main sourcse of bugs in javascript</p>
+                <p>ECMAscript 2015 (or ES6) introduced toe new ways of declating variables. <strong>let</strong> and <strong>const</strong>. the reason for the new keyword was becaues the <strong>function scoping</strong> of <mark><small> var </small></mark>confusing. it was one the main sourcse of bugs in javascript</p>
 
                 <h3>scope:-</h3>
                 <p>by scope, we are talking about the visibility of variables in the defferent parts of the code during runtime. or in other words which parts of code can access and modify a variable. </p>
@@ -63,7 +63,7 @@
 
                 <p>we can declare constants in the global scope:</p>
 
-                <div class="syntax">
+                <div class="example_of_scope">
                     const COLS = 10; <br><br>
                     const ROWS = 20; 
                 </div>
@@ -77,6 +77,77 @@
                     <p>
                         variable declared with the <em>var </em>keyword become local to the function. they can be accessed from within the function
                     </p>
+
+                    <div class="example_of_scope" style="height: auto;">
+                        function printCar(){<br>
+                            if(true){<br>
+                                console.log(car) // underfined<br>
+                                var car = "porsche";<br>
+                                console.log(car); // "porsche" <br>
+                            }<br>
+                            console.log(car); "porsche"<br>
+                        }<br>
+                        <br>
+                        printCar();<br>
+                        console.log(car); // ReferenceError
+                    </div>
+
+                    <p>we can see that we dont't get an error even though we access <em>car</em>befor the declaration. variable declared with the <em>var</em> keyword are <strong>hoisting -</strong> moved to the top of the function and initailized with <em>undefined</em> before the code is run. with the hoisting, they are accessible in their enclosing scope even before they are declared. </p>
+                     <p> can you see now this can get confusing?</p>
+
+
+                    <h3>Block scope:-</h3>
+                        <p>the concept of <strong>block scope </strong> was introduced in ES6 together with the new ways to declare variablesn - <em>const</em> and <em>let.</em> this means that variable is accessible between two curly braces <em>{}</em>, for example inside an <em>if</em> of  <em>for</em>,
+                        </p>
+
+                        <div class="example_of_scope" style="height: auto;">
+                            function printCar(){<br>
+                                if(true){<br>
+                                    console.log(car) // ReferenceError<br>
+                                    const car = "fiat";<br>
+                                    console.log(car); // "fiat" <br>
+                                }<br>
+                                console.log(car); "ReferenceError"<br>
+                            }<br>
+                            <br>
+                            printCar();<br>
+                            console.log(car); // ReferenceError
+                        </div>
+
+                        <p>
+                            the <mark><small>let</small></mark> and <mark><small>const</small></mark> variable are not  initailized until their definition is evaluated. they are not hoisting as in the function scoping. accessing them before the initailization results in a <mark><small>ReferenceError.</small></mark>
+                        </p>
+
+                        <p>i hope you can  see  how  this  is easier to reason about.</p>
+
+                        <h3>const vs let:-</h3>
+
+                            <p>
+                                so now that we should use <mark><small>let</small></mark> and <mark><small>const</small></mark> when should we use which?</p>
+
+                                <p>this difference between the two is that the value of a <mark><small>const</small></mark> can't be changed through reassingment. and it can't re-declared. so if we don't need to reassing we should use <mark><small>const</small></mark> this also makes the code clearer since we have one variable to represent one thing.</p>
+
+                                <p>you could even always declare the variables as const until you see that you need to reassing the variables and then change to <mark><small>let.</small></mark> one example of when you need <mark><small>let \</small></mark> is in loops:
+                                </p>
+                                
+                                <div class="example_of_scope">
+                                    for (let i = 0; 0 < 10; i++){ <br>
+                                        console.log(i); // 1,2,3,4..... <br>
+                                    }
+                                </div>
+
+                                <h3>conclustion:-</h3>
+
+                                <ul>
+                                    <li>variables declared on the <strong>global scope</strong> are accessible everywhare in your code.</li>
+                                    <li>variables declared in a <strong>local scope</strong> can not be accessed from outside that scope.
+                                    </li>
+                                    <li><mark><small>const</small></mark> and <mark><small>let</small></mark> use block scope which exists between two curly braces.</li>
+                                    <li>mostly use <mark><small>const</small></mark> for variables whose values will never change.</li>
+                                    <li>for evarything else use <mark><small>let.</small></mark></li>
+                                    <li>don't use <mark><small>var</small></mark> to avoid confusing.</li>
+                                </ul>
+
         </div>
     </div>    
 </body>
