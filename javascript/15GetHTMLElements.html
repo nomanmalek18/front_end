@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get HTML Elements</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="image/js.png" type="image/x-icon">
+
 </head>
 <body>
     <div class="container">
-
+        <div id="img">
+            <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
         <div class="containet-items">
             <h2>Document Object Model Selectors</h2>
                 <h3>DOM Id Selectors:-</h3>
@@ -27,6 +32,15 @@
                         </div>
                 </div>
 
+                <h3>DOM Elements Selectors</h3>
+                <div class="">
+                    &lt;p class="para1"&gt;This is my first paragraph.&lt;/p&gt;
+                        <div class="">
+                            let paragraph1 = document.getElementByName("para1");
+                            console.log(paragraph1);
+                        </div>
+                </div>
+                
                 
         </div>
     </div>
