@@ -34,30 +34,55 @@
             <h3>Named Function:-</h3>
             <p>Lacacy / Traditional Way.</p>
             <div class="">
-                function(){
-
+                function myFunction(){
+                    console.log("CodeBustler");
                 }
+                myFunction();   
             </div>
 
             <h3>Anonymous Function:-</h3>
             <p>Anonymous Function is a without name, used as function Expressions or a arguments</p>
-            <div class=""></div>
+            <div class="">
+                let greet = function(name){
+                    console.log(`Hello${name}`);
+
+                };
+                greet("Noman");
+            </div>
 
             <h3>Arrow Function</h3>
             <p>Arrow function introduced in ES6, shorter syntex & one-lined function</p>
-            <div class=""></div>
+            <div class="">
+                let greet = () => console.log("Hello")
+                greet();
+            </div>
 
             <h3>Immediately Invoked Function :-</h3>
             <p>Immediately invoked function expressions (IIFE) executed Immediately after their creation. used to create private scopes and avoid polluting the global namespoce.</p>
-            <div class=""></div>
+            <div class="">
+                (function(){
+                    let str = "good Evening";
+                    console.log(str);
+                })();
+
+                // good morning
+            </div>
 
             <h3>Higher Order Function:-</h3>
             <p>function that take one or more function as arguments or return a function</p>
-            <div class=""></div>
+
+            <p><b>eg:-</b>map(), filter(), reduce()</p>
+            <div class="">
+                let ary = [10, 20, 23];
+                let newAry = ary.map((emlement)=> emle)
+            </div>
 
             <h3>Constructor Function:-</h3>
             <p>used as blueprints for creating objects with similar properties and methods. they are invoked using the <strong>new</strong> keyword to create indtances of objects.</p>
-            <div class=""></div>
+            <div class="">
+                function (){
+                }
+            </div>
         </div>
     </div>
 </body>
