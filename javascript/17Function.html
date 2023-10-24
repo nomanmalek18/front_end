@@ -15,11 +15,17 @@
         <div id="img">
             <img src="image/javascript.png" class="img-logo" alt="" srcset="">
         </div>
-        <div class="containet-items">
+        <div class="container-items">
 
             <h2>Function</h2>
+            <p>
+                Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+            </p>
             <p>Function Contians Fucntionalities</p>
-            <p>Functions are one of the fundamental building blocks in JavaScript. </p>
+                <ol>
+                    <li>Default (alert,prompt...)</li>
+                    <li>UDF</li>
+                </ol>
 
             <h3>type of Functions in javascript</h3>
             <ol>
@@ -80,8 +86,14 @@
             <h3>Constructor Function:-</h3>
             <p>used as blueprints for creating objects with similar properties and methods. they are invoked using the <strong>new</strong> keyword to create indtances of objects.</p>
             <div class="">
-                function (){
+                function Person(name, place){
+                    this.name = name;
+                    this.place = place;
                 }
+
+                let user1 =  new Person("codebustler", "india");
+                console.log(`hello everyone this is ${uset1.name}, and ia am from ${user1.place}`);
+                // hello everyone this is codebustler, and i am from india
             </div>
         </div>
     </div>
