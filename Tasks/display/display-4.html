@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 04</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    .flex-container{
+        background-color: #fffcf4;
+        height: 410px;
+        width: 65%;
+        border-radius: 4px;
+        margin: 1px auto;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    code{
+        color: red;
+    }
+    .flex-item{
+        padding: 7px;
+    }
+    .first-card{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 200px; 
+        margin: 5px;
+    }
+    .font-sty{
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color:white;
+        text-align: justify;
+    }
+    .font-sty>h4{
+        margin: 4px;
+    }
+    .font-sty>p{
+        margin: 4px;
+    }
+    .card-items:nth-child(1) {
+        width:60%;
+        background-color: #6495ed;
+        margin-right: 10px;
+    }
+    .card-items:nth-child(2) {
+        width: 10%;
+        background-color: #20b2aa;
+        margin-right: 10px;
+    }
+    .card-items:nth-child(3) {
+        width: 30%;
+        background-color: #da70d6;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Default setup</h2>
+                <p>Default setup of flsx propertues os <code class="red">flex : 0 1 auto</code>This's shourthand for <code class="red">flex-grow, flex-sheink,</code> and <code class="red">flex-besis</code> properties values</p>
+                <p>This setup besiscally tells us <q>Al children <strong>should not grow, should shrink </strong> at the same rate, and have their <strong>initail size besed on their width or height</strong></q></p>
+        </div>        
+        <div class="first-card">
+            <div class="card-items font-sty">
+                <h4>First Card</h4>
+                <p>On the other hand,we denounce with eighteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,so blinded by desire,that they cannot foresee the pain and trouble that are bound to ensure;and equal blame belongs to those who fail in their duty through weakness of will,which is the same as saying through shrinking from toil and pain.</p>
+            </div>
+            <div class="card-items font-sty">
+                <h4>Second Card</h4>
+                <p>I am The shortest.</p>
+            </div>
+            <div class="card-items font-sty">
+                <h4>Third Card</h4>
+                <p>But in certain circummstances and owing to the claims of duty or the obligations of business it will frequantly occur that pleasure have to be repudiated and annoyance accepted.</p>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>

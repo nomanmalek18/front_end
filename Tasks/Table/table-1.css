@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+h2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+    height: 300px;
+    width: 60%;
+}
+
+tr td{
+    
+    align-items: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.row1-col-1{
+    background-color: pink;
+}
+.row1-col-2{
+    background-color: antiquewhite;
+}
+.row2-col-1{
+    background-color: antiquewhite;
+
+}
+.row2-col-2{
+    background-color: rgb(214, 255, 255);
+}
+.row2-col-3{
+    background-color: rgb(214, 255, 255);
+}
+.row2-col-4{
+    background-color: pink;
+}
+.row3-col-1{
+    background-color: rgb(214, 255, 255);
+}
+.row3-col-2{
+    background-color:  rgb(214, 255, 255);
+}
+.row4-col-1{
+    background-color: rgb(206, 206, 206);     
+}

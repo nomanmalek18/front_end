@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../javascript/image/js.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="img">
+            <img src="../../javascript/image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <div class="container-items">
+            <form action="#" method="post" name="myForm" onsubmit=" return validateform()">
+                <div class="formdesign" id="name">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fname"  ><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="email">
+                    <label for="femail">Email:</label>
+                    <input type="email" name="femail"  ><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="phone">
+                    <label for="fphone">Phone:</label>
+                    <input type="phone" name="fphone"  ><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="pass">
+                    <label for="fpass">Password:</label>
+                    <input type="password" name="fpass"><b><span class="formerror"></span></b>
+                </div>
+                <div class="formdesign" id="cpass">
+                    <label for="fcpass">Confirm Password:</label>
+                    <input type="password" name="fcpass"><b><span class="formerror"></span></b>
+                </div>
+                
+                <input class="but" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>

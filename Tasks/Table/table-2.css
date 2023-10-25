@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table tr td{
+    border: 1px solid black;
+}
+table{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: o auto;
+    border-collapse: collapse;
+    height: 300px;
+    width: 500px;
+}
+
+.labal{
+    padding-top: 10px;
+    vertical-align: top;
+    font-weight: bold;
+    color: green;
+    
+    
+}
+.dg{
+    background-color: darkseagreen;
+}
+.sky{
+    background-color: lightskyblue;
+}
+.rd{
+    color: red;
+    font-weight: bold;
+}
+.yel{
+    background-color: yellow;
+}
