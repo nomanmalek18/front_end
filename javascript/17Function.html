@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in javascript</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="image/js.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+
+            <h2>Function</h2>
+            <p>
+                Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+            </p>
+            <p>Function Contians Fucntionalities</p>
+                <ol>
+                    <li>Default (alert,prompt...)</li>
+                    <li>UDF</li>
+                </ol>
+
+            <h3>type of Functions in javascript</h3>
+            <ol>
+                <li>Named Function</li>
+                <li>Anonymous Function</li>
+                <li>Arrow Function</li>
+                <li>Immediately Invoked Functions Expressions (IIFE)</li>
+                <li>Higher Order Function</li>
+                <li>Constructor Function</li>
+            </ol>
+
+            <h3>Named Function:-</h3>
+            <p>Lacacy / Traditional Way.</p>
+            <div class="">
+                function myFunction(){
+                    console.log("CodeBustler");
+                }
+                myFunction();   
+            </div>
+
+            <h3>Anonymous Function:-</h3>
+            <p>Anonymous Function is a without name, used as function Expressions or a arguments</p>
+            <div class="">
+                let greet = function(name){
+                    console.log(`Hello${name}`);
+
+                };
+                greet("Noman");
+            </div>
+
+            <h3>Arrow Function</h3>
+            <p>Arrow function introduced in ES6, shorter syntex & one-lined function</p>
+            <div class="">
+                let greet = () => console.log("Hello")
+                greet();
+            </div>
+
+            <h3>Immediately Invoked Function :-</h3>
+            <p>Immediately invoked function expressions (IIFE) executed Immediately after their creation. used to create private scopes and avoid polluting the global namespoce.</p>
+            <div class="">
+                (function(){
+                    let str = "good Evening";
+                    console.log(str);
+                })();
+
+                // good morning
+            </div>
+
+            <h3>Higher Order Function:-</h3>
+            <p>function that take one or more function as arguments or return a function</p>
+
+            <p><b>eg:-</b>map(), filter(), reduce()</p>
+            <div class="">
+                let ary = [10, 20, 23];
+                let newAry = ary.map((emlement)=> emle)
+            </div>
+
+            <h3>Constructor Function:-</h3>
+            <p>used as blueprints for creating objects with similar properties and methods. they are invoked using the <strong>new</strong> keyword to create indtances of objects.</p>
+            <div class="">
+                function Person(name, place){
+                    this.name = name;
+                    this.place = place;
+                }
+
+                let user1 =  new Person("codebustler", "india");
+                console.log(`hello everyone this is ${uset1.name}, and ia am from ${user1.place}`);
+                // hello everyone this is codebustler, and i am from india
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

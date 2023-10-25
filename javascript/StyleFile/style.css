@@ -1,0 +1,180 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 219, 79);
+}
+
+.img-logo {
+    height: 15vmin;
+    margin: 40px 0px 0px 35px;
+}
+
+.container{
+    width: 150vmin;
+    height: auto;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.container-items {
+    padding: 25px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+
+h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
+
+.container-items p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.output {
+    background-color: #27374D;
+    padding: 5px;
+    margin: 1.5vmin 2vmin;
+    border-radius: 5px;
+}
+
+.output p {
+    font-size: 3vmin;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul{    
+    padding: 1.2vmin;
+    margin: 3vmin;
+    background-color: honeydew;
+}
+li{
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+a{
+    margin: 1.5vmin 7vmin 0 7vmin;
+    text-decoration: none;
+}
+/* table style start*/
+
+table {
+    border: 1px solid #144272;
+    border-collapse: collapse;
+    margin-bottom: 8vmin;
+}
+table tr th {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+table tr td {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+/* table style end */
+
+/* alert box  */
+
+.syntax{
+    height: 7.5vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* confirm box  */
+
+.confirm {
+    font-size: 3vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 100vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 5px;
+}
+
+.confirm h3 {
+    margin: 0 4vmin;
+    padding: 3vmin 0;
+    color: #fff;
+}
+.confirm p {
+    color: #fff;
+}
+
+.confirm-code {
+    height: 70vmin;
+    width: 120vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+
+/* variables */
+
+.output-variables{
+    height: 10.5vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* scope example */
+.example_of_scope{
+    height: 13.5vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}

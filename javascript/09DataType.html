@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="image/js.png" type="image/x-icon">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="container-items">
+            <div id="img">
+                <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+            </div>
+            
+            <h2>Introduction</h2>
+
+            <p>A data type in JavaScript is a container that stores a specific type of data. In this article, we learn about various data types in JavaScript and how to work with them.</p>
+
+
+            <ol>
+                <li>
+                    <strong>Number</strong>: This data type is used to represent numerical values. Numbers can be
+                    integers (whole numbers) or floating-point numbers (decimal numbers).
+                </li>
+                <li>
+                    <strong>String</strong>: This data type is used to represent textual data. Strings are sequences of
+                    characters enclosed in quotes (either single or double).
+                </li>
+                <li>
+                    <strong>Boolean</strong>: This data type is used to represent logical values. Boolean values can be
+                    either true or false.
+                </li>
+                <li>
+                    <strong>Undefined</strong>: This data type represents a variable that has not been assigned a value.
+                </li>
+                <li>
+                    <strong>Null</strong>: This data type represents a deliberate absence of any object value.</li>
+                <li>
+                    <strong>Object</strong>: This data type represents complex data structures, including arrays,
+                    functions, and objects.
+                </li>
+                <li>
+                    <strong>Symbol</strong>: This data type represents unique values that can be used as object keys.
+                </li>
+            </ol>
+
+            <p>JavaScript is dynamic like any other programming language, so you don't need to declare the variable
+                type. If I am talking about C, C++, C#, Java, etc., you must define the datatype when you declare the
+                variable. But The left-side variable takes on the data type of whatever value you gave the right-hand
+                side.</p>
+
+            <h2>Data type in JavaScript</h2>
+
+            <p>The data type is a primary data type that can be used in a program. JavaScript provides different data
+                types to hold different types of values. There is no need to specify the variable type because the
+                JavaScript Engine dynamically uses it. The different types of data types in JavaScript are shown in
+                the&nbsp; flowchart below,</p>
+
+            <img src="image/Datatypes_In_avaScript_.jpg" width="100%">
+
+            <p>There are two significant data types in JavaScript,</p>
+
+            <ul>
+                <li>Primitive data types in JavaScript</li>
+                <li>Non-primitive data types/ composite data types in JavaScript</li>
+            </ul>
+
+            <h3>Primitive Data Types in JavaScript</h3>
+
+            <ul>
+                <li><strong>Number&nbsp;</strong>represents a numeric Value.</li>
+                <li><strong>String&nbsp;</strong>is a sequence of Characters.</li>
+                <li><strong>Boolean&nbsp;</strong>represents Boolean value, either True or False.</li>
+                <li><strong>Undefined&nbsp;</strong>represents an undefined value.</li>
+                <li><strong>Null&nbsp;</strong>represents no value.</li>
+            </ul>
+
+            <p><strong>Note.&nbsp;</strong>Data types in JavaScript can be defined at run-time.</p>
+
+            <h3>Number data type in JavaScript</h3>
+
+            <p>The number datatype&nbsp;represents the numeric value; the number type represents integer, float, or
+                decimal. It can hold any value. You need to use var here to specify the datatype. Suppose I declared a
+                variable.</p>
+
+            <p><em>Var x=10;</em></p>
+
+            <p>And after that, I assign a string value like this x=" sagar" so you will know the data types are changed
+                at run-time.</p>
+
+            <p><strong>For example,&nbsp;</strong>you can assign values like 10,10.2, which means even if you assign a
+                floating-point number to a variable, it is treated like several data types.</p>
+
+            <p><strong>Code Example</strong></p>
+
+            <div class="code-toolbar">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt; Java Script &lt;/title&gt;<br>
+                    &lt;head&gt; <br>
+                    &lt;body&gt; <br>
+                    &lt;h4&gt; <br>
+                    &lt;JavaScript&gt; <br>
+                    &lt;h4&gt; <br>
+                    &lt;p id = "p1"&gt;&lt;/p&gt; <br>
+                    &lt;p id="p2"&gt;&lt;/p&gt; <br>
+                    &lt;p id="p3"&gt;&lt;/p&gt; <br>
+                    &lt;script&gt; <br>
+                    var a =100; //integer <br>
+                    var b =10.5; //float <br>
+                    var c =24.00; //decimal <br>
+                    document.getElementById("p1").innerHTML = a; <br>
+                    document.getElementById("p2").innerHTML = b; <br>
+                    document.getElementById("p3").innerHTML = c; <br>
+                    &lt;/script&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt;</code></pre> <br>
+                
+                    <h3>Output:-</h3>
+                    <img src="image/Datatypes_In_JavaScript_image1.jpg">
+            </div>
+
+
+
+            <h3>String data type in JavaScript</h3>
+
+            <p>The string is a sequence of characters; the character must represent in&nbsp;single ('')or double
+                quotations ("") in JavaScript. You can assign a single character or multiple characters in JavaScript
+                String.</p>
+
+            <div class="">
+                <p>For example, "Hello"," 'Hello World'</p>
+                <p>Example</p>
+            </div>
+            <div class="">
+                
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;Java Script&lt;/title&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                &lt;h4&gt;JavaScript&lt;/h4&gt; <br>
+                &lt;script&gt; <br>
+                var fname = "Vijay"; <br>
+                var lastname= "Kumar"; <br>
+                document.write(fname,lastname); <br>
+                &lt;/script&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;</code>
+                <h3>Output:-</h3>
+                <img src="image/Datatypes_In_JavaScript_image2.jpg">
+            </div>
+            
+            <h3>Boolean data type in JavaScript</h3>
+
+            <p>
+                The boolean datatype can only have two values True or False. Boolean is used to test conditional
+                statements in JavaScript. You also can assign true and false values to the Boolean datatype in
+                JavaScript.
+            </p>
+            <div class="">
+                <p><em>let yes =” true”;<br>
+                    let no =” false”;</em></p>
+            </div>
+            <h3>Example:-</h3>
+
+            <div class="code-toolbar">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Java Script&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h4&gt;JavaScript&lt;/h4&gt;<br>
+                    &lt;script&gt;<br>
+                    var user = (prompt("Enter the Number"))<br>
+                    if (user &lt; 10) <br>
+                    {<br>
+                    alert("True"); <br>
+                    document.write("Welcome to My Article");<br>
+                    } <br>
+                    else <br>
+                    { <br>
+                    alert("False"); <br>
+                    document.write("Access denide"); <br>
+                    } <br>
+                    &lt;/script&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt;
+                    <h3>Output:-</h3>
+                    <img src="image/Datatypes_In_JavaScript_image3.jpg">
+            </div>
+
+            <h3>Undefined data type in JavaScript</h3>
+
+            <p>It is called undefined if you declare a variable but don't assign the value. The variable has no
+                value, but it will have later on. </p>
+
+            <h3>Null in JavaScript</h3>
+
+            <p>if a variable can not contain a value other than null, it is called a null datatype.</p>
+
+            <div class="">
+                var nullvalue = null;<br>
+                alert(nullvalue); // null
+            </div>
+            <h3>Non-Primitive Data Type in JavaScript</h3>
+
+            <ol>
+                <li><strong>Object:</strong>Key-Value pair.</li>
+                <li><strong>Array:</strong>A group of similar values.</li>
+            </ol>
+
+            <h3>Object in JavaScript</h3>
+
+            <p>Any data type which is not primitive is called Object. JavaScript follows literal object syntax, a list
+                of zero or more pairs of property names and associated values of an object enclosed with {}. The object
+                is a collection of properties. The object holds the value in Key-Value format.</p>
+
+            <p>Here is a detailed article on Objects in JavaScript with various options.</p>
+
+            <h3>Array in JavaScript</h3>
+
+            <p>An array is a collection of data items stored under a single name. Array provides a framework for
+                announcing and accessing multiple data Objects that should have only one identifier, thereby simplifying the data management task.</p>
+
+            <h3>Example:-</h3>
+
+            <div class="">
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;body&gt; <br>
+                            
+                &lt;h2&gt; Array Example Program&lt;/h2&gt; <br>
+                &lt;p&gt;First paragraph.&lt;/p&gt; <br>
+                &lt;p&gt;JavaScript code starts here....&lt;/p&gt;<br>
+                <br>
+                &lt;script&gt;<br>
+                var stu = ["Rahul", "Rohit", "Rohan"];<br>
+                document.write(stu);<br>
+                &lt;/script&gt;<br>
+                <br>
+                &lt;p&gt;JavaScript code ends here......&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &nbsp;&lt;/html&gt;<br>
+                
+                &lt;/html&gt;</code></pre>
+                
+                <h3>Output:-</h3>
+                <img src="image/Array-outputimage.png">
+            </div>
+
+            <p><strong>Explanation</strong></p>
+
+            <p>
+                In the above array example program, we use JavaScript code inside the HTML code. So, first, we print a heading into the &lt;h2&gt; tag "First Array Example Program". Then we print two paragraphs by using &lt;p&gt; tag, As "First Paragraph" and "JavaScript code starts here....". After that, we write JavaScript code as &lt;script&gt; tag. Inside &lt;script&gt; tag, we first define an array named stu. In the next line, we access the array elements bt "document.write(stu);" line prints array elementsseparated by commas as the output. We print a paragraph in the last line" JavaScript code ends here....".
+            </p>
+
+        
+        </div>
+    </div>
+                
+</body>
+</html>
