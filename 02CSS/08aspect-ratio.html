@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aspect ratio</title>
+    <link rel="stylesheet" href="styleFile/styleCSS.css">
+</head>
+<body>
+    <div class="container">
+      <div class="aspect-ratio">
+        <h2>aspect-ratio</h2>  
+        <pre>
+            div {
+                width: 100px;
+                height: auto;
+              }
+              div:nth-child(1) {
+                aspect-ratio: 1/1;
+              }
+              div:nth-child(2) {
+                aspect-ratio: 0.5;
+              }
+              div:nth-child(3) {
+                aspect-ratio: 1;
+              }
+              div:nth-child(4) {
+                aspect-ratio: 1/0.5;
+              }
+              div:nth-child(5) {
+                aspect-ratio: 16/9;
+              }          
+            </pre>
+      </div>
+    </div>
+</body>
+</html>

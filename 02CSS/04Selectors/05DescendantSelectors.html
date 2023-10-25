@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selectors</title>
+    <link rel="stylesheet" href="../styleFile/styleCSS.css">
+    <style>
+        
+    .custom-Home> .custom-about> .custom-contact> .custom-work> p>a{
+        color: rgba(0, 255, 255, 0.696);
+        font-size: 50px;
+    }
+    ul.itams>li>a{
+        color: brown;
+    }
+    </style>
+</head>
+<div>
+    <div class="container">
+        <div class="descendant-secetoer">
+            <div class="custom-Home">
+                <a href="#">Home</a>
+                    <div class="custom-about">
+                        <a href="#">about us</a>
+                            <div class="custom-contact">
+                                <a href="#">contact</a>
+                                <div class="custom-work">
+                                    <a href="#">Work</a>
+                                    <p>Lorem ipsum dolor sit <a href="../../HTML/01htmlintro.html">HTML Introduction</a> amet consectetur adipisicing elit. Tenetur consectetur, quas enim officia odit amet excepturi eos! Debitis vel optio perspiciatis maiores vero dolorum ipsa mollitia, soluta nihil voluptatum quod odit, doloremque consectetur quae provident.</p>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+            <ul>
+                <li>itams 1</li>
+                <li>itams 2</li>
+                <li>itams 3</li>
+                <li>itams 4</li>
+                <li>itams 5</li>
+            </ul>
+            <ul class="itams">
+                <li><a href="#">itams 1</a></li>
+                <li><a href="#">itams 2</a></li>
+                <li><a href="#">itams 3</a></li>
+                <li><a href="#">itams 4</a></li>
+                <li><a href="#">itams 5</a></li>
+            </ul>
+            <ul>
+                <li>itams 1</li>
+                <li>itams 2</li>
+                <li>itams 3</li>
+                <li>itams 4</li>
+                <li>itams 5</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
