@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <link rel="stylesheet" href="../StyleFile/style.css">
+    <link rel="shortcut icon" href="../image/js.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="../image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <div class="container-items">
+            <p> Objects allow you to store keyed collections of values. That's fine.</p>
+            <p> 
+                But quite often we find that we need an ordered collection, where we have a 1st, a 2nd, a 3rd element and so on.  For example, we need that to store a list of something: users, goods, HTML elements etc.
+            </p>
+            
+            <p> 
+                It is not convenient to use an object here, because it provides no methods to manage the order of elements. We can't insert a new property “between” the existing ones. Objects are just not meant for such use.
+            </p>
+
+            <h3> There exists a special data structure named Array, to store ordered collections.</h3>
+
+                <p>let arr = new Array();</p>
+                <p>let arr = [];</p>
+                <p>let arr = [123,74,89,152,512];</p>
+
+            <h3> Array is a special kind of object, suited to storing and managing ordered data items.
+            </h3>
+            <p> The declaration:</p>
+            <p>// square brackets (usual)</p>
+            <p>let arr = [item1, item2...];</p>
+
+            <p>// new Array (exceptionally rare)</p>
+            <p>let arr = new Array(item1, item2...);</p>
+            <p>The call to new Array(number) creates an array with the given length, but without elements.</p>
+
+            <p>The length property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
+            </p>
+            <p>If we shorten length manually, the array is truncated.
+            </p>
+            <p>        Getting the elements:
+            </p>
+            <p>        we can get element by its index, like arr[0]
+            </p>
+            <p>        also we can use at(i) method that allows negative indexes. For negative values of i, it steps back from the end of the array. If i >= 0, it works same as arr[i].
+            </p>
+            <p>        We can use an array as a deque with the following operations:
+            </p>
+            <p>        push(...items) adds items to the end.</p>
+            <p>        pop() removes the element from the end and returns it.</p>
+            <p>        shift() removes the element from the beginning and returns it.</p>
+            <p>        unshift(...items) adds items to the beginning.</p>
+            <p>        To loop over the elements of the array:</p>
+            <!-- for (let i=0; i<arr.length; i++) - works fastest, old-browser-compatible.
+            for (let item of arr) - the modern syntax for items only,
+            for (let i in arr) - never use.
+            To compare arrays, don’t use the == operator (as well as >, < and others), as they have no special treatment for arrays. They handle them as any objects, and it’s not what we usually want. -->
+            <p>        Instead you can use for..of loop to compare arrays item-by-item.
+            </p>
+            <p>        We will continue with arrays and study more methods to add, remove, extract elements and sort arrays in the next chapter Array methods.
+            </p>
+
+            <div class="">
+                <h3>concat()</h3>
+                <div class="">
+                    const array1 = ['a', 'b', 'c'];
+                    const array2 = ['d', 'e', 'f'];
+                    const array3 = array1.concat(array2);
+    
+                    console.log(array3);
+                    // Expected output: Array ["a", "b", "c", "d", "e", "f"]
+                </div>
+            </div>
+
+            <div class="">
+                <h3>copyWithin()</h3>
+                copyWithin(target, start) <br>
+                copyWithin(target, start, end)
+                <div class="">
+                    const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+                    // Copy to index 0 the element at index 3
+                    console.log(array1.copyWithin(0, 3, 4));
+                    // Expected output: Array ["d", "b", "c", "d", "e"]
+        
+                    // Copy to index 1 all elements from index 3 to the end
+                    console.log(array1.copyWithin(1, 3));
+                    // Expected output: Array ["d", "d", "e", "d", "e"]
+        
+                </div>
+            </div>
+            <div class="">
+                <h3>every()</h3>
+                <div class="">
+                    const isBelowThreshold = (currentValue) => currentValue &lt; 40;
+                    const array1 = [1, 30, 39, 29, 10, 13];
+                    console.log(array1.every(isBelowThreshold));
+                    // Expected output: true
+                </div>
+            </div>
+            <div class="">
+                <h3>filter()</h3>
+                <div class="">
+                    const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+                    const result = words.filter((word) => word.length > 6);
+    
+                    console.log(result);
+                    // Expected output: Array ["exuberant", "destruction", "present"]
+                </div>
+            </div>
+
+            <div class="">
+                <h3>flat()</h3>
+                <div class="">
+                    const arr1 = [0, 1, 2, [3, 4]];
+
+                    console.log(arr1.flat());
+                    // expected output: Array [0, 1, 2, 3, 4]
+        
+                    const arr2 = [0, 1, [2, [3, [4, 5]]]];
+        
+                    console.log(arr2.flat());
+                    // expected output: Array [0, 1, 2, Array [3, Array [4, 5]]]
+        
+                    console.log(arr2.flat(2));
+                    // expected output: Array [0, 1, 2, 3, Array [4, 5]]
+        
+                    console.log(arr2.flat(Infinity));
+                    // expected output: Array [0, 1, 2, 3, 4, 5]
+        
+                </div>
+            </div>
+
+            <div class="">
+                <h3>flatMap()</h3>
+                <div class="">
+                    const arr1 = [1, 2, 1];
+
+                    const result = arr1.map((num) => (num === 2 ? [2, 2] : 1));
+                    console.log(result);
+                    const result = arr1.flatMap((num) => (num === 2 ? [2, 2] : 1));
+        
+                    console.log(result);
+                    // Expected output: Array [1, 2, 2, 1]
+                </div>
+            </div>
+
+            <div class="">
+                <h3>forEach()</h3>
+                <div class="">
+                    const array1 = ['a', 'b', 'c'];
+
+                    array1.forEach((element) => console.log(element));
+        
+                    // Expected output: "a"
+                    // Expected output: "b"
+                    // Expected output: "c"
+                </div>
+            </div>
+
+            <div class="">
+                <h3>indexOf()</h3>
+                indexOf(searchElement) <br>
+                indexOf(searchElement, fromIndex)
+                <div class="">
+                    const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+                    console.log(beasts.indexOf('bison'));
+                    // Expected output: 1
+    
+                    // Start from index 2
+                    console.log(beasts.indexOf('bison', 2));
+                    // Expected output: 4
+    
+                    console.log(beasts.indexOf('giraffe'));
+                    // Expected output: -1
+                </div>
+            </div>
+
+            <div class="">
+                <h3>lastIndexOf()</h3>
+                lastIndexOf(searchElement) <br>
+                lastIndexOf(searchElement, fromIndex)
+                <div class="">
+                    const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+
+                    console.log(animals.lastIndexOf('Dodo'));
+                    // Expected output: 3
+        
+                    console.log(animals.lastIndexOf('Tiger'));
+                    // Expected output: 1
+        
+                </div>
+            </div>
+
+            <div class="">
+                <h3>map()</h3>
+                <div class="">
+                    const array1 = [1, 4, 9, 16];
+
+                    // Pass a function to map
+                    const map1 = array1.map((x) => x * 2);
+    
+                    console.log(map1);
+                    // Expected output: Array [2, 8, 18, 32]
+                </div>
+            </div>
+            
+            <div class="">
+                <h3>reduce()</h3>
+                <div class="">
+                    const array1 = [1, 2, 3, 4];
+
+                    // 0 + 1 + 2 + 3 + 4
+                    const initialValue = 0;
+                    const sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+    
+                    console.log(sumWithInitial);
+                    // Expected output: 10
+                </div>
+            </div>
+            <div class="">
+                <h3>reduceRight()</h3>
+            </div>
+            <div class="">
+                <h3>reverse()</h3>
+                <div class="">
+                    const array1 = ['one', 'two', 'three'];
+                    console.log('array1:', array1);
+                    // Expected output: "array1:" Array ["one", "two", "three"]
+    
+                    const reversed = array1.reverse();
+                    console.log('reversed:', reversed);
+                    // Expected output: "reversed:" Array ["three", "two", "one"]
+    
+                    // Careful: reverse is destructive -- it changes the original array.
+                    console.log('array1:', array1);
+                    // Expected output: "array1:" Array ["three", "two", "one"]
+                </div>
+            </div>
+
+            <div class="">
+                <h3>slice()</h3>
+                <div class="">
+                    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+                    console.log(animals.slice(2));
+                    // Expected output: Array ["camel", "duck", "elephant"]
+        
+                    console.log(animals.slice(2, 4));
+                    // Expected output: Array ["camel", "duck"]
+        
+                    console.log(animals.slice(1, 5));
+                    // Expected output: Array ["bison", "camel", "duck", "elephant"]
+        
+                    console.log(animals.slice(-2));
+                    // Expected output: Array ["duck", "elephant"]
+        
+                    console.log(animals.slice(2, -1));
+                    // Expected output: Array ["camel", "duck"]
+        
+                    console.log(animals.slice());
+                    // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+                </div>
+            </div>
+
+            <div class="">
+                <h3>some()</h3>
+                <div class="">
+                    const array = [1, 2, 3, 4, 5];
+
+                    // Checks whether an element is even
+                    const even = (element) => element % 2 === 0;
+        
+                    console.log(array.some(even));
+                    // Expected output: true
+                </div>
+            </div>
+
+            <div class="">
+                <h3>sort()</h3>
+                <div class="">
+                    const months = ['March', 'Jan', 'Feb', 'Dec'];
+                    months.sort();
+                    console.log(months);
+                    // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+        
+                    const array1 = [1, 30, 4, 21, 100000];
+                    array1.sort();
+                    console.log(array1);
+                    // Expected output: Array [1, 100000, 21, 30, 4]
+
+                </div>
+            </div>
+
+                <div class="">
+                    <h3>splice()</h3>
+                    splice(start) <br>
+                    splice(start, deleteCount) <br>
+                    splice(start, deleteCount, item1) <br>
+                    splice(start, deleteCount, item1, item2) <br>
+                    splice(start, deleteCount, item1, item2, /* …, */ itemN) <br>
+                    <div class="">
+                        const months = ['Jan', 'March', 'April', 'June'];
+                        months.splice(1, 0, 'Feb');
+                        // Inserts at index 1
+                        console.log(months);
+                        // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+            
+                        months.splice(4, 1, 'May');
+                        // Replaces 1 element at index 4
+                        console.log(months);
+                        // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+                    </div>
+                </div>
+            <ul>
+                <li>
+                    <p>To add/remove elements:</p>
+                    <ul>
+                        <li><code>push(...items)</code> - adds items to the end,</li>
+                        <li><code>pop()</code> - extracts an item from the end,</li>
+                        <li><code>shift()</code> - extracts an item from the beginning,</li>
+                        <li><code>unshift(...items)</code> - adds items to the beginning.</li>
+                        <li><code>splice(pos, deleteCount, ...items)</code> - at index <code>pos</code> deletes
+                            <code>deleteCount</code> elements and inserts <code>items</code>.
+                        </li>
+                        <li><code>slice(start, end)</code> - creates a new array, copies elements from index <code>start</code>
+                            till <code>end</code> (not inclusive) into it.</li>
+                        <li><code>concat(...items)</code> - returns a new array: copies all members of the current one and adds
+                            <code>items</code> to it. If any of <code>items</code> is an array, then its elements are taken.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>To search among elements:</p>
+                    <ul>
+                        <li><code>indexOf/lastIndexOf(item, pos)</code> - look for <code>item</code> starting from position
+                            <code>pos</code>, return the index or <code>-1</code> if not found.
+                        </li>
+                        <li><code>includes(value)</code> - returns <code>true</code> if the array has <code>value</code>,
+                            otherwise <code>false</code>.</li>
+                        <li><code>find/filter(func)</code> - filter elements through the function, return first/all values that
+                            make it return <code>true</code>.</li>
+                        <li><code>findIndex</code> is like <code>find</code>, but returns the index instead of a value.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>To iterate over elements:</p>
+                    <ul>
+                        <li><code>forEach(func)</code> - calls <code>func</code> for every element, does not return anything.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>To transform the array:</p>
+                    <ul>
+                        <li><code>map(func)</code> - creates a new array from results of calling <code>func</code> for every
+                            element.</li>
+                        <li><code>sort(func)</code> - sorts the array in-place, then returns it.</li>
+                        <li><code>reverse()</code> - reverses the array in-place, then returns it.</li>
+                        <li><code>split/join</code> - convert a string to array and back.</li>
+                        <li><code>reduce/reduceRight(func, initial)</code> - calculate a single value over the array by calling
+                            <code>func</code> for each element and passing an intermediate result between the calls.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Additionally:</p>
+                    <ul>
+                        <li><code>Array.isArray(value)</code> checks <code>value</code> for being an array, if so returns
+                            <code>true</code>, otherwise <code>false</code>.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
