@@ -154,7 +154,7 @@ table tr td {
 /* variables */
 
 .output-variables{
-    height: 10.5vmin;
+    height: auto;
     width: 130vmin;
     background-color: #2267c8d2;
     margin: 4vmin 3vmin;
@@ -177,4 +177,90 @@ table tr td {
     color: #fff;
     border-radius: 10px;
     letter-spacing: 1px;
+}
+
+/* data type example */
+.code-toolbar{
+    height: auto;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+
+}
+
+/* DOM example */
+
+.dom-example{
+    font-size: 3vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 25vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 5px;
+}
+.dom-example-code{
+    height: 9vmin;
+    width: 120vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+.dom-example p{
+    margin: 0 4vmin;
+    padding: 3vmin 0;
+    color: #fff;
+}
+.h-35{
+    height: 35vmin;
+}
+
+/* function example */
+
+.function-code{
+    height: auto;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    margin: 4vmin 3vmin;
+    padding: 2.5vmin 5vmin;
+    font-size: 2.5vmin;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;   
+}
+
+/* array exmaple */
+
+
+.array-example{
+    font-size: 3vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 25vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 5px;
+}
+.array-example p{
+    margin: 0 4vmin;
+    padding: 3vmin 0;
+    color: #fff;
+}
+.array-example-code{
+    height: 9vmin;
+    width: 120vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
 }

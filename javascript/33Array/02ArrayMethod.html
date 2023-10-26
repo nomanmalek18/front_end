@@ -65,9 +65,9 @@
             <p>        We will continue with arrays and study more methods to add, remove, extract elements and sort arrays in the next chapter Array methods.
             </p>
 
-            <div class="">
+            <div class="array-example">
                 <h3>concat()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array1 = ['a', 'b', 'c'];
                     const array2 = ['d', 'e', 'f'];
                     const array3 = array1.concat(array2);
@@ -77,11 +77,11 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>copyWithin()</h3>
                 copyWithin(target, start) <br>
                 copyWithin(target, start, end)
-                <div class="">
+                <div class="array-example-code">
                     const array1 = ['a', 'b', 'c', 'd', 'e'];
 
                     // Copy to index 0 the element at index 3
@@ -94,18 +94,18 @@
         
                 </div>
             </div>
-            <div class="">
+            <div class="array-example">
                 <h3>every()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const isBelowThreshold = (currentValue) => currentValue &lt; 40;
                     const array1 = [1, 30, 39, 29, 10, 13];
                     console.log(array1.every(isBelowThreshold));
                     // Expected output: true
                 </div>
             </div>
-            <div class="">
+            <div class="array-example">
                 <h3>filter()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
                     const result = words.filter((word) => word.length > 6);
@@ -115,9 +115,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>flat()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const arr1 = [0, 1, 2, [3, 4]];
 
                     console.log(arr1.flat());
@@ -137,9 +137,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>flatMap()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const arr1 = [1, 2, 1];
 
                     const result = arr1.map((num) => (num === 2 ? [2, 2] : 1));
@@ -151,9 +151,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>forEach()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array1 = ['a', 'b', 'c'];
 
                     array1.forEach((element) => console.log(element));
@@ -164,11 +164,11 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>indexOf()</h3>
                 indexOf(searchElement) <br>
                 indexOf(searchElement, fromIndex)
-                <div class="">
+                <div class="array-example-code">
                     const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 
                     console.log(beasts.indexOf('bison'));
@@ -183,11 +183,11 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>lastIndexOf()</h3>
                 lastIndexOf(searchElement) <br>
                 lastIndexOf(searchElement, fromIndex)
-                <div class="">
+                <div class="array-example-code">
                     const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
 
                     console.log(animals.lastIndexOf('Dodo'));
@@ -199,9 +199,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>map()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array1 = [1, 4, 9, 16];
 
                     // Pass a function to map
@@ -212,9 +212,9 @@
                 </div>
             </div>
             
-            <div class="">
+            <div class="array-example">
                 <h3>reduce()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array1 = [1, 2, 3, 4];
 
                     // 0 + 1 + 2 + 3 + 4
@@ -225,12 +225,12 @@
                     // Expected output: 10
                 </div>
             </div>
-            <div class="">
+            <div class="array-example">
                 <h3>reduceRight()</h3>
             </div>
-            <div class="">
+            <div class="array-example">
                 <h3>reverse()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array1 = ['one', 'two', 'three'];
                     console.log('array1:', array1);
                     // Expected output: "array1:" Array ["one", "two", "three"]
@@ -245,9 +245,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>slice()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
                     console.log(animals.slice(2));
@@ -270,9 +270,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>some()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const array = [1, 2, 3, 4, 5];
 
                     // Checks whether an element is even
@@ -283,9 +283,9 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="array-example">
                 <h3>sort()</h3>
-                <div class="">
+                <div class="array-example-code">
                     const months = ['March', 'Jan', 'Feb', 'Dec'];
                     months.sort();
                     console.log(months);
@@ -299,14 +299,14 @@
                 </div>
             </div>
 
-                <div class="">
+                <div class="array-example">
                     <h3>splice()</h3>
                     splice(start) <br>
                     splice(start, deleteCount) <br>
                     splice(start, deleteCount, item1) <br>
                     splice(start, deleteCount, item1, item2) <br>
                     splice(start, deleteCount, item1, item2, /* …, */ itemN) <br>
-                    <div class="">
+                    <div class="array-example-code">
                         const months = ['Jan', 'March', 'April', 'June'];
                         months.splice(1, 0, 'Feb');
                         // Inserts at index 1

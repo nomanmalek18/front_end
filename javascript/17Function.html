@@ -39,61 +39,61 @@
 
             <h3>Named Function:-</h3>
             <p>Lacacy / Traditional Way.</p>
-            <div class="">
-                function myFunction(){
-                    console.log("CodeBustler");
-                }
-                myFunction();   
+            <div class="function-code">
+                function myFunction(){ <br>
+                    console.log("CodeBustler"); <br>
+                } <br>
+                myFunction();    <br>
             </div>
 
             <h3>Anonymous Function:-</h3>
             <p>Anonymous Function is a without name, used as function Expressions or a arguments</p>
-            <div class="">
-                let greet = function(name){
-                    console.log(`Hello${name}`);
-
-                };
-                greet("Noman");
+            <div class="function-code">
+                let greet = function(name){ <br>
+                    console.log(`Hello${name}`); <br>
+                <br>
+                }; <br>
+                greet("Noman"); <br>
             </div>
 
             <h3>Arrow Function</h3>
             <p>Arrow function introduced in ES6, shorter syntex & one-lined function</p>
-            <div class="">
-                let greet = () => console.log("Hello")
-                greet();
+            <div class="function-code">
+                let greet = () => console.log("Hello") <br>
+                greet(); <br>
             </div>
 
             <h3>Immediately Invoked Function :-</h3>
             <p>Immediately invoked function expressions (IIFE) executed Immediately after their creation. used to create private scopes and avoid polluting the global namespoce.</p>
-            <div class="">
-                (function(){
-                    let str = "good Evening";
-                    console.log(str);
-                })();
-
-                // good morning
+            <div class="function-code">
+                (function(){ <br>
+                    let str = "good Evening"; <br>
+                    console.log(str); <br>
+                })(); <br>
+                <br>
+                // good morning <br>
             </div>
 
             <h3>Higher Order Function:-</h3>
             <p>function that take one or more function as arguments or return a function</p>
 
             <p><b>eg:-</b>map(), filter(), reduce()</p>
-            <div class="">
-                let ary = [10, 20, 23];
-                let newAry = ary.map((emlement)=> emle)
+            <div class="function-code">
+                let ary = [10, 20, 23]; <br>
+                let newAry = ary.map((emlement)=> emle) <br>
             </div>
 
             <h3>Constructor Function:-</h3>
             <p>used as blueprints for creating objects with similar properties and methods. they are invoked using the <strong>new</strong> keyword to create indtances of objects.</p>
-            <div class="">
-                function Person(name, place){
-                    this.name = name;
-                    this.place = place;
-                }
+            <div class="function-code">
+                function Person(name, place){ <br>
+                    this.name = name; <br>
+                    this.place = place; <br>
+                } <br> <br>
 
-                let user1 =  new Person("codebustler", "india");
-                console.log(`hello everyone this is ${uset1.name}, and ia am from ${user1.place}`);
-                // hello everyone this is codebustler, and i am from india
+                let user1 =  new Person("codebustler", "india"); <br>
+                console.log(`hello everyone this is ${uset1.name}, and ia am from ${user1.place}`); <br>
+                // hello everyone this is codebustler, and i am from india <br>
             </div>
         </div>
     </div>

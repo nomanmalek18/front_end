@@ -67,36 +67,33 @@
                     JavaScript variable names are case-sensitive. Lowercase and uppercase letters are distinct. For
                 example, you can define three unique variables to store a dog name, as follows.
             </p>
-                    <div>
+                    <div class="output-variables"> 
                         var DogName ='Scooby-Doo';<br>
                         var dogName = 'Droopy';<br>
                         var DOGNAME = 'Odie';<br>
-                        <div class="">
-                            console .log( DogName); // "Scooby-Doo"<br>
-                            console .log(dogName); // "Droopy"<br>
-                            console .log(DOGNAME); // "Odie"<br>
-                        </div>
+                    </div>
+                    <div class="output-variables">
+                        console .log( DogName); // "Scooby-Doo"<br>
+                        console .log(dogName); // "Droopy"<br>
+                        console .log(DOGNAME); // "Odie"<br>
                     </div>
             <p>
                 However, the most recommended way to declare JavaScript variables is with <strong>camel case</strong>
                 variable names. You can use the camel case naming convention for all types of variables in
                 JavaScript, and it will ensure that there aren't multiple variables with the same name.
             </p>
-                <div>
-                    <h3>bad:-</h3>
-                    <div>
-                        var dogname = 'Droopy';<br>
-                        var dog_name = 'Droopy';<br>
-                        var DOGNAME =<q>Droopy</q>;<br>
-                        var DOG_NAME = 'Droopy';<br>
-                    </div>
+                
+                <h3>bad:-</h3>
+                <div class="output-variables">
+                    var dogname = 'Droopy';<br>
+                    var dog_name = 'Droopy';<br>
+                    var DOGNAME =<q>Droopy</q>;<br>
+                    var DOG_NAME = 'Droopy';<br>
                 </div>
     
-                <div class="">
-                    <h3>good:-</h3>
-                    <div>
-                        var dogName = 'Droopy';<br>
-                    </div>
+                <h3>good:-</h3>
+                <div class="output-variables">
+                    var dogName = 'Droopy';<br>
                 </div>
             </ol>
                 <p>
@@ -104,19 +101,15 @@
                 need a variable to store a dog's name, you should use dogName instead of just Name since it is more
                 meaningful.
             </p>
-            <div>
                 <h3>bad:-</h3>
-                <div>
+                <div class="output-variables">
                     var d = 'Scooby-Doo';<br>
                     var name = 'Scooby-Doo';<br>
                 </div>
-            </div>
-            <div>
                 <h3>good:-</h3>
-                <div>
+                <div class="output-variables">
                     var dogName = 'Scooby-Doo';
                 </div>
-            </div>
     
     
             <h2>2. Naming Convention for Booleans</h2>
@@ -124,43 +117,36 @@
                 When it comes to Boolean variables, we should use <strong>is</strong> or <strong>has </strong>as
                 prefixes. For example, if you need a Boolean variable to check if a dog has an owner, you should use
                 hasOwner as the variable name.</p>
-                <div class="">
-                    <h3>bad:-</h3>
-                    <div class="">
+
+                <h3>bad:-</h3>
+                    <div class="output-variables">
                         var bark = false;
                     </div>
-                </div>
-                <div class="">
+
                     <h3>good:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var isBark = false;
                     </div>
-                </div>
-                <div class="">
+
                     <h3>bad:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var ideal = true;
                     </div>
-                </div>
-    
-                <div class="">
+                
                     <h3>good:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var areIdeal = true;<br>
                     </div>
-                </div>
-                <div class="">
+
                     <h3>bad:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var owner = true;<br>
                     </div>
-                </div>
-                <div class="">
+
                     <h3>good:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var hasOwner = true;<br>
                     </div>
-                </div>
                    
             
             <h2>3. Naming<strong> Convention for Functions</strong></h2>
@@ -172,44 +158,37 @@
                 In addition to that, you should use descriptive nouns and verbs as prefixes. For example, if we
                 declare a function to retrieve a name, the function name should be getName.
             </p>
-            <div class="">
+            
                 <h3>bad:-</h3>
-                <div class="">
+                <div class="output-variables">
                     function name ( dogName, ownerName ) {<br>
                     return '${dogName} ${ownerName}';<br>
                     }<br>
                 </div>
-            </div>
-    
-            <div class="">
                 <h3>good:-</h3>
-                <div class="">
+                <div class="output-variables">
                     function getName ( dogName, ownerName ) {<br>
                     return '${dogName} ${ownerName}'<br>
                     }
                 </div>
-            </div>
+            
             <h2>4. Naming Convention for Constants</h2>
             <p>JavaScript constants are also case-sensitive. However, these constants should be written in
                 <strong>uppercase </strong>because they are nonchanging variables.
             </p>
-            <div class="">
     
-                <div class="">
+                <div class="output-variables">
                     var LEG = 4;<br>
                     var TAIL = 1;<br>
                     var MOVABLE = LEG + TAIL;<br>
                 </div>
-            </div>
     
             <p>If the variable declaration name contains more than one word, you should use <strong>UPPER_SNAKE_CASE. </strong>
             </p>
     
-            <div class="">
-                <div class="">
+                <div class="output-variables">
                     var DAYS_UNTIL_TOMORROW =  1;<br>
                 </div>
-            </div>
             <p>All the constants should be defined at the start of your file, method, or class.</p>
             
             <h2>5. Naming Convention for Classes</h2>
@@ -218,9 +197,7 @@
             <p>The major difference between function and class names is that we have to use <strong>Pascal
                     case</strong> for class names.</p>
     
-            <div class="">
-    
-                <div class="">
+                <div class=""class="output-variables">
                     class DogCartoon { <br>
                     constructor (dogName, ownerName) {<br>
                     this .dogName = dogName;<br>
@@ -228,13 +205,10 @@
                     } <br>
                     }
                 </div>
-            </div>       
-            <div class="">
     
-                <div class="">
+                <div class="output-variables">
                     var cartoon = new DogCartoon( 'Scooby-Doo','Shaggy');
                 </div>
-            </div>       
             
     
     
@@ -243,9 +217,9 @@
             <p>JavaScript components are widely used in front-end frameworks like React. Although components are
                 used in the DOM, treating them similarly to classes and using <strong>Pascal case </strong>to define
                 names is recommended.</p>
-                <div class="">
-                    <h3>bad:-</h3>
-                    <div class="">
+                <h3>bad:-</h3>
+                <div class="output-variables">
+                    
                         function dogCartoon(roles) {<br>
                         return (<br>
                         &lt; div &gt;<br>
@@ -256,11 +230,9 @@
                         &lt; /div&gt;<br>
                         );<br>
                        }<br>
-                    </div>
                 </div>
-                <div class="">
                     <h3>good</h3>
-                    <div class="">
+                    <div class="output-variables">
                         function DogCartoon(roles) {<br>
                         return (<br>
                         &lt; div &gt;<br>
@@ -272,14 +244,13 @@
                         );<br>
                         }<br>
                     </div>
-                </div>
     
             <p>
                 Since the initial letter is always written in uppercase, a component stands out from native HTML and
                 web components when utilized.
             </p>
-            <div class="">
-                <div class="">
+            
+                <div class="output-variables">
                     &lt;div &gt;<br>
                     &lt;DogCartoon<br>
                     roles= {{ dogName:<br>
@@ -288,7 +259,6 @@
                         /&gt;<br>
                     &lt;/div&gt;<br>
                 </div>
-            </div>
     
             <h2>7. Naming Convention for Methods</h2>
     
@@ -296,27 +266,22 @@
                 similar. So, naming convention rules are the same.</p>
             <p>We must use <strong>camel case </strong>to declare JavaScript methods and use verbs as prefixes to
                 make names more meaningful.</p>
-            <div class="">
-                <div class="">
+                <div class="output-variables">
                     class DogCartoon {<br>
                     constructor ( dogName, ownerName) {<br>
                     this dogName = dogName;<br>
                     this ownerName = ownerName;<br>
                     }<br>
                 </div>
-            </div>
-            <div class="">
-                <div class="">
+                <div class="output-variables">
                     getName() {<br>
                     return '${this.dogName} ${this.ownerName}';<br>
                     }<br>
                     }<br>
     
                 </div>
-            </div>
     
-            <div class="">
-                <div class="">
+                <div class="output-variables">
                     var cartoon= new <br>
                     DogCartoon('Scooby-Doo', 'Shaggy'); <br>
             
@@ -324,7 +289,6 @@
                             "Scooby-Doo Shaggy" <br>
                     
                 </div>
-            </div>
     
     
             <h2>8. Naming Convention for Denoting Private Functions</h2>
@@ -333,8 +297,7 @@
             <p>For example, if you have a private function name like toonName, you can denote it as a private
                 function by adding an underscore as a prefix (_toonName).</p>
     
-                <div class="">
-                    <div class="">
+                    <div class="output-variables">
                         class DogCartoon {<br>
                         constructor(dogName, ownerName) {<br>
                         this.dogName = dogName;<br>
@@ -349,31 +312,26 @@
                         }<br>
     
                     </div>
-                </div>
-                <div class="">
-                    <div class="">
+                    <div class="output-variables">
                         var cartoon = new <br>
                         DodCartoon('Scooby-Doo', <br>
                         'Shaggy');<br>
     
                     </div>
-                </div>
-    
-                <div class="">
+
                     <h3>good:-</h3>
-                    <div class="">
+                    <div class="output-variables">
                         var name = cartoon.name;<br>
                         consolel.log(name);<br>
                         "Scooby-Doo Shaggy" <br>
                     </div>
-                </div>
-                <div class="">
+
                     <h3>bad:-</h3>
-                    <div class=""></div>
+                    <div class="output-variables">
                     name =cartoon._toonName(cartoon.dogName, cartoon.ownerName);<br>
                     console.log(name);<br>
                     // "Scooby-Doo Shaggy"<br>
-                </div>                
+                    </div>                
     
     
             <h2>9. Naming Convention for Global Variables</h2>
