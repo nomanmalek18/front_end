@@ -34,53 +34,75 @@
 
             <h3>1: JavaScript object literal</h3>
 
-            <div class="">
+            <div class="object-example-1">
                 <h3>The syntax of creating object using object literal is given below:</h3>
-                <div class="">
+                <div class="object-example-1-code">
                     let UserDetailsObject = { <br> 
-                        FName: "Neel", <br>
-                        LName: "Nutin", <br>
-                        MName: "Mukesh", <br>
+                        FName: "Noman", <br>
+                        LName: "Malek", <br>
+                        MName: "Aashik", <br>
                         Gender: "Male", <br>
-                        Location: "Ahmedabad"<br>, 
+                        Location: "Ahmedabad",<br> 
                         Mobile: "9879879878",<br> 
                         Rank: 1, <br>
                         Status: true <br>
                     } <br> <br>
                     console.log(UserDetailsObject); <br>
-                    console.log("Access FName", UserDetailsObject['FName']); <br>
-                    console.log(UserDetailsObject.FName); <br><br>
-                    for (const key in UserDetailsObject) { <br>
-                        console.log(key); <br>
-                        // console.log("Data",UserDetailsObject.key); // not able to access by . because for...in gives an ittrator we can access its data by [] br
-                        console.log("Data", UserDetailsObject[key]);<br>
-                    } <br>
-                    console.log("Object.entries", Object.entries(UserDetailsObject)); <br>
-                    console.log("Object.keys", Object.keys(UserDetailsObject));<br>
-                    console.log("Object.values", Object.values(UserDetailsObject));<br>
-            
                 </div>
             </div>
 
-            <div class="">
+            <div class="object-example-1-output">
                 <h3>output:</h3>
-                <div class="">
-                    { FName: "Neel", LName: "Nutin", MName: "Mukesh", Gender: "Male", Location: "Ahmedabad", Mobile: "9879879878", Rank: 1, Status: true } <br> <br>
-                    
-                    FName: "Neel" <br>
-                    Gender: "Male" <br>
-                    LName: "Nutin"<br>
-                    Location: "Ahmedabad"<br>
-                    MName: "Mukesh",<br>
-                    Mobile: "9879879878"<br>
-                    Rank: 1, <br>
-                    Status: true<br> <br>
-
-                    accessed FName Neel <br> <br>
-                    Neel
+                <div class="object-example-1-output-code">
+                    { FName: "Noman", LName: "Malek", MName: "Aashik", Gender: "Male", Location: "Ahmedabad", Mobile: "9879879878", Rank: 1, Status: true } 
                 </div>
             </div>
 
+
+            <h3>creating instance of Object directly (using new keyword)</h3>
+
+            <div class="object-example-2">
+                <h3>The syntax of creating object directly is given below:</h3>
+                <div class="object-example-2-code">
+                    let userObject = new Object();<br>
+                    userObject.FName = "Noman";<br>
+                    userObject.age = 22;<br>
+                    userObject.Gender = "Male",<br>
+                    userObject.Location = "Ahmedabad"<br>
+                    <br>
+                    console.log(userObject);<br>
+
+                </div>
+            </div>
+            <div class="object-example-2-output">
+                <h3>output:</h3>
+                <div class="object-example-2-output-code">
+                    {FName: 'Noman', age: 22, Gender: 'Male', Location: 'Ahmedabad'}
+                </div>
+            </div>
+
+            <h3>using an object constructor (using new keyword)</h3>
+            <div class="object-example-3">
+                    <h3>The example of defining method in object is given below.</h3>
+                <div class="object-example-3-code">
+                    function UserDetails(id,name,salary){  <br>
+                        this.id=id;  <br>
+                        this.name=name;  <br>
+                        this.salary=salary;  <br>
+                        }  <br>
+                        UserDetailsData=new UserDetails(1820,"Noman",30000); <br> 
+                        <br>
+                        console.log(UserDetailsData);<br>
+    
+                </div>
+            </div>
+
+            <div class="object-example-3-output">
+                <h3>output:</h3>
+                <div class="object-example-3-output-code">
+                    UserDetails {id: 1820, name: 'Noman', salary: 30000}
+                </div>
+            </div>
         </div>
     </div>
 </body>
