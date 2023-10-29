@@ -7,7 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240, 101, 41);
+    background-color: rgb(64, 41, 240);
 }
 .container{
     width: 150vmin;
