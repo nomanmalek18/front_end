@@ -542,6 +542,44 @@ table tr td {
     border-left: 5px solid orange;
 }
 
+.q-9-exmaple{
+    height: 120vmin;
+    /* height: auto; */
+    width: 111vmin;
+    background-color: #144272;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #fff;
+    border-left: 5px solid orange;    
+}
+/* .q-9-example-output{
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: -12vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 10px;
+    padding: 2vmin;
+    line-height: 5vmin;
+}
+.q-9-example-output h3{
+        margin: 0 4vmin;
+    padding: 1vmin 0;
+    color: #fff;
+}
+.q-9-example-output-code{
+    height: 10vmin;
+    width: 111vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+
+} */
 ul {
     padding: 1.2vmin;
     margin: 3vmin;
@@ -989,7 +1027,7 @@ li {
 }
 
 .q-16-example-2{
-    height: 186vmin;
+    height: 104vmin;
     width: 111vmin;
     background-color: #144272;
     padding: 0vmin;
@@ -999,7 +1037,7 @@ li {
     border-left: 5px solid orange;
 }
 .q-16-example-3{
-    height: 89vmin;
+    height: 60vmin;
     width: 111vmin;
     background-color: #144272;
     padding: 0vmin;
@@ -1065,3 +1103,88 @@ li {
     color: #144272;
     border-left: 5px solid orange;
 }
+
+.q-17-example-2{
+    height: 89vmin;
+    width: 111vmin;
+    background-color: #144272;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #fff;
+    border-left: 5px solid orange;
+
+}   
+
+
+/* == Question- 17 End == */
+/* == Question- 18 Start == */
+
+
+.question-18{
+    padding: 25px;
+    margin: 5px;
+}
+
+.question-18 h2{
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+.question-18 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-18 h3 {
+    font-size: 4vmin;
+    color: #144272;
+    margin: 2vmin 3vmin;
+}
+
+.q-18-example{
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 215vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 10px;
+    padding: 2vmin;
+    line-height: 5vmin;
+}
+.q-18-example h3{
+    margin: 0 4vmin;
+    padding: 1vmin 0;
+    color: #fff;
+
+}
+.q-18-example p{
+    margin: 0 4vmin;
+    padding: 1vmin 0;
+    color: #144272;
+}
+
+.q-18-example-output-1{
+    height: 25vmin;
+    width: 111vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+
+.q-18-example-output-2{
+    height: 165vmin;
+    width: 111vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+

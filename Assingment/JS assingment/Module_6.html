@@ -401,50 +401,51 @@
                 <strong>Example:</strong> In this instance, a PAN number validator has been constructed. We will first use a regex pattern to match the input value. If it does, add an inline style to the &lt;p&gt; tag using JavaScript. If not, change the style of the &lt;p&gt; tag.
             </p>
             <div class="q-9-exmaple">
-                <!-- <!DOCTYPE html>
-                    <html lang="en">
+                &lt;!DOCTYPE html&gt; <br>
+                    &lt;html lang="en"&gt; <br>
+ <br>
+                    &lt;body&gt; <br>
+ <br>
+                    &lt;h2&gt; How can the style/class of an element be changed? &lt;/h2&gt; <br>
 
-                    <body>
-
-                    <h2>
-                    How can the style/class of
-                    an element be changed?
-                    </h2>
-
-                    <b>Validate Pan Number</b>
-
-                    <input type="text" id="pan" />
-                    <p></p>
-                    <button id="submit">Validate</button>
-                    <script>
-
-                    const btn = document.getElementById("submit");
-                    btn.addEventListener("click", function () {
-                    const pan = document.getElementById("pan").value;
-                    const para = document.querySelector("p");
-                    let regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
-                    if (regex.test(pan.toUpperCase())) {
-                    para.innerHTML = "Hurrey It's correct";
-
-                    // Inline style
-                    para.style.color = "green";
-                    } else {
-                    para.innerHTML = "OOps It's wrong!";
-
-                    // Inline style
-                    para.style.color = "red";
-                    }
-                    });
-                    </script>
-
-                    </html> -->
+                    &lt;b&gt;Validate Pan Number&lt;/b&gt; <br>
+ <br>
+                    &lt;input type="text" id="pan" /&gt; <br>
+                    &lt;p&gt;&lt;/p&gt; <br>
+                    &lt;button id="submit"&gt;Validate&lt;/button&gt; <br>
+                    &lt;script&gt; <br>
+ <br>
+                    const btn = document.getElementById("submit"); <br> 
+                    <br>
+                    btn.addEventListener("click", function () { <br>
+                    <br>
+                    const pan = document.getElementById("pan").value; <br>
+                    <br>
+                    const para = document.querySelector("p"); <br>
+                    <br>
+                    let regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/; <br>
+                    <br>
+                    if (regex.test(pan.toUpperCase())) { <br>
+                    para.innerHTML = "Hurrey It's correct"; <br>
+                    // Inline style <br>
+                    para.style.color = "green"; <br>
+                    } else { <br>
+                    para.innerHTML = "OOps It's wrong!"; <br>
+                    // Inline style <br>
+                    para.style.color = "red"; <br>
+                    } <br>
+                    }); <br>
+                    &lt;/script&gt; <br> 
+                    <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt; <br>
+                </div>
                 <div class="q-9-example-output">
                     <h3>Output:</h3>
                     <p> How can the style/class of an element be changed?</p>
                     <p> Validate Pan Number</p>
                     <p> Validate</p>
                 </div>
-            </div>
         </div>
 
                 <!-- == Question- 9 End ==  -->
@@ -921,34 +922,29 @@
             </p>
             <div class="q-17-example-2">
 
-                &lt;!DOCTYPE html&gt;
-                    &lt;html&gt;
+                &lt;!DOCTYPE html&gt;  <br>
+                    &lt;html&gt; <br>
                         
-                    &lt;head&gt;
-                    &lt;title&gt;
-                    Using innerHTML in JavaScript
-                    &lt;/title&gt;
-                    &lt;head&gt;
-                        
-                        &lt;body style="text-align: center"&gt;
-                    
-                    &lt;h1 style="color:green"&gt;
-                        GeeksforGeeks
-                    &lt;/h1&gt;
-                    
-                    &lt;p id="P"&gt;A computer science portal for geeks.&lt;/p&gt;
-                    
-                    &lt;button onclick="geek()"&gt; Try it &lt;/button&gt;
-                    &lt;p id="p"&gt;&lt;/p&gt;
-
-                    &lt;script&gt;
-                    function geek() {
-                        var x = document.getElementById("P").innerHTML;
-                        document.getElementById("p").innerHTML = x;
-                        document.getElementById("p").style.color = "green";
-                    }
-                    &lt;/script&gt;
-                &lt;/body&gt;
+                    &lt;head&gt; <br>
+                    &lt;title&gt; Using innerHTML in JavaScript &lt;/title&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;body style="text-align: center"&gt; <br>
+                    <br>
+                    &lt;h1 style="color:green"&gt;GeeksforGeeks&lt;/h1&gt; <br>
+                    <br>
+                    &lt;p id="P"&gt;A computer science portal for geeks.&lt;/p&gt; <br>
+                    <br>
+                    &lt;button onclick="geek()"&gt; Try it &lt;/button&gt;<br>
+                    &lt;p id="p"&gt;&lt;/p&gt;<br>
+                <br>
+                    &lt;script&gt; <br>
+                    function geek() { <br>
+                        var x = document.getElementById("P").innerHTML; <br>
+                        document.getElementById("p").innerHTML = x;<br>
+                        document.getElementById("p").style.color = "green";<br>
+                    } <br>
+                    &lt;/script&gt; <br>
+                &lt;/body&gt; <br>
                 &lt;/html&gt; 
             </div>
         </div>
@@ -972,49 +968,48 @@
             </ul>
 
             <div class="q-18-example">
-                <h3>Example:
-                </h3>
+                <h3>Example:</h3>
                 <div class="q-18-example-output-1">
-                    Password is Welcome12@. 
-                    So, on typing it will show like this ********* 
-                    And on clicking the checkbox it will show the characters: Welcome12@.
+                    <p>Password is Welcome12@. </p>
+                    <p>So, on typing it will show like this ********* </p>
+                    <p>And on clicking the checkbox it will show the characters: Welcome12@.</p>
                 </div>
                 <div class="q-18-example-output-2">
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                    <meta charset="UTF-8">
-                    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-                    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-                    <title>Show and hide password using JavaScript</title>
-                    </head>
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html lang="en"&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;meta charset="UTF-8"&gt; <br>
+                    &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt; <br>
+                    &lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt; <br>
+                    &lt;title&gt;Show and hide password using JavaScript&lt;/title&gt; <br>
+                    &lt;/head&gt; <br>
                     
-                    <body>
-                    <strong>
-                    <p>Click on the checkbox to show or hide password:</p>
-                    </strong>
+                    &lt;body&gt; <br>
+                    &lt;strong&gt; <br>
+                    &lt;p&gt;Click on the checkbox to show or hide password:&lt;/p&gt; <br>
+                    &lt;/strong&gt; <br>
                     
-                    <strong>Password</strong>:
-                    <input type="password" value="geeksforgeeks" id="typepass">
+                    &lt;strong&gt;Password&lt;/strong&gt; <br>:
+                    &lt;input type="password" value="geeksforgeeks" id="typepass"&gt; <br>
                     
-                    <input type="checkbox" onclick="Toggle()">
-                    <strong>Show Password</strong>
+                    &lt;input type="checkbox" onclick="Toggle()"&gt; <br>
+                    &lt;strong&gt;Show Password&lt;/strong&gt; <br>
                     
-                    <script>
-                    // Change the type of input to password or text
-                    function Toggle() {
-                        let temp = document.getElementById("typepass");
-
-                        if (temp.type === "password") {
-                                temp.type = "text";
-                        }
-                        else {
-                                    temp.type = "password";
-                                }
-                    }
-                    </script>
-                    </body>
-                    </html>
+                    &lt;script&gt; <br>
+                    // Change the type of input to password or text <br>
+                    function Toggle() { <br>
+                        let temp = document.getElementById("typepass"); <br>
+                        <br>
+                        if (temp.type === "password") { <br>
+                                temp.type = "text"; <br>
+                        } <br>
+                        else { <br>
+                                temp.type = "password"; <br>
+                        } <br>
+                    } <br>
+                    &lt;/script&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt; <br>
 
                 </div>
             </div>
