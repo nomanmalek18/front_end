@@ -799,16 +799,16 @@
                 <div class="q-16-syntax">
                     <h3>Syntax:</h3>
                     <div class="q-16-syntax-output">
-                        &lt;script&gt;
-                            window.location = &lt;Path / URL&gt;
+                        &lt;script&gt;<br>
+                            window.location = &lt;Path / URL&gt;<br>
                         &lt;/script&gt;
                     </div>
                 </div>
                 <div class="q-16-example">
                     <h3>Example:</h3>
                     <div class="q-16-example-output">
-                        &lt;script&gt;
-                            window.location = "https://www.geeksforgeeks.org/"
+                        &lt;script&gt;<br>
+                            window.location = "https://www.geeksforgeeks.org/"<br>
                         &lt;/script&gt; 
                     </div>
                 </div>
@@ -821,56 +821,56 @@
                     Step 1. Make a file called index.html as the first step. Add two buttons and a heading to it. One button forces the loading of a live URL while the other forces the loading of a local HTML page. Two functions are contained in the script> tag; one loads the gfg homepage, and the other uses the window.location property to load a local HTML page.
                 </p>
                 <div class="q-16-example-2">
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html lang="en"&gt;
-
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                    &lt;/head&gt;
-
-                    &lt;body&gt;
-                        &lt;h3&gt;This is the original page&lt;/h3&gt;
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+<br>
+                    &lt;head&gt;<br>
+                        &lt;meta charset="UTF-8"&gt;<br>
+                        &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;<br>
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;/head&gt;<br>
+<br>
+                    &lt;body&gt;<br>
+                        &lt;h3&gt;This is the original page&lt;/h3&gt;<br>
                         <br>
-
-                    &lt;button onclick="force_load_wikipedia()"&gt;Force Load wikipedia Page&lt;/button&gt;
+<br>
+                    &lt;button onclick="force_load_wikipedia()"&gt;Force Load wikipedia Page&lt;/button&gt;<br>
                     <br><br>
-                    
-                    &lt;button onclick="force_load_local()"&gt;Force Load Local HTML page&lt;/button&gt;
+                    <br>
+                    &lt;button onclick="force_load_local()"&gt;Force Load Local HTML page&lt;/button&gt;<br>
                     <br>                    
-                    &lt;script&gt;
-                    function force_load_wekipedia() {
-                    window.location ="https://www.wikipedia.org/"
-                    }
-                    
-                    function force_load_local() {
-                    window.location ="F:/gfg/PageRedirect/newPage.html"
-                    }
-                    &lt;/script&gt;
-                    &lt;/body&gt;
-
-                    &lt;/html&gt; 
+                    &lt;script&gt;<br>
+                    function force_load_wekipedia() {<br>
+                    window.location ="https://www.wikipedia.org/"<br>
+                    }<br>
+                    <br>
+                    function force_load_local() {<br>
+                    window.location ="F:/gfg/PageRedirect/newPage.html"<br>
+                    }<br>
+                    &lt;/script&gt;<br>
+                    &lt;/body&gt;<br>
+<br>
+                    &lt;/html&gt; <br>
                 </div>
 
                 <p> 
                     <strong>Step 2:</strong> Make a newPage.html file. This is the local HTML page that Javascript would load.
                 </p>
                 <div class="q-16-example-3">
-                     &lt;!DOCTYPE html&gt;
-                    &lt;html lang="en"&gt;
-
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt; New Page &lt;/title&gt;
-                    &lt;/head&gt;
-
-                    &lt;body&gt;
-                        &lt;h3&gt;This is the new loaded page&lt;/h3&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt; 
+                     &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+<br>
+                    &lt;head&gt;<br>
+                        &lt;meta charset="UTF-8"&gt;<br>
+                        &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;<br>
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                        &lt;title&gt; New Page &lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+<br>
+                    &lt;body&gt;<br>
+                        &lt;h3&gt;This is the new loaded page&lt;/h3&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt; <br>
                 </div>
         </div>
                     <!-- == Question- 16 End ==  -->
@@ -899,14 +899,13 @@
             </p>
 
             <div class="q-17-example">
-                <h3>Example:
-                </h3>
+                <h3>Example:</h3>
                 <div class="q-17-example-output">
-                    <p id="geek">Geeks</p>
-                    title = document.getElementById('#geek')
-
-                    // The whole "geek" tag is reparsed
-                    title.innerHTML += '<p> forGeeks </p>'
+                    &lt;p id="geek"&gt;Geeks&lt;/p&gt; <br>
+                    title = document.getElementById('#geek') <br>
+                    
+                    // The whole "geek" tag is reparsed <br>
+                    title.innerHTML += '&lt;p&gt; forGeeks &lt;/p&gt;'
 
                 </div>
             </div>
@@ -922,46 +921,35 @@
             </p>
             <div class="q-17-example-2">
 
-                <!DOCTYPE html> 
-                    <html> 
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
                         
-                    <head> 
-                        <title>
-                            Using innerHTML in JavaScript
-                        </title> 
-                    <head> 
+                    &lt;head&gt;
+                    &lt;title&gt;
+                    Using innerHTML in JavaScript
+                    &lt;/title&gt;
+                    &lt;head&gt;
                         
-                        <body style="text-align: center"> 
-                          
-                        <h1 style="color:green"> 
-                        GeeksforGeeks 
-                        </h1> 
-                      
-                        <p id="P">
-                            A computer science
-                            portal for geeks.
-                        </p> 
-                      
-                        <button onclick="geek()">
-                            Try it
-                        </button> 
-                      
-                        <p id="p"></p> 
-                      
-                        <script> 
-                            function geek() { 
-                        var x = document.getElementById("P")
-                                            .innerHTML; 
-                                  
-                                document.getElementById("p")
-                                            .innerHTML = x; 
-                                  
-                                document.getElementById("p")
-                                            .style.color = "green"; 
-                } 
-                        </script> 
-                </body> 
-                </html> 
+                        &lt;body style="text-align: center"&gt;
+                    
+                    &lt;h1 style="color:green"&gt;
+                        GeeksforGeeks
+                    &lt;/h1&gt;
+                    
+                    &lt;p id="P"&gt;A computer science portal for geeks.&lt;/p&gt;
+                    
+                    &lt;button onclick="geek()"&gt; Try it &lt;/button&gt;
+                    &lt;p id="p"&gt;&lt;/p&gt;
+
+                    &lt;script&gt;
+                    function geek() {
+                        var x = document.getElementById("P").innerHTML;
+                        document.getElementById("p").innerHTML = x;
+                        document.getElementById("p").style.color = "green";
+                    }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt; 
             </div>
         </div>
 
@@ -995,44 +983,36 @@
                     <!DOCTYPE html>
                     <html lang="en">
                     <head>
-                        <meta charset="UTF-8">
-                        <meta http-equiv="X-UA-Compatible"
-                              content="IE=edge">
-                        <meta name="viewport"
-                              content="width=device-width, initial-scale=1.0">
-                        <title>
-                            Show and hide password using JavaScript
-                        </title>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+                    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+                    <title>Show and hide password using JavaScript</title>
                     </head>
-                     
+                    
                     <body>
-                        <strong>
-                            <p>Click on the checkbox to show
-                                or hide password:
-                            </p>
-                        </strong>
-                     
-                        <strong>Password</strong>:
-                        <input type="password" value="geeksforgeeks"
-                                  id="typepass">
-                     
-                        
-                        <input type="checkbox" onclick="Toggle()">
-                        <strong>Show Password</strong>
-                     
-                        <script>
-                            // Change the type of input to password or text
-                            function Toggle() {
-                                let temp = document.getElementById("typepass");
-                                 
-                                if (temp.type === "password") {
-                                    temp.type = "text";
-                                }
-                                else {
+                    <strong>
+                    <p>Click on the checkbox to show or hide password:</p>
+                    </strong>
+                    
+                    <strong>Password</strong>:
+                    <input type="password" value="geeksforgeeks" id="typepass">
+                    
+                    <input type="checkbox" onclick="Toggle()">
+                    <strong>Show Password</strong>
+                    
+                    <script>
+                    // Change the type of input to password or text
+                    function Toggle() {
+                        let temp = document.getElementById("typepass");
+
+                        if (temp.type === "password") {
+                                temp.type = "text";
+                        }
+                        else {
                                     temp.type = "password";
                                 }
-                            }
-                        </script>
+                    }
+                    </script>
                     </body>
                     </html>
 

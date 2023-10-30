@@ -583,7 +583,7 @@ li {
 .q-10-example{
     height: 130vmin;
     width: 111vmin;
-    background-color: #27374D;
+    background-color: #144272;
     padding: 0vmin;
     margin: 5vmin;
     padding: 1vmin 3vmin;
@@ -937,7 +937,7 @@ li {
     font-size: 3.5vmin;
     color: #fff;
     margin: 4vmin 3vmin;
-    height: 32vmin;
+    height: 38vmin;
     width: 130vmin;
     background-color: #2267c8d2;
     border-radius: 10px;
@@ -951,7 +951,7 @@ li {
 
 }
 .q-16-syntax-output{
-    height: 10vmin;
+    height: 18vmin;
     width: 111vmin;
     background-color: #fff;
     padding: 0vmin;
@@ -964,7 +964,7 @@ li {
     font-size: 3.5vmin;
     color: #fff;
     margin: 4vmin 3vmin;
-    height: 32vmin;
+    height: 38vmin;
     width: 130vmin;
     background-color: #2267c8d2;
     border-radius: 10px;
@@ -978,7 +978,85 @@ li {
 
 }
 .q-16-example-output{
-    height: 10vmin;
+    height: 19vmin;
+    width: 111vmin;
+    background-color: #fff;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #144272;
+    border-left: 5px solid orange;
+}
+
+.q-16-example-2{
+    height: 186vmin;
+    width: 111vmin;
+    background-color: #144272;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #fff;
+    border-left: 5px solid orange;
+}
+.q-16-example-3{
+    height: 89vmin;
+    width: 111vmin;
+    background-color: #144272;
+    padding: 0vmin;
+    margin: 5vmin;
+    padding: 1vmin 3vmin;
+    color: #fff;
+    border-left: 5px solid orange;
+}
+
+
+/* == Question- 16 End == */
+/* == Question- 17 Start == */
+
+
+.question-17{
+    padding: 25px;
+    margin: 5px;
+}
+
+.question-17 h2{
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+.question-17 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+.question-17 h3 {
+    font-size: 4vmin;
+    color: #144272;
+    margin: 2vmin 3vmin;
+}
+
+
+
+.q-17-example{
+    font-size: 3.5vmin;
+    color: #fff;
+    margin: 4vmin 3vmin;
+    height: 47vmin;
+    width: 130vmin;
+    background-color: #2267c8d2;
+    border-radius: 10px;
+    padding: 2vmin;
+    line-height: 5vmin;
+}
+.q-17-example h3{
+    margin: 0 4vmin;
+    padding: 1vmin 0;
+    color: #fff;
+
+}
+.q-17-example-output{
+    height: 25vmin;
     width: 111vmin;
     background-color: #fff;
     padding: 0vmin;
