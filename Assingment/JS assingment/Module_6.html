@@ -107,15 +107,14 @@
             </ul>
             <div class="style-output">
                 <h3>Output:</h3>
-                <ul>
-                    <li>true</li>
-                    <li>false</li>
-                    <li>true</li>
-                    <li>true</li>
-                    <li>false</li>
-                    <li>true</li>
-                    <li>false</li>
-                </ul>
+                
+                    <p>true</p>
+                    <p>false</p>
+                    <p>true</p>
+                    <p>true</p>
+                    <p>false</p>
+                    <p>true</p>
+                    <p>false</p>
             </div>
         </div>
             <!-- == Question- 2 End ==  -->
@@ -335,42 +334,42 @@
             </div>
             <h3>Example 1: In this example, we will compare the value of the same data types.</h3>
             <div class="q-8-example-1">
-                let a = 2, b=2, c=3;
-                let d = {name:"MAAN"};
-                let e = {name:"MAAN"};
-                let f = e;
-                console.log(a===b);
-                console.log(a===c);
-                console.log(d===e);
-                console.log(f===e);
+                <p>let a = 2, b=2, c=3;</p>
+                <p>let d = {name:"MAAN"};</p>
+                <p>let e = {name:"MAAN"};</p>
+                <p>let f = e;</p>
+                <p>console.log(a===b);</p>
+                <p>console.log(a===c);</p>
+                <p>console.log(d===e);</p>
+                <p>console.log(f===e);</p>
                 <div class="q-8-example-1-output">
                     <p>
                         <strong>Output:</strong> When two objects are compared, their references are examined, just like with other comparisons, and true is only returned if the references are identical.
                     </p>
-                    true
-                    false
-                    false
-                    true
+                    <p>true</p>
+                    <p>false</p>
+                    <p>false</p>
+                    <p>true</p>
                 </div>
             </div>
              
             <h3>Example 2:  In this example, we will use the strict equality operator on different data types.</h3>
             <div class="q-8-example-2">
-                let a = 2;
-                let b= "2";
-                let c = true;
-                let d = null;
-                let e = undefined;
-                console.log(a===b);
-                console.log(a===c);
-                console.log(d===e);
+                <p>let a = 2;</p>
+                <p>let b= "2";</p>
+                <p>let c = true;</p>
+                <p>let d = null;</p>
+                <p>let e = undefined;</p>
+                <p>console.log(a===b);</p>
+                <p>console.log(a===c);</p>
+                <p>console.log(d===e);</p>
                 <div class="q-8-example-2-output">
                     <p>
                         <strong>Output:</strong> Even though some values are the same but still false is returned as the data type is different.
                     </p>
-                    false
-                    false
-                    false
+                    <p>false</p>
+                    <p>false</p>
+                    <p>false</p>
                 </div>
             </div>
         </div>
@@ -392,7 +391,7 @@
             </p>
             <div class="q-9-syntax">
                 <h3>Syntax:</h3>
-                <div class="q-9-syntax">
+                <div class="q-9-syntax-line">
                     <p>document.getElementById("id").style.property = new_style</p>
                 </div>
 
@@ -520,32 +519,32 @@
                     </p>
 
                     <div class="q-10-example">
-                        var fs = require("fs");
-                        console.log(" Writing into an file ");
+                        var fs = require("fs"); <br>
+                        console.log(" Writing into an file "); <br>
 
                         // Sample.txt is an empty file
-                        fs.writeFile(
-                        "sample.txt",
-                        "Let's write a few sentences in the file",
-                        function (err) {
-                        if (err) {
-                        return console.error(err);
-                        }
-
-                        // If no error the remaining code executes
-                        console.log(" Finished writing ");
-                        console.log("Reading the data that's written");
-
-                        // Reading the file
-                        fs.readFile("sample.txt", function (err, data) {
-                        if (err) {
-                        return console.error(err);
-                        }
-                        console.log("Data read : " + data.toString());
-
-                        });
-                        }
-                        );
+                        fs.writeFile( <br>
+                        "sample.txt",<br>
+                        "Let's write a few sentences in the file",<br>
+                        function (err) {<br>
+                        if (err) {<br>
+                        return console.error(err);<br>
+                        }<br>
+<br>
+                        // If no error the remaining code executes<br>
+                        console.log(" Finished writing ");<br>
+                        console.log("Reading the data that's written");<br>
+<br>
+                        // Reading the file<br>
+                        fs.readFile("sample.txt", function (err, data) {<br>
+                        if (err) {<br>
+                        return console.error(err);<br>
+                        }<br>
+                        console.log("Data read : " + data.toString());<br>
+<br>
+                        });<br>
+                        }<br>
+                        );<br>
 
                     </div>
         </div>
@@ -575,9 +574,8 @@
             <div class="q-11-syntax">
                 <h3>Syntax:</h3>
                 <div class="q-11-syntax-output">
-                    for (initialization; condition; increment/ decrement)
-                    {
-                    Executed these statements;
+                    for (initialization; condition; increment/ decrement){<br>
+                        Executed these statements;<br>
                     }
                 </div>
             </div>
@@ -590,10 +588,10 @@
             <div class="q-11-syntax-2">
                 <h3>Syntax:</h3>
                 <div class="q-11-syntax-output-2">
-                    while (condition)
-                    {
-                    Execute these statements; //true
-                    Increment/decrement;
+                    while (condition) <br>
+                    { <br>
+                    Execute these statements; //true <br>
+                    Increment/decrement; <br>
                     }
                 </div>
             </div>
@@ -606,11 +604,11 @@
             <div class="q-11-syntax-3">
                 <h3>Syntax:</h3>
                 <div class="q-11-syntax-output-3">
-                    do
-                    {
-                    Execute the statements;
-                    Increment/decrements;
-                    }
+                    do <br>
+                    { <br>
+                    Execute the statements;<br>
+                    Increment/decrements;<br>
+                    }<br>
                     while (condition) //true
                 </div>
             </div>
@@ -692,48 +690,42 @@
             <div class="q-14-example">
                 <h3>Alert: A message with an OK button is all that is shown.</h3>
                 <div class="q-14-example-output">
-                    <!-- < !DOCTYPE html >
-    
-                    < html >
-    
-                    < body >
-    
-                    < ;p >Click the button to display an alert box. < /p >
-    
-                    <button onclick="myFunction()"> Click me </button>
-    
-                    <script>
-                    function myFunction() {
-                    alert("Hello! Welcome to edureka!");
-                    }
-                    </script>
-    
-                    </body>
-                    </html> -->
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html &gt;<br>
+                    &lt;body &gt;<br>
+    <br>
+                    &lt;p &gt;Click the button to display an alert box. &lt; /p &gt;<br>
+                    &lt;button onclick="myFunction()"&gt; Click me &lt;/button&gt;<br>
+<br>
+                    &lt; script&gt;<br>
+                    function myFunction() {<br>
+                    alert("Hello! Welcome to edureka!");<br>
+                    }<br>
+                    &lt; /script &gt;<br>
+    <br>
+                    &lt; /body &gt;<br>
+                    &lt;/html &gt;<br>
                 </div>
             </div>
             <div class="q-14-example-2">
                 <h3>Confirm -- A confirmation message window with an OK and Cancel button appears.
                 </h3>
                 <div class="q-14-example-output-2">
-                    <!-- < !DOCTYPE html >
-
-                    < html >
-
-                    < body >
-
-                    < ;p >Click the button to display an alert box. < /p >
-
-                    <button onclick="myFunction()"> Click me </button>
-
-                    <script>
-                    function myFunction() {
-                    confirm("Press a button!");
-                    }
-                    </script>
-
-                    </body>
-                    </html> -->
+                    &lt; !DOCTYPE html &gt;<br>
+                    &lt; html &gt;<br>
+                    &lt; body &gt;<br>
+<br>
+                    &lt;p &gt; Click the button to display an alert box. &lt; /p &gt;<br>
+                    &lt;button onclick="myFunction()"&gt; Click me &lt;/button&gt;<br>
+<br>
+                    &lt;script&gt;<br>
+                    function myFunction() { <br>
+                    confirm("Press a button!");<br>
+                    } <br>
+                    &lt;/script&gt;<br>
+<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
 
                 </div>
             </div>
@@ -741,31 +733,26 @@
                 <h3>Prompt: A dialog window asking for the user's input then displays confirmation buttons.
                 </h3>
                 <div class="q-14-example-output-3">
-                    <!-- < !DOCTYPE html >
-
-                    < html >
-
-                    < body >
-
-                    < ;p >Click the button to display an alert box. < /p >
-
-                    <button onclick="myFunction()"> Click me </button>
-
-                    < id ="demo"></p>
-
-                    <script>
-                    function myFunction() {
-                    var person = prompt("Please enter your name", "Edureka");
-                    if (person != null) {
-                    document.getElementById("demo").innerHTML =
-                    "Hello " + person + "! How are you today?";
-                    }
-                    }
-
-                    </script>
-
-                    </body>
-                    </html> -->
+                    &lt; !DOCTYPE html &gt;<br>
+                    &lt; html &gt;<br>
+                    &lt; body &gt;<br>
+<br>
+                    &lt; ;p &gt;Click the button to display an alert box. &lt; /p &gt;<br>
+                    &lt;button onclick="myFunction()"&gt; Click me &lt;/button &gt;<br>
+                    &lt; id ="demo"&gt; &lt;/p&gt;<br>
+<br>
+                    &lt;script&gt;<br>
+                    function myFunction() {<br>
+                    var person = prompt("Please enter your name", "Edureka");<br>
+                    if (person != null) {<br>
+                    document.getElementById("demo").innerHTML =<br>
+                    "Hello " + person + "! How are you today?";<br>
+                    }<br>
+                    }<br>
+                    &lt;/script&gt;<br>
+<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
                 </div>
             </div>
         </div>
@@ -774,29 +761,26 @@
                 <!-- == Question- 15 Start ==  -->
 
         <div class="question-15">
-            <h2>Q-15. What is the use of Void (0)?
-            </h2>
+            <h2>Q-15. What is the use of Void (0)?</h2>
             <p>
                 <q>javascript:void(0)</q> may have occasionally appeared in an HTML document. It is frequently used when adding an expression to a web page can have unintended consequences. The command <q>javascript:void(0)</q> is used to reverse this effect. This expression yields a primitive value that is undefinable. This is frequently applied to hyperlinks. You may occasionally choose to execute some JavaScript from a link. Depending on the URL provided, the browser typically loads a fresh copy of the current page when you click a link. But if you've connected some JavaScript thereto link, you probably don't want this to happen. Using void(0) would stop the page from refreshing. 
             </p>
             <div class="q-15-example">
-                <h3>Example:
-                </h3>
+                <h3>Example:</h3>
                 <div class="q-15-example-output">
-                    <!-- <h1 style="color:green">GeeksforGeeks</h1>
-                    <h3>without JavaScript:void(0)</h3>
-                    <a href="#" ondblclick="alert('Welcome to Geeks for Geeks')">
-                        Double click on me </a>
-                    <a href="#" ondblclick="geeks()">
-                        Double click on me
-                    </a>
-                    <script>
-                        function geeks(){
-                        document.getElementById("gfg")
-                            .innerHTML='Welcome to GeeksforGeeks';
-                        }
-                    </script>
-                    <p id="gfg"></p> -->
+                    &lt;h1 style="color:green"&gt;GeeksforGeeks&lt;/h1&gt;<br><br>
+                    &lt;h3&gt;without JavaScript:void(0)&lt;/h3&gt;<br> 
+                    <br>
+                    &lt;a href="#" ondblclick="alert('Welcome to Geeks for Geeks')"&gt;Double click on me &lt;/a&gt;<br>
+                    &lt;a href="#" ondblclick="geeks()">Double click on me&lt;/a&gt;<br>
+                    <br>
+                    &lt;script&gt;<br>
+                    function geeks(){<br>
+                    document.getElementById("gfg").innerHTML='Welcome to GeeksforGeeks';<br>
+                    }<br>
+                    &lt;/script&gt;<br>
+                    <br>
+                    &lt;p id="gfg"&gt;&lt;/p&gt;<br>
                 </div>
             </div>
         </div>
@@ -815,17 +799,17 @@
                 <div class="q-16-syntax">
                     <h3>Syntax:</h3>
                     <div class="q-16-syntax-output">
-                        <!-- <script>
-                            window.location = <Path / URL>
-                        </script> -->
+                        &lt;script&gt;
+                            window.location = &lt;Path / URL&gt;
+                        &lt;/script&gt;
                     </div>
                 </div>
                 <div class="q-16-example">
                     <h3>Example:</h3>
                     <div class="q-16-example-output">
-                        <!-- <script>
+                        &lt;script&gt;
                             window.location = "https://www.geeksforgeeks.org/"
-                        </script> -->
+                        &lt;/script&gt; 
                     </div>
                 </div>
                 
@@ -837,51 +821,43 @@
                     Step 1. Make a file called index.html as the first step. Add two buttons and a heading to it. One button forces the loading of a live URL while the other forces the loading of a local HTML page. Two functions are contained in the script> tag; one loads the gfg homepage, and the other uses the window.location property to load a local HTML page.
                 </p>
                 <div class="q-16-example-2">
-                    <!-- <!DOCTYPE html>
-                    <html lang="en">
-                      
-                    <head>
-                        <meta charset="UTF-8">
-                        <meta http-equiv="X-UA-Compatible"
-                            content="IE=edge">
-                        <meta name="viewport" content=
-                            "width=device-width, initial-scale=1.0">
-                    </head>
-                      
-                    <body>
-                        <h3>This is the original page</h3>
-                        <br>
-                      
-                        <button onclick="force_load_wikipedia()">
-                            Force Load wikipedia Page
-                        </button>
-                        <br><br>
-                      
-                        <button onclick="force_load_local()"> 
-                            Force Load Local HTML page
-                        </button>
-                      
-                        <script>
-                            function force_load_wekipedia() {
-                                window.location = 
-                                    "https://www.wikipedia.org/"
-                            }
-                      
-                            function force_load_local() {
-                                window.location = 
-                                    "F:/gfg/PageRedirect/newPage.html"
-                            }
-                        </script>
-                    </body>
-                      
-                    </html> -->
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;h3&gt;This is the original page&lt;/h3&gt;
+                        <br>
+
+                    &lt;button onclick="force_load_wikipedia()"&gt;Force Load wikipedia Page&lt;/button&gt;
+                    <br><br>
+                    
+                    &lt;button onclick="force_load_local()"&gt;Force Load Local HTML page&lt;/button&gt;
+                    <br>                    
+                    &lt;script&gt;
+                    function force_load_wekipedia() {
+                    window.location ="https://www.wikipedia.org/"
+                    }
+                    
+                    function force_load_local() {
+                    window.location ="F:/gfg/PageRedirect/newPage.html"
+                    }
+                    &lt;/script&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt; 
                 </div>
 
                 <p> 
                     <strong>Step 2:</strong> Make a newPage.html file. This is the local HTML page that Javascript would load.
                 </p>
                 <div class="q-16-example-3">
-                    <!-- <!DOCTYPE html>
+                     <!DOCTYPE html>
                     <html lang="en">
                       
                     <head>
@@ -896,7 +872,7 @@
                     <body>
                         <h3>This is the new loaded page</h3>
                     </body>
-                    </html> -->
+                    </html> 
                 </div>
         </div>
                     <!-- == Question- 16 End ==  -->
@@ -948,7 +924,7 @@
             </p>
             <div class="q-17-example-2">
 
-                <!-- <!DOCTYPE html> 
+                <!DOCTYPE html> 
                     <html> 
                         
                     <head> 
@@ -987,7 +963,7 @@
                 } 
                         </script> 
                 </body> 
-                </html> -->
+                </html> 
             </div>
         </div>
 
@@ -1018,7 +994,7 @@
                     And on clicking the checkbox it will show the characters: Welcome12@.
                 </div>
                 <div class="q-18-example-output-2">
-                    <!-- <!DOCTYPE html>
+                    <!DOCTYPE html>
                     <html lang="en">
                     <head>
                         <meta charset="UTF-8">
@@ -1061,7 +1037,7 @@
                         </script>
                     </body>
                     </html>
- -->
+
                 </div>
             </div>
         </div>
