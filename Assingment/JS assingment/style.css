@@ -553,33 +553,6 @@ table tr td {
     color: #fff;
     border-left: 5px solid orange;    
 }
-/* .q-9-example-output{
-    font-size: 3.5vmin;
-    color: #fff;
-    margin: 4vmin 3vmin;
-    height: -12vmin;
-    width: 130vmin;
-    background-color: #2267c8d2;
-    border-radius: 10px;
-    padding: 2vmin;
-    line-height: 5vmin;
-}
-.q-9-example-output h3{
-        margin: 0 4vmin;
-    padding: 1vmin 0;
-    color: #fff;
-}
-.q-9-example-output-code{
-    height: 10vmin;
-    width: 111vmin;
-    background-color: #fff;
-    padding: 0vmin;
-    margin: 5vmin;
-    padding: 1vmin 3vmin;
-    color: #144272;
-    border-left: 5px solid orange;
-
-} */
 ul {
     padding: 1.2vmin;
     margin: 3vmin;
