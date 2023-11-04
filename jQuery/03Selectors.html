@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-items">
+            <h2>jQuery Selectors:-</h2>
+            <h3>The $() factory function</h3>
+            <p>Every jQuery selector start with thiis sign $(). This sign is known as the factory function. It uses the
+                three basic building blocks while selecting an element in a given document. </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Selector</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>1 :</td>
+                        <td>Tag Name:</td>
+                        <td>It represents a tag name available in the DOM.<br> For example: $('p') selects all
+                            paragraphs'p'in the document.</td>
+                    </tr>
+                    <tr>
+                        <td>2 :</td>
+                        <td>Tag ID:</td>
+                        <td>It represents a tag available with a specific ID in the DOM.<br>For example: $('#real-id')
+                            selects a specific element in the document that has an ID of real-id.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3 :</td>
+                        <td>Tag Class:</td>
+                        <td>It represents a tag available with a specific class in the DOM.<br>For example:
+                            $('real-class') selects all elements in the document that have a class of real-class.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3> Different jQuery Selectors</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Example</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>$("*")</td>
+                        <td>It is used to select all elements.</td>
+                    </tr>
+                    <tr>
+                        <td>#id</td>
+                        <td>$("#firstname")</td>
+                        <td>It will select the element with id="firstname"</td>
+                    </tr>
+                    <tr>
+                        <td>.class</td>
+                        <td>$(".primary")</td>
+                        <td>It will select all elements with class="primary"</td>
+                    </tr>
+                    <tr>
+                        <td>class,.class</td>
+                        <td>$(".primary,.secondary")</td>
+                        <td>It will select all elements with the class "primary" or "secondary"</td>
+                    </tr>
+                    <tr>
+                        <td>element</td>
+                        <td>$("p")</td>
+                        <td>It will select all p elements.</td>
+                    </tr>
+                    <tr>
+                        <td>el1,el2,el3</td>
+                        <td>$("h1,div,p")</td>
+                        <td>It will select all h1, div, and p elements.</td>
+                    </tr>
+                    <tr>
+                        <td>:first</td>
+                        <td>$("p:first")</td>
+                        <td>This will select the first p element</td>
+                    </tr>
+                    <tr>
+                        <td>:last</td>
+                        <td>$("p:last")</td>
+                        <td>This will select he last p element</td>
+                    </tr>
+                    <tr>
+                        <td>:even</td>
+                        <td>$("tr:even")</td>
+                        <td>This will select all even tr elements</td>
+                    </tr>
+                    <tr>
+                        <td>:odd</td>
+                        <td>$("tr:odd")</td>
+                        <td>This will select all odd tr elements</td>
+                    </tr>
+                    <tr>
+                        <td>:first-child</td>
+                        <td>$("p:first-child")</td>
+                        <td>It will select all p elements that are the first child of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:first-of-type</td>
+                        <td>$("p:first-of-type")</td>
+                        <td>It will select all p elements that are the first p element of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:last-child</td>
+                        <td>$("p:last-child")</td>
+                        <td>It will select all p elements that are the last child of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:last-of-type</td>
+                        <td>$("p:last-of-type")</td>
+                        <td>It will select all p elements that are the last p element of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:nth-child(n)</td>
+                        <td>$("p:nth-child(2)")</td>
+                        <td>This will select all p elements that are the 2nd child of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:nth-last-child(n)</td>
+                        <td>$("p:nth-last-child(2)")</td>
+                        <td>This will select all p elements that are the 2nd child of their parent, counting from the
+                            last child</td>
+                    </tr>
+                    <tr>
+                        <td>:nth-of-type(n)</td>
+                        <td>$("p:nth-of-type(2)")</td>
+                        <td>It will select all p elements that are the 2nd p element of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:nth-last-of-type(n)</td>
+                        <td>$("p:nth-last-of-type(2)")</td>
+                        <td>This will select all p elements that are the 2nd p element of their parent, counting from
+                            the last child</td>
+                    </tr>
+                    <tr>
+                        <td>:only-child</td>
+                        <td>$("p:only-child")</td>
+                        <td>It will select all p elements that are the only child of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>:only-of-type</td>
+                        <td>$("p:only-of-type")</td>
+                        <td>It will select all p elements that are the only child, of its type, of their parent</td>
+                    </tr>
+                    <tr>
+                        <td>parent &gt; child</td>
+                        <td>$("div &gt; p")</td>
+                        <td>It will select all p elements that are a direct child of a div element</td>
+                    </tr>
+                    <tr>
+                        <td>parent descendant</td>
+                        <td>$("div p")</td>
+                        <td>It will select all p elements that are descendants of a div element</td>
+                    </tr>
+                    <tr>
+                        <td>element + next</td>
+                        <td>$("div + p")</td>
+                        <td>It selects the p element that are next to each div elements</td>
+                    </tr>
+                    <tr>
+                        <td>element ~ siblings</td>
+                        <td>$("div ~ p")</td>
+                        <td>It selects all p elements that are siblings of a div element</td>
+                    </tr>
+                    <tr>
+                        <td>:eq(index)</td>
+                        <td>$("ul li:eq(3)")</td>
+                        <td>It will select the fourth element in a list (index starts at 0)</td>
+                    </tr>
+                    <tr>
+                        <td>:gt(no)</td>
+                        <td>$("ul li:gt(3)")</td>
+                        <td>Select the list elements with an index greater than 3</td>
+                    </tr>
+                    <tr>
+                        <td>:lt(no)</td>
+                        <td>$("ul li:lt(3)")</td>
+                        <td>Select the list elements with an index less than 3</td>
+                    </tr>
+                    <tr>
+                        <td>:not(selector)</td>
+                        <td>$("input:not(:empty)")</td>
+                        <td>Select all input elements that are not empty</td>
+                    </tr>
+                    <tr>
+                        <td>:header</td>
+                        <td>$(":header")</td>
+                        <td>Select all header elements h1, h2 ...</td>
+                    </tr>
+                    <tr>
+                        <td>:animated</td>
+                        <td>$(":animated")</td>
+                        <td>Select all animated elements</td>
+                    </tr>
+                    <tr>
+                        <td>:focus</td>
+                        <td>$(":focus")</td>
+                        <td>Select the element that currently has focus</td>
+                    </tr>
+                    <tr>
+                        <td>:contains(text)</td>
+                        <td>$(":contains('Hello')")</td>
+                        <td>Select all elements which contains the text "Hello"</td>
+                    </tr>
+                    <tr>
+                        <td>:has(selector)</td>
+                        <td>$("div:has(p)")</td>
+                        <td>Select all div elements that have a p element</td>
+                    </tr>
+                    <tr>
+                        <td>:empty</td>
+                        <td>$(":empty")</td>
+                        <td>Select all elements that are empty</td>
+                    </tr>
+                    <tr>
+                        <td>:parent</td>
+                        <td>$(":parent")</td>
+                        <td>Select all elements that are a parent of another element</td>
+                    </tr>
+                    <tr>
+                        <td>:hidden</td>
+                        <td>$("p:hidden")</td>
+                        <td>Select all hidden p elements</td>
+                    </tr>
+                    <tr>
+                        <td>:visible</td>
+                        <td>$("table:visible")</td>
+                        <td>Select all visible tables</td>
+                    </tr>
+                    <tr>
+                        <td>:root</td>
+                        <td>$(":root")</td>
+                        <td>It will select the document's root element</td>
+                    </tr>
+                    <tr>
+                        <td>:lang(language)</td>
+                        <td>$("p:lang(de)")</td>
+                        <td>Select all p elements with a lang attribute value starting with "de"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute]</td>
+                        <td>$("[href]")</td>
+                        <td>Select all elements with a href attribute</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute=value]</td>
+                        <td>$("[href='default.htm']")</td>
+                        <td>Select all elements with a href attribute value equal to "default.htm"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute!=value]</td>
+                        <td>$("[href!='default.htm']")</td>
+                        <td>It will select all elements with a href attribute value not equal to "default.htm"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute$=value]</td>
+                        <td>$("[href$='.jpg']")</td>
+                        <td>It will select all elements with a href attribute value ending with ".jpg"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute|=value]</td>
+                        <td>$("[title|='Tomorrow']")</td>
+                        <td>Select all elements with a title attribute value equal to 'Tomorrow', or starting with
+                            'Tomorrow' followed by a hyphen</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute^=value]</td>
+                        <td>$("[title^='Tom']")</td>
+                        <td>Select all elements with a title attribute value starting with "Tom"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute~=value]</td>
+                        <td>$("[title~='hello']")</td>
+                        <td>Select all elements with a title attribute value containing the specific word "hello"</td>
+                    </tr>
+                    <tr>
+                        <td>[attribute*=value]</td>
+                        <td>$("[title*='hello']")</td>
+                        <td>Select all elements with a title attribute value containing the word "hello"</td>
+                    </tr>
+                    <tr>
+                        <td>:input</td>
+                        <td>$(":input")</td>
+                        <td>It will select all input elements</td>
+                    </tr>
+                    <tr>
+                        <td>:text</td>
+                        <td>$(":text")</td>
+                        <td>It will select all input elements with type="text"</td>
+                    </tr>
+                    <tr>
+                        <td>:password</td>
+                        <td>$(":password")</td>
+                        <td>It will select all input elements with type="password"</td>
+                    </tr>
+                    <tr>
+                        <td>:radio</td>
+                        <td>$(":radio")</td>
+                        <td>It will select all input elements with type="radio"</td>
+                    </tr>
+                    <tr>
+                        <td>:checkbox</td>
+                        <td>$(":checkbox")</td>
+                        <td>Itwill select all input elements with type="checkbox"</td>
+                    </tr>
+                    <tr>
+                        <td>:submit</td>
+                        <td>$(":submit")</td>
+                        <td>It will select all input elements with type="submit"</td>
+                    </tr>
+                    <tr>
+                        <td>:reset</td>
+                        <td>$(":reset")</td>
+                        <td>It will select all input elements with type="reset"</td>
+                    </tr>
+                    <tr>
+                        <td>:button</td>
+                        <td>$(":button")</td>
+                        <td>It will select all input elements with type="button"</td>
+                    </tr>
+                    <tr>
+                        <td>:image</td>
+                        <td>$(":image")</td>
+                        <td>It will select all input elements with type="image"</td>
+                    </tr>
+                    <tr>
+                        <td>:file</td>
+                        <td>$(":file")</td>
+                        <td>It will select all input elements with type="file"</td>
+                    </tr>
+                    <tr>
+                        <td>:enabled</td>
+                        <td>$(":enabled")</td>
+                        <td>Select all enabled input elements</td>
+                    </tr>
+                    <tr>
+                        <td>:disabled</td>
+                        <td>$(":disabled")</td>
+                        <td>It will select all disabled input elements</td>
+                    </tr>
+                    <tr>
+                        <td>:selected</td>
+                        <td>$(":selected")</td>
+                        <td>It will select all selected input elements</td>
+                    </tr>
+                    <tr>
+                        <td>:checked</td>
+                        <td>$(":checked")</td>
+                        <td>It will select all checked input elements</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
