@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <button onclick="btnClick()">Click</button>
+    <ol id="dispData">
+    <script>
+        
+        function btnClick() {
+        fetch("https://api.opencagedata.com/geocode/v1/json?q=${ahmedabad}&key=faed4d9eb29d483a866000c901ccb680").then((res)=>res.json()).then((result)=>{
+            // console.log(result);
+            HTMLList = "";
+            result.results.forEach(element => {
+                console.log(element);
+                // console.log(element.title);
+                HTMLList += `<li>${element.title}</li>`;
+            });
+            document.getElementById("dispData").innerHTML=HTMLList
+        })
+    }
+    </script>
+
+</body>
+</html>
