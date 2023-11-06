@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Button jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .box {
+            line-height: 100px;
+            background-color: rgb(0, 11, 128);
+            color: white;
+        }
+
+        .disp-none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <!-- bottons   -->
+    <button id="btnjqadd">Click add jQuery</button>
+    <button id="btnjqremove">Click remove jQuery</button>
+    <button id="btnjqtoggle">Click toggle jQuery</button>
+    <button id="btnjs">Click JavaScript Add Class</button>
+    <button id="btnjsremove">Click JavaScript Remove Class</button>
+    <button id="btnjstoggle">Click JavaScript Toggle Class</button>
+
+    <!-- manu box -->
+     
+    <div class="box" id="box">
+        <h2>Menu</h2>
+    </div>
+
+
+    <script>
+        // jQuery
+
+        $("#btnjqadd").on("click", function () {
+            // console.log("jQuery called");
+            $("#box").addClass("disp-none")
+        })
+        $("#btnjqremove").on("click", function () {
+            // console.log("jQuery called");
+            $("#box").removeClass("disp-none")
+        })
+        $("#btnjqtoggle").on("click", function () {
+            // console.log("jQuery called");
+            $("#box").toggleClass("disp-none")
+        })
+        
+        // javascript
+
+
+        document.getElementById("btnjs").addEventListener("click", function () {
+            document.getElementById("box").classList.add("disp-none")
+        });
+
+        document.getElementById("btnjsremove").addEventListener("click", function () {
+            document.getElementById("box").classList.remove("disp-none")
+        });
+
+        document.getElementById("btnjstoggle").addEventListener("click", function () {
+            document.getElementById("box").classList.toggle("disp-none")
+        });
+    </script>
+</body>
+</html>
