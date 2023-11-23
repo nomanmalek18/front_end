@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1a39;
+}
+
+.img-logo {
+    height: 15vmin;
+    margin: 40px 0px 0px 35px;
+
+}
+
+.container {
+    width: 150vmin;
+    height: auto;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
