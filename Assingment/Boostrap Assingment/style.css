@@ -25,3 +25,69 @@ body {
     padding: 10px;
     border-radius: 25px;
 }
+
+/* == Question- 1 Start == */
+.question-1 {
+    padding: 25px;
+    margin: 5px;
+}
+
+.question-1 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+
+.question-1 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.question-1 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
+
+/* == Question- 3 Start == */
+
+.question-3 {
+    padding: 25px;
+    margin: 5px;
+}
+
+.question-3 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+
+.question-3 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
+
+
+.question-3 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+
+}
+.question-3 ul {
+    padding: 1.2vmin;
+    margin: 3vmin;
+}
+
+.question-3 li {
+    list-style-type: none;
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+
+}
+
