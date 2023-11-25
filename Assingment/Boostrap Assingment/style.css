@@ -51,6 +51,75 @@ body {
     margin: 0 3vmin;
 }
 
+
+/* == Question- 2 Start == */
+.question-2 {
+    padding: 25px;
+    margin: 5px;
+}
+
+.question-2 h2 {
+    font-size: 5vmin;
+    color: #27374D;
+    margin-bottom: 1.8vmin;
+    margin-top: 5vmin;
+}
+
+.question-2 p {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 5vmin;
+}
+
+.question-2 h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
+
+
+table {
+    border: 1px solid #144272;
+    border-collapse: collapse;
+    margin-bottom: 8vmin;
+}
+
+table tr th {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+table tr td {
+    border: 1px solid #000;
+    font-size: 3vmin;
+    color: #144272;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+
+.question-2 ul {
+    border: 2vmin solid #144272;
+    padding: 1.2vmin;
+    margin: 3vmin;
+    background-color: honeydew;
+}
+
+.question-2 li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+
+}
+
+
+
+
 /* == Question- 3 Start == */
 
 .question-3 {
@@ -79,15 +148,15 @@ body {
 
 }
 .question-3 ul {
+    border: 2vmin solid #144272;
     padding: 1.2vmin;
     margin: 3vmin;
+    background-color: honeydew;
 }
 
 .question-3 li {
-    list-style-type: none;
     font-size: 3vmin;
     color: #144272;
     margin: 1.5vmin 7vmin 0 7vmin;
 
 }
-
