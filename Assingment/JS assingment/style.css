@@ -46,7 +46,7 @@ body {
 }
 
 .question-1 ul {
-    /* border: 2vmin solid #144272; */
+    border: 2vmin solid #144272;
     padding: 1.2vmin;
     margin: 3vmin;
     /* background-color: honeydew; */
