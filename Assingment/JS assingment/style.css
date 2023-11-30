@@ -675,7 +675,7 @@ li {
 .q-11-syntax-output-2{
     height: 28vmin;
     width: 111vmin;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 0vmin;
     margin: 5vmin;
     padding: 1vmin 3vmin;
