@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(41, 101, 241);
 
 }
-.container{
+
+.container {
     width: 150vmin;
     height: auto;
     background-color: #fff;
@@ -18,34 +20,40 @@ body{
     padding: 10px;
     border-radius: 25px;
 }
+
 .img-logo {
     height: 15vmin;
-    margin:40px 0px 0px 35px;
+    margin: 40px 0px 0px 35px;
 }
-                                        /* == CSS-introduction Start == */
 
-.CSS-introduction{    
+/* commen css Start */    /* == container-items Start == */
+
+.container-items {
     padding: 25px;
     margin: 5px;
 }
-.CSS-introduction h2 {
+
+.container-items h2 {
     font-size: 5vmin;
     color: #27374D;
     transition: 2s;
-    margin-bottom:  1.8vmin;
+    margin-bottom: 1.8vmin;
     margin-top: 5vmin;
 }
 
-.CSS-introduction p {
+.container-items p {
     font-size: 3vmin;
     color: #144272;
     margin: 1.5vmin 5vmin;
 }
-.CSS-introduction h3 {
+
+.container-items h3 {
     font-size: 3vmin;
     color: #144272;
     margin: 0 3vmin;
 }
+
+
 .example {
     font-size: 3vmin;
     color: #fff;
@@ -55,6 +63,7 @@ body{
     background-color: #27374D;
     border-radius: 5px;
 }
+
 .example h3 {
     margin: 0 4vmin;
     padding: 3vmin 0;
@@ -75,27 +84,28 @@ body{
     color: #144272;
     border-left: 5px solid orange;
 }
-.CSS-introduction ul {
+
+.container-items ul {
     margin: 1.5vmin 5vmin;
-    /* border: 2vmin solid #144272;  */
-    /* padding: 1.2vmin; */
+    border: 2vmin solid #144272; 
+    padding: 1.2vmin;
     /* margin: 3vmin; */
-    /* background-color: honeydew; */
+    background-color: honeydew;
 }
-.CSS-introduction li {
+
+.container-items li {
     font-size: 3vmin;
     color: #144272;
     margin: 1.5vmin 7vmin 0 7vmin;
 
 }
-                                        /* == CSS-introduction End == */
-                                        /* == Way-To-Adopt-CSS Start == */
 
-.Way-To-Adopt-CSS{
-    padding: 25px;
-    margin: 5px;
-}
-.example-internal-css{
+/* == container-items End == */
+/* == container-items Start == */
+
+
+
+.example-internal-css {
     font-size: 3vmin;
     color: #fff;
     margin: 4vmin 3vmin;
@@ -104,6 +114,7 @@ body{
     background-color: #27374D;
     border-radius: 5px;
 }
+
 .example-internal-css h3 {
     margin: 0 4vmin;
     padding: 3vmin 0;
@@ -113,11 +124,13 @@ body{
 .example-internal-css p {
     color: #fff;
 }
+
 .example-heading {
     font-size: 3vmin;
     color: #144272;
     margin: 2vmin 3vmin;
 }
+
 .box-internal {
     height: 18vmin;
     width: 120vmin;
@@ -128,36 +141,49 @@ body{
     color: #144272;
     border-left: 5px solid orange;
 }
-                                        /* == Way-To-Adopt-CSS End == */
-                                        /* == priorities Start == */
-.priorities{
+
+/* == container-items End == */
+/* == priorities Start == */
+/* == display-intro Start == */
+.display-intro {
     padding: 25px;
-    margin: 5px;    
+    margin: 5px;
 }
-.priorities h2{
+
+.display-intro h2 {
     font-size: 5vmin;
-    margin-bottom:  1.8vmin;
+    color: #27374D;
+    transition: 2s;
+    margin-bottom: 1.8vmin;
     margin-top: 5vmin;
 }
-.priorities p {
+
+.display-intro p {
     font-size: 3vmin;
+    color: #144272;
     margin: 1.5vmin 5vmin;
 }
-                                        /* == priorities End == */
-                                        /* == universal-selector Start == */
-                                        /* == universal-selector End == */
 
-                                        /* == elm-selectoer Start == */
-                                        /* == elm-selectoer End == */
+.container-items h3 {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 0 3vmin;
+}
 
-                                        /* == id-secetor Start == */
-                                        /* == id-secetor End == */
 
-                                        /* ==  Start == */
-                                        /* ==  End == */
+.container-items ul {
+    /* margin: 1.5vmin 5vmin; */
+    /* border: 2vmin solid #144272;  */
+    padding: 1.2vmin;
+    margin: 3vmin;
+    background-color: honeydew;
+}
 
-                                        /* ==  Start == */
-                                        /* ==  End == */
-                                        
-                                        /* ==  Start == */
-                                        /* ==  End == */
+.container-items li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+
+}
+
+/* == display-intro End == */
