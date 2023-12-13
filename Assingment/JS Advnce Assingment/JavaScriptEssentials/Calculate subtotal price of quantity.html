@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate subtotal price of quantity in JavaScript?
+    </title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        #list_of_quantity, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #list_of_quantity  tr  td {
+            padding: 10px;
+        } 
+
+        #list_of_quantity  tr  .btn button {
+            color: #fff;
+            background-color: orangered;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: .3s linear;
+        }
+        #list_of_quantity  tr  .btn button:hover {
+           background-color: orange;
+        }
+
+        #list_of_quantity tr td img {
+            border-radius: 50%;
+        }
+        
+        #list_of_quantity tr td input {
+            width: 100px;
+            height: 20px;
+            outline: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table id="list_of_quantity">
+            <tr id="first">
+                <td>Product Info</td>
+                <td>Quantity</td>
+                <td>Price (per unit)</td>
+                <td>Price (subtotal)</td>
+                <td></td>
+            </tr>
+            <tr id="second">
+                <td><img src="https://m.media-amazon.com/images/I/71YvEbfWGUL.jpg" alt="" width="50px"><p>Fortunata Window Hardware - Decorative Holdbacks - Mocha</p></td>
+                <td><input type="number" id="quantity_1" onkeyup="quantityfunc(this)"></td>
+                <td class="PriceU" onkeyup="pricefunc(this)"></td>
+                <td class="PriceS"></td>
+                <td class="btn"><button onclick="funcbtn(this)">Remove</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHe1180-cjgv1CQHTMJV0yTBdyho2l-frCy4ePWQnn6CijH3mivW2GsmmIPnT4dBK_8t4&usqp=CAU" alt="" width="50pxs"><p>Woven Trellis Window Hardware - Clip Rings - Bronze</p></td>
+                <td><input type="number" id="quantity_1" onkeyup="quantityfunc2(this)"></td>
+                <td class="PriceU2" onkeyup="pricefunc2(this)" ></td>
+                <td class="PriceS2"></td>
+                <td class="btn"><button>Remove</button></td>
+            </tr>
+
+            <tr id="fourth-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="Subtotal"></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        let total = document.getElementById('quantity_1');
+        // console.log(total)
+        let price = document.getElementsByClassName('PriceU');
+        let tprice = price[0].innerHTML = Number(29.99);
+        let subtotal = document.getElementsByClassName('PriceS');
+        // console.log(price)
+        function quantityfunc(q) {
+            let pricevalue = q.parentElement.parentElement.children[1].children[0].value;
+            subtotal = q.parentElement.parentElement.children[3].innerHTML = q.value * tprice
+            console.log(q.value * tprice)
+        }
+
+        let total2 = document.getElementById('quantity_2');
+        let price2 = document.getElementsByClassName('PriceU2');
+        let tprice2 = price2[0].innerHTML = Number(12.99)
+        let subtotal2 = document.getElementsByClassName('PriceS2');
+        
+        function quantityfunc2(q2) {
+            let pricevalue = q2.parentElement.parentElement.children[1].children[0].value;
+            subtotal2 = q2.parentElement.parentElement.children[3].innerHTML = q2.value * tprice2
+            console.log(q2.value * tprice2)
+        }
+
+        let remove = document.querySelectorAll('.btn button');
+        // console.log(remove)
+
+        funcbtn(0)
+        function funcbtn(r) {
+            let removeq= document.getElementById('quantity_1').value;
+           let ral =  removeq.innerTEXT = 0;
+           console.log(ral);
+            // console.log(removeq);
+        }
+        
+    </script>
+</body>
+</html>

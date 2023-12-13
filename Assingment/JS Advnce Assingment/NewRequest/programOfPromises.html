@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>● Write a program of promises and handle that promises also
+    </title>
+</head>
+<body>
+    <script>
+        //  Program with a Promise
+        const count = true;
+        let countValue = new Promise(function (resolve, reject) {
+            if (count) {
+                resolve("There is a count value.");
+            } else {
+                reject("There is no count value");
+            }
+        });
+        // Promise {<resolved>: "There is a count value."}
+
+            /*  A Promise object is created in the aforementioned software and has the two functions resolve() and reject(). If the procedure is successful, resolve() is used, while reject() is used if the promise contains an error.
+
+           If count has a value of true, the promise is fulfilled.
+
+  */
+
+  //  JavaScript Promise Chaining
+
+     /* When you need to manage multiple asynchronous tasks sequentially, promises come in handy. We employ promise chaining for this.
+
+  */
+
+    /*  Using the methods then(), catch(), and finally(), you can carry out an action after a promise has been fulfilled.
+  */
+
+  // JavaScript then() method
+
+  /*  When the promise is accepted or resolved, the callback and the then() method are used.
+  */
+
+  // The syntax of then() method is:
+
+  promiseObject.then(onFulfilled, onRejected);
+
+// Chaining the Promise with then()
+
+// returns a promise
+
+let countValue2 = new Promise(function (resolve, reject) {
+  resolve("Promise resolved");
+});
+
+// executes when promise is resolved successfully
+
+countValue2 
+  .then(function successValue(result) {
+    console.log(result);
+  })
+
+  .then(function successValue1() {
+    console.log("You can call multiple functions this way.");
+  });
+
+console.log(countValue2);
+
+// Output
+// Promise resolved
+ // You can call multiple functions this way.
+
+ //  then() method is used in the program above to link the functions to the promise. When the promise is fulfilled, the then() method is invoked.
+
+ // The promise allows you to use several then() methods in a chain.
+
+ // JavaScript catch() method
+/* When the promise is declined or if an error happens, the callback and the catch() function are both used. For instance,
+*/
+
+// returns a promise
+let countValue3 = new Promise(function (resolve, reject) {
+   reject('Promise rejected'); 
+});
+
+// executes when promise is resolved successfully
+countValue3.then(
+    function successValue(result) {
+        console.log(result);
+    },
+ )
+
+// executes if there is an error
+.catch(
+    function errorValue(result) {
+        console.log(result);
+    }
+); // Promise rejected
+
+
+// The pledge is turned down in the aforementioned show. In order to handle the error, the catch() method is utilized together with a promise.
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
