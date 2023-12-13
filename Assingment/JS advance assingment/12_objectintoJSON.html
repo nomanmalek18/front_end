@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn the object into JSON and back Turn the user into JSON and then read it back into another variable.</title>
+</head>
+<body>
+    <script>
+        
+        //   let  user = {
+        //     name: "John Smith", 
+        //     age: 35
+
+        //     toString() {
+        //         return `{name: "${this.name}", age: ${this.age}}`;
+        //     }
+        // };
+        // alert(user); // {name: "John", age: 30}
+
+        let student = {
+            name: 'John',
+            age: 30,
+            isAdmin: false,
+            courses: ['html', 'css', 'js'],
+            spouse: null
+        };
+
+        let json = JSON.stringify(student);
+        alert(typeof json); // we've got a string!
+
+        alert(json);
+
+    </script>
+</body>
+</html>
