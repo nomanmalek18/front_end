@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assingment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/jquery-Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="images/jquery-original-wordmark.242x256.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- question-1 Start  -->
+
+        <div class="question-1">
+            <h2>1:- What is jQuery?</h2>
+            <p>
+                jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+                traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API
+                that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery
+                has changed the way that millions of people write JavaScript.
+            </p>
+        </div>
+
+        <!-- question-1 End  -->
+        <!-- question-2 Start -->
+
+        <div class="question-2">
+            <h2>2:- How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+                Jquery, JQuery Animation?</h2>
+            <p>
+                We can use jquery’s .css() method to apply CSS style on the given webpage. jQuery is a javascript
+                library that helps us manipulate the DOM easily and efficiently using its various helper methods and
+                properties. It allows us to add interactivity to the DOM as well as add and change the CSS styles of the
+                DOM elements.
+            </p>
+
+            <h3>Syntax:-</h3>
+            <div class="syntax">
+                <p>$(selector).css(property, value)</p>
+            </div>
+            <h3>or</h3>
+            <div class="syntax">
+                <p>$(selector).css({ property: value, property: value, … })</p>
+            </div>
+
+            <p>JQuery css() method accepts either an argument of type object, with key as the CSS property name and
+                value as the desired property value to be set to, or just a pair of comma-separated CSS property name
+                and value.</p>
+
+            <P>Let’s understand how to use the css() method, by jQuery, to apply styles to the HTML elements with the
+                help of some suitable examples.</p>
+
+
+            <h3>Example 1</h3>
+            <p>In this example, we will change the text color of the “p” tag after clicking the button using css()
+                jQuery method.</p>
+
+            <div class="example-1">
+
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                <br>
+                &lt;head&gt;<br>
+                &lt;script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+                integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+                crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+                &lt;title&gt;How to apply CSS style using jQuery?&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                &lt;p class="sample"&gt;This is p tag content!&lt;/p&gt;<br>
+                &lt;button&gt;Click here!&lt;/button&gt;<br>
+                &lt;script&gt;<br>
+                const button = document.getElementsByTagName('button')[0]<br>
+                button.addEventListener('click', function () {<br>
+                $('p').css('color', 'red')<br>
+                })<br>
+                &lt;/script&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;<br>
+                <div class="exmple-box-print">
+                    &lt;p&gt;this is a tag content!&lt;/p&gt; <br><br>
+                    <button value="button">click here!</button>
+                </div>
+            </div>
+
+            <h3>addClass() and removeClass() method jQuery :- </h3>
+            <ul>
+                <li>addClass() method: It is used to add specified classes to each of the targeted elements while
+                    animating all style changes.</li>
+            </ul>
+            <h3>syntax :- jquery addClass()</h3>
+            <div class="syntax">
+                <p>.addClass(className, [duration], [easing], [callback])</p>
+            </div>
+            <ul>
+                <li>removeClass() method: It is used to remove the classes from the element while animating all style
+                    changes.</li>
+            </ul>
+            <h3>syntax :- jquery removeClass()</h3>
+            <div class="syntax">
+                <p>.removeClass(className, [duration], [easing], [callback])</p>
+            </div>
+            <h3>Example:-</h3>
+            <div class="example-2">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt; <br>
+                <br>
+                &lt;head&gt;<br>
+
+                &lt;style&gt;<br>
+                #btn {<br>
+                padding: 10px 8px;<br>
+                color: green;<br>
+                background-color: rgba(122, 122, 122, 0.322);<br>
+                border-radius: 12px;<br>
+                }<br>
+                <br>
+                .geeks {<br>
+                font-size: 40px;<br>
+                color: green;<br>
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;<br>
+                text-shadow: 2px 2px 4px #880a0a;<br>
+                letter-spacing: 2px;<br>
+                }<br>
+                &lt;/style&gt;<br>
+                <!-- JQuery CDN  -->
+                &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"&gt;<br>
+                &lt;/script&gt;<br>
+                <br>
+                <!-- JQuery UI CDN  -->
+                &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"&gt;<br>
+                &lt;/script&gt; <br>
+                <br>
+                &lt;script&gt; <br>
+                $(document).ready(function () {<br>
+                $("#btn").click(function () {<br>
+                $("h2").addClass("geeks", 2000, myCallback);<br>
+                });<br>
+                function myCallback() {<br>
+                setTimeout(function () {<br>
+                $("h2").removeClass("geeks");<br>
+                }, 3000);<br>
+                }<br>
+                }); <br>
+                &lt;/script&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                &lt;h2&gt;Welcome to GeeksForGeeks.&gt;/h2&gt;<br>
+                &lt;button id="btn"&gt;<br>
+                Click to see the effect&gt;/button&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;<br>
+
+                <div class="example-2-output">
+                    <p>Welcome to GeeksForGeeks.</p>
+                    <button value="button">Click to see the effect</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- question-2 End  -->
+        <!-- question-3 Start -->
+
+        
+        </div>
+
+        <!-- question-3 End  -->
+        <!-- question-4 Start -->
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-bg{
+    background-color: #202020;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.col-50{
+    padding-right: 50px;
+    width: 50%;
+    position: relative;
+}
+.col-50 h1{
+
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #f4f5f9;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    padding: 40px 0;
+}
+.text h2{
+    font-size: 18px;
+    line-height: 29px;
+    color: #e74c3c;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: right;
+    padding: 20px 0;
+}
+.text p{
+    font-size: 14px;
+    line-height: 29px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    text-align: right;
+}
+.possession-ab{
+    position: absolute;
+    left: 605px;
+    top: 175px;
+}
+.img {
+    width: 50px;
+    border-radius: 35px;
+}
+.logo-2 {
+    top: 300px;
+}
+.logo-3{
+    top: 433px;
+}
+.col50 {
+    width: 50%;
+}
+.bg-img{
+    width: 100%;
+}

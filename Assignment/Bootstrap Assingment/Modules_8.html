@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/icon-img.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- container Start -->
+    <div id="img">
+      <img src="images/pngwing.com.png" class="img-logo" alt="" srcset="">
+    </div>
+
+    <!-- == Question- 1 Start ==  -->
+
+    <div class="question-1">
+      <h2>1:- What are the advantages of Bootstrap?</h2>
+      <p>
+        Bootstrap is a collection of CSS and JavaScript files that can be used for web design. It has many
+        advantages, including
+      </p>
+      <h3>Responsive:-</h3>
+      <p>Bootstrap helps create websites that adapt to different devices, platforms, and screen sizes.</p>
+
+      <h3>Browser compatibility</h3>
+      <p>Bootstrap can make websites accessible across different browsers, which can help reduce bounce rate and
+        improve search results.</p>
+
+      <h3>Customizable</h3>
+      <p>Bootstrap is a popular platform that includes CSS, HTML, and JS frameworks. It also offers ready-made
+        components and styles that can be customized.</p>
+
+      <h3>Fast development</h3>
+      <p>Bootstrap has an HTML and CSS based structure design template for easy web development.</p>
+
+      <h3>Integration</h3>
+      <p>Bootstrap can be integrated with other platforms and frameworks, and can also be used with existing CSS.
+      </p>
+    </div>
+    <!-- == Question- 1 End ==  -->
+    <!-- == Question- 2 Start ==  -->
+
+    <div class="question-2">
+      <h2>2:- How to create slider with animation?</h2>
+      <p>Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a
+        given device or viewport.</p>
+      <p>Containers are the most basic layout element in Bootstrap and are required when using our default grid system.
+        Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be
+        nested, most layouts do not require a nested container.</p>
+
+      <h3>Bootstrap comes with three different containers:</h3>
+      <ul>
+        <li>.container, which sets a max-width at each responsive breakpoint</li>
+        <li>.container-fluid, which is width: 100% at all breakpoints</li>
+        <li>.container-{breakpoint}, which is width: 100% until the specified breakpoint</li>
+      </ul>
+
+      <p>The table below illustrates how each container’s max-width compares to the original .container and
+        .container-fluid across each breakpoint.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">
+              Extra small<br>
+              <span>&lt;576px</span>
+            </th>
+            <th scope="col">
+              Small<br>
+              <span>≥576px</span>
+            </th>
+            <th scope="col">
+              Medium<br>
+              <span>≥768px</span>
+            </th>
+            <th scope="col">
+              Large<br>
+              <span>≥992px</span>
+            </th>
+            <th scope="col">
+              X-Large<br>
+              <span>≥1200px</span>
+            </th>
+            <th scope="col">
+              XX-Large<br>
+              <span>≥1400px</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>.container</code></th>
+            <td>100%</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-sm</code></th>
+            <td>100%</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-md</code></th>
+            <td>100%</td>
+            <td>100%</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-lg</code></th>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-xl</code></th>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-xxl</code></th>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>.container-fluid</code></th>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- == Question- 2 End ==  -->
+    <!-- == Question- 3 Start ==  -->
+    <div class="question-3">
+
+      <h2>3:- What are the default Bootstrap text settings?</h2>
+
+      <p><b>Bootstrap 5</b> Text font size is used to set the text font size. We all know that we have 6 different
+        header tags, and depending on that we have 6 classes to set the font size. Heading class applies
+        font-size, font-weight and line-height properties.</p>
+
+      <h3>Text Font size classes:</h3>
+
+      <ul>
+        <li>fs-1: This class is used to set the text size equal to the h1 tag.</li>
+        <li>fs-2: This class is used to set the text size equal to the h2 tag.</li>
+        <li>fs-3: This class is used to set the text size equal to the h3 tag.</li>
+        <li>fs-4: This class is used to set the text size equal to the h4 tag.</li>
+        <li>fs-5: This class is used to set the text size equal to the h5 tag.</li>
+        <li>fs-6: This class is used to set the text size equal to the h6 tag.</li>
+      </ul>
+    </div>
+    <!-- == Question- 3 End ==  -->
+    <!-- == Question- 4 start ==  -->
+
+    <div class="question-4">
+      <h2>4:- What do you know about the Bootstrap Grid System?</h2>
+      <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built
+        with flexbox and is fully responsive. Below is an example and an in-depth explanation for how the grid system
+        comes together.</p>
+
+      <h3>How it works:-</h3>
+
+      <p> Our grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning
+        they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl). This
+        means you can control container and column sizing and behavior by each breakpoint.
+      </p>
+      <p>Containers center and horizontally pad your content. Use .container for a responsive pixel width,
+        .container-fluid for width: 100% across all viewports and devices, or a responsive container (e.g.,
+        .container-md) for a combination of fluid and pixel widths.
+      </p>
+      <p>Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the
+        space between them. This padding is then counteracted on the rows with negative margins to ensure the content
+        in your columns is visually aligned down the left side. Rows also support modifier classes to uniformly apply
+        column sizing and gutter classes to change the spacing of your content.
+      </p>
+      <p>Columns are incredibly flexible. There are 12 template columns available per row, allowing you to create
+        different combinations of elements that span any number of columns. Column classes indicate the number of
+        template columns to span (e.g., col-4 spans four). widths are set in percentages so you always have the same
+        relative sizing.
+      </p>
+      <p>Gutters are also responsive and customizable. Gutter classes are available across all breakpoints, with all
+        the same sizes as our margin and padding spacing. Change horizontal gutters with .gx-* classes, vertical
+        gutters with .gy-*, or all gutters with .g-* classes. .g-0 is also available to remove gutters.
+      </p>
+      <p>Sass variables, maps, and mixins power the grid. If you don’t want to use the predefined grid classes in
+        Bootstrap, you can use our grid’s source Sass to create your own with more semantic markup. We also include
+        some CSS custom properties to consume these Sass variables for even greater flexibility for you.
+      </p>
+
+      <h3>Grid options:-</h3>
+      <p>Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The
+        six default grid tiers are as follow:</p>
+      <ul>
+        <li>Extra small (xs)</li>
+        <li>Small (sm)</li>
+        <li>Medium (md)</li>
+        <li>Large (lg)</li>
+        <li>Extra large (xl)</li>
+        <li>Extra extra large (xxl)</li>
+      </ul>
+
+      <table class="table mb-4">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">
+              xs<br>
+              <span>&lt;576px</span>
+            </th>
+            <th scope="col">
+              sm<br>
+              <span>≥576px</span>
+            </th>
+            <th scope="col">
+              md<br>
+              <span>≥768px</span>
+            </th>
+            <th scope="col">
+              lg<br>
+              <span>≥992px</span>
+            </th>
+            <th scope="col">
+              xl<br>
+              <span>≥1200px</span>
+            </th>
+            <th scope="col">
+              xxl<br>
+              <span>≥1400px</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Container <code>max-width</code></th>
+            <td>None (auto)</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row">Class prefix</th>
+            <td><code>.col-</code></td>
+            <td><code>.col-sm-</code></td>
+            <td><code>.col-md-</code></td>
+            <td><code>.col-lg-</code></td>
+            <td><code>.col-xl-</code></td>
+            <td><code>.col-xxl-</code></td>
+          </tr>
+          <tr>
+            <th scope="row"># of columns</th>
+            <td colspan="6">12</td>
+          </tr>
+          <tr>
+            <th scope="row">Gutter width</th>
+            <td colspan="6">1.5rem (.75rem on left and right)</td>
+          </tr>
+          <tr>
+            <th scope="row">Custom gutters</th>
+            <td colspan="6"><a href="/docs/5.0/layout/gutters/">Yes</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Nestable</th>
+            <td colspan="6"><a href="#nesting">Yes</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Column ordering</th>
+            <td colspan="6"><a href="/docs/5.0/layout/columns/#reordering">Yes</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- == Question- 4 End ==  -->
+
+    <!-- == Question-5 Start == -->
+    <div class="question-5">
+      <h2>5:- What is the difference between Bootstrap 4 and Bootstrap 5</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>BASIS OF</th>
+            <th>BOOTSTRAP 4</th>
+            <th>BOOTSTRAP 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Grid System</strong></td>
+            <td>It has 5 tier (xs, sm, md, lg, xl).</td>
+            <td>It has 6 tier (xs, sm, md, lg, xl, xxl).</td>
+          </tr>
+          <tr>
+            <td><strong>Color</strong></td>
+            <td>It has limited colors.</td>
+            <td>Extra colors added with the looks, A card improved color palette. there are various shades available to
+              choose.</td>
+          </tr>
+          <tr>
+            <td><strong>Jquery</strong></td>
+            <td>It has jquery and all related plugins.</td>
+            <td>Jquery is removed and switched to vanilla JS with some working plugins</td>
+          </tr>
+          <tr>
+            <td><strong>Internet Explorer</strong></td>
+            <td>Bootstrap 4 supports both IE 10 and 11.</td>
+            <td>Bootstrap 5 doesn’t support IE 10 and 11.</td>
+          </tr>
+          <tr>
+            <td><strong>Form elements</strong></td>
+            <td>Radio buttons, checkboxes have different look in different OS and browsers. The form uses whatever
+              default browsers provide.</td>
+            <td>The look of form elements will not change, on different OS or browser. The forms can be customized and
+              form controls can be added, they would not depend on browser.&nbsp;</td>
+          </tr>
+          <tr>
+            <td><strong>Utilities API</strong></td>
+            <td>We cannot modify utilities in bootstrap 4</td>
+            <td>Bootstrap 5 gave freedom to modify and also create our own utility</td>
+          </tr>
+          <tr>
+            <td><strong>Gutter</strong></td>
+            <td>We use .glutter with fontsize in px</td>
+            <td>We use .g* with fontsize in rem</td>
+          </tr>
+          <tr>
+            <td><strong>Vertical Classes</strong></td>
+            <td>Columns can be positioned relative</td>
+            <td>Columns cannot be positioned relative</td>
+          </tr>
+          <tr>
+            <td><strong>Bootstrap Icons</strong></td>
+            <td>Bootstrap 4 doesn’t have its own SVG icons, we have to use font-awesome for icons.</td>
+            <td>Bootstrap 5 have its own SVG icons</td>
+          </tr>
+          <tr>
+            <td><strong>Jumbotron</strong></td>
+            <td>It supports.</td>
+            <td>It doesn’t support jumbotron.</td>
+          </tr>
+          <tr>
+            <td><strong>Card deck</strong></td>
+            <td>The card deck is used to create a set of cards with equal width and height.</td>
+            <td>Card deck class in removed in bootstrap</td>
+          </tr>
+          <tr>
+            <td><strong>Navbar</strong></td>
+            <td>We have inline-block property and we will get white dropdown as default for dropdown-menu-dark class.
+            </td>
+            <td>Inline-block property is removed and we will get black dropdown as default for dropdown-menu-dark class.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Static Site Generator</strong></td>
+            <td>Bootstrap 4 uses Jekyll software.</td>
+            <td>Bootstrap 5 uses Hugo software as it is fast static site generator.</td>
+          </tr>
+          <tr>
+            <td><strong>flexbox grid</strong></td>
+            <td>this makes easier to implement vertical designs, and the columns and rows can easily be implemented. the
+              classes justify-center-content can directly be used to align according to the requirement.</td>
+            <td>advanced grid system is made available , also columns don’t have relative positions. &nbsp;</td>
+          </tr>
+          <tr>
+            <td><strong>RTL Support</strong></td>
+            <td>It does not enable RTL(Right to Left) switching.</td>
+            <td>It enables RTL(Right to Left) switching.</td>
+          </tr>
+          <tr>
+            <td><strong>Offcanvas Component</strong></td>
+            <td>It does not support Offcanvas Component.</td>
+            <td>It supports Offcanvas Component(that is it is available now).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- == Question-5 End == -->
+    <!-- == Question-6 Start == -->
+
+    <div class="question-6">
+      <h2>6:- What is a Button Group, and what is the class for a basic Button Group?</h2>
+      <p>“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in
+        groups (without spaces) vertically or horizontally.</p>
+      <p><b>Syntax:-</b> This is the basic syntax of the button group class where each button has its own class of
+        “btn”.</p>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="btn-group"&gt;</p>
+        <p>&lt;button type="button" class="btn"&gt;Click&lt;/button&gt;</p>
+        <p>&lt;/div&gt;</p>
+      </div>
+      <p>Buttons have a default border-radius on the first and last buttons of the group.</p>
+      <p><b>Adding Styles on Buttons:</b> Bootstrap allows you to add styles to your buttons using the following
+        classes:</p>
+      <ul>
+        <li>.btn-default</li>
+        <li>.btn-primary</li>
+        <li>.btn-success</li>
+        <li>.btn-info</li>
+        <li>.btn-warning</li>
+        <li>.btn-danger</li>
+        <li>.btn-link</li>
+      </ul>
+    </div>
+    <!-- == Question-6 End == -->
+    <!-- == Question-7 Start == -->
+    <div class="question-7">
+      <h2>7:-How can you use Bootstrap to make thumbnails?</h2>
+
+      <p>With the use of Bootstrap, web designers may make thumbnails that are used to display connected photos in grids
+        with already established classes, cutting down on the length of the coding. In order to give users a quick
+        sample of photographs with small images, thumbnails were developed.</p>
+
+      <p>A <strong>thumbnail</strong> is a little image that serves as a representation of a larger image. Thumbnails in
+        Bootstrap make this simple to accomplish. To display connected images in grids (grid system),
+        Bootstrap's.thumbnail class is utilised. A thumbnail is produced using class.thumbnail within the element a>.
+        The classes.col-sm-* and.col-md-*, where * denotes a number, are used to arrange images into grids.</p>
+
+      <p><strong>Step-by-step instructions for implementation</strong></p>
+
+      <p><strong>Step 1:</strong> To load our CSS, include Bootstrap and jQuery CDN in the head> tag before any other
+        stylesheets.</p>
+      <p><strong>Step 2:</strong> Insert a div> tag with the class row in the HTML body. make four div sections in the
+        "div" to make four images.</p>
+      <p><strong>Step 3:</strong> To make a webpage responsive, add "col-sm-6" and "col-md-3" to four div parts.</p>
+      <p><strong>Step 4:</strong> To define the link to the image in the next line, add an a> tag with the class value
+        thumbnail. </p>
+
+
+
+    </div>
+    <!-- == Question-7 End == -->
+
+
+    <!-- == Question-8 Start == -->
+
+    <div class="question-8">
+      <h2>8:- In Bootstrap 4, what is flexbox?</h2>
+      <p>The Flexible Box Layout Module in bootstrap is used for designing the flexible and responsive layout structure.
+        It is used in Bootstrap 4.</p>
+      <ul>
+        <li>The d-flex class is used to create a simple flexbox container</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex p-2"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <ul>
+        <li>The d-inline-flex class is used to create an inline flexbox container</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-inline-flex p-2"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <ul>
+        <li>d-flex and .d-inline-flex can be used for all breakpoints(sm, md, lg, xl) like .d-sm-flex,
+          .d-sm-inline-flex, etc.</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-sm-flex p-2"&gt;&lt;/div&gt;</p>
+        <p>&lt;div class="d-sm-inline-flex p-2"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <p><b>Horizontal And Vertical Direction of Flexbox:</b> The direction of flex items can be positioned in a flex
+        container.</p>
+
+      <ul>
+        <li>To set a horizontal direction (the browser default) use .flex-row.</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex flex-row"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <ul>
+        <li>To start the horizontal direction from the opposite side use .flex-row-reverse. </li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex flex-row-reverse"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <ul>
+        <li>To set a vertical direction use .flex-column. </li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex flex-column"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+
+      <ul>
+        <li>To start the vertical direction from the opposite side use .flex-column-reverse.</li>
+      </ul>
+
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex flex-column-reverse"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <ul>
+        <li>Flex-direction can be used for all breakpoints(sm, md, lg, xl) like .flex-sm-row, flex-sm-row-reverse, etc.
+        </li>
+      </ul>
+      <h3>syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex flex-column-reverse"&gt;&lt;/div&gt;</p>
+        <p>&lt;div class="d-flex flex-column"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <p>Justify Content: In order to change the alignment of flex items, one can use the .justify-content-* classes.
+      </p>
+      <p>* can be any one of them start (default), end, center, between, or around.</p>
+      <p>Similarly, justify-content can be used for all breakpoints(sm, md, lg, xl) like .justify-content-sm-start,
+        .justify-content-sm-end, etc.
+      </p>
+
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="d-flex justify-content-start"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <h3>Filling of Widths of flex items:</h3>
+      <p>Flex items can be forced into equal widths by using the .flex-fill class.</p>
+      <p>.flex-fill can be used for all breakpoints(sm, md, lg, xl) like .flex-sm-fill, etc.</p>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 flex-fill"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <h3>Order:</h3>
+      <p>.order classes are used for changing the visualization order of a flex item. </p>
+      <p>Ordering is done on a number basis from 0 to 12. </p>
+      <p>0 has highest priority. </p>
+      <p>.order can be used for all breakpoints(sm, md, lg, xl) like .order-sm-0 to </p>
+      <p>.order-sm-12, etc.</p>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 order-4"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <h3>Automation of margins:</h3>
+
+      <ul>
+        <li>.mr-auto used to push items to the right.</li>
+        <li>.ml-auto used to push items to the left</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 mr-auto"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <h3>Wrapping of flex item:</h3>
+
+      <p>.flex-nowrap (default), </p>
+      <p>.flex-wrap and </p>
+      <p>.flex-wrap-reverse are used for wrapping the flex items in a flex container. </p>
+      <p>.flex-wrap can be used for all breakpoints(sm, md, lg, xl) </p>
+      <p>.flex-sm-nowrap, </p>
+      <p>.flex-sm-wrap</p>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 border"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <h3>Align Content:</h3>
+      <p>Basically, it is used for the vertical alignment of flex items.</p>
+      <p>align-content can be implemented in various ways. </p>
+      <ul>
+        <li>.align-content-start </li>
+        <li>.align-content-end </li>
+        <li>.align-content-center</li>
+        <li>.align-content-around</li>
+        <li>.align-content-stretch</li>
+        <li>.align-content-sm-start</li>
+        <li>Similarly for sm, md, lg, xl</li>
+      </ul>
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 align-content-start"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <h3>Align items:</h3>
+
+      <p>Use the align-items class to change the alignment of flex items on the cross axis. </p>
+      <p>align-items can be implemented in various ways.</p>
+
+      <ul>
+        <li>align-items-start </li>
+        <li>.align-items-end </li>
+        <li>.align-items-center</li>
+        <li>.align-items-baseline</li>
+        <li>.align-items-stretch</li>
+        <li>.align-items-sm-start</li>
+        <li>Similarly for sm, md, lg, xl</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 align-items-start"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+      <h3>Align self:</h3>
+
+      <p>align-self class can be used to change the alignment on the cross axis. </p>
+      <p>align-self can be implemented in various ways.</p>
+      <ul>
+        <li>align-self-start </li>
+        <li>align-self-end </li>
+        <li>align-self-center</li>
+        <li>align-self-around</li>
+        <li>align-self-stretch</li>
+        <li>align-self-sm-start</li>
+        <li>Similarly for sm, md, lg, xl</li>
+      </ul>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 align-self-center"&gt;&lt;/div&gt;</p>
+      </div>
+
+      <h3>Growing and Shrinking of available space:</h3>
+
+      <p>flex-grow-* is used to grow flex items to fill available space. </p>
+      <p>flex-shrink-* is used to shrink the flex item. </p>
+      <p>flex-grow and flex-shrink can be implemented as follows. </p>
+
+      <ul>
+        <li>flex-{grow|shrink}-0</li>
+      </ul>
+      <ul>
+        <li>flex-{grow|shrink}-1</li>
+      </ul>
+      <p>Similarly for sm, md, lg, xl</p>
+
+      <h3>Syntax:-</h3>
+      <div class="syntax">
+        <p>&lt;div class="p-2 flex grow-1"&gt;&lt;/div&gt;</p>
+      </div>
+
+
+    </div>
+    <!-- == Question-8 End == -->
+
+    <!-- == Question-9 Start == -->
+
+    <div class="question-9">
+      <h2>9:- How can one create an alert in Bootstrap?</h2>
+
+      <p>On some websites, we frequently come across particular notifications either before or after executing an
+        activity. These warning messages are highlighted text that needs to be considered when carrying out an activity.
+        These warning warnings can be shown on the website using pre-defined Bootstrap classes.</p>
+
+      <p> <strong>Approach:</strong> To display the alert message on a website, the.alert class is needed, then
+        contextual classes. There are eight different alert
+        classes:.alert-success,.alert-info,.alert-warning,.alert-danger,.alert-primary,.alert-secondary,.alert-light,
+        and.alert-dark. To make alert notification alerts in bootstrap, use.alert-warning.</p>
+
+      <p>The steps to construct a straightforward warning notice in Bootstrap are listed below.</p>
+      <p><strong>Step 1:</strong> To load our CSS, include Bootstrap and jQuery CDN in the head> tag before any other
+        stylesheets. </p>
+      <p><strong>Step 2:</strong> Include the.alert and.alert-warning contextual classes in your code.</p>
+
+      <div style="background-color: lightgrey; padding: 10px; border-radius: 3px;">
+        &lt;div class="alert alert-warning" role="alert"&gt; <br>
+        A simple warning alert—check it out! <br>
+        &lt;/div&gt; <br>
+      </div>
+      <br>
+
+      <div style="background-color: lightgrey; padding: 10px; border-radius: 3px; ">
+        &lt;html&gt; <br>
+        &lt;head&gt; <br>
+        &lt;title>Warning Alerts&lt;/title&gt;<br>
+        &lt;meta charset="utf-8" /&gt;<br>
+        &lt;link<br>
+        rel="stylesheet"<br>
+        href=<br>
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        /&gt;<br>
+        &lt;script src= <br>
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt; br <br>
+        &lt;/script&gt; <br>
+        &lt;script src=<br>
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"&gt;<br>
+        &lt;/script&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;div class="container py-5"&gt;<br>
+        &lt;h4 class="text-center text-uppercase"&gt;<br>
+        Bootstrap 5 warning messages<br>
+        &lt;/h4&gt;<br>
+        &lt;h6&gt;Basic Warning alert&lt;/h6&gt;<br>
+        &lt;div class="alert alert-warning"&gt;<br>
+        &lt;strong&gt;Warning!&lt;/strong&gt;<br>
+        There was a problem with connection.<br>
+        &lt;/div&gt;<br>
+        &lt;h6&gt;Warning alert with link&lt;/h6&gt;<br>
+        &lt;div class="alert alert-warning"&gt;<br>
+        &lt;strong>Warning!&lt;/strong&gt; <br>
+        There was a problem with wifi connection&lt;a<br>
+        href="#"<br>
+        class="alert-link"&gt;<br>
+        Contact us&lt;/a&gt;.<br>
+        &lt;/div&gt;<br>
+        &lt;h6>Warning alert with close button&lt;/h6&gt;<br>
+        &lt;div class="alert alert-warning"&gt;<br>
+        &lt;button type="button" <br>
+        class="close" <br>
+        data-dismiss="alert"&gt;<br>
+        ×<br>
+        &lt;/button&gt;<br>
+        &lt;strong>Warning!&lt;/strong&gt;<br>
+        There was a problem with wifi connection.<br>
+        &lt;/div&gt;<br>
+        &lt;h6>Warning alert with close button and fade animation&lt;/h6&gt;<br>
+        &lt;div class="alert alert-warning alert-dismissible fade show"&gt;<br>
+        &lt;button type="button" <br>
+        class="close" <br>
+        data-dismiss="alert"&gt;<br>
+        ×<br>
+        &lt;/button&gt;<br>
+        &lt;strong>Warning!&lt;/strong&gt; <br>
+        There was a problem with internet connection.<br>
+        &lt;/div&gt;<br>
+        &lt;h6&gt;Warning alert with heading&lt;/h6&gt;<br>
+        &lt;div class="alert alert-warning alert-dismissible fade show"&gt;<br>
+        &lt;button type="button" <br>
+        class="close"<br>
+        data-dismiss="alert"&gt;<br>
+        ×<br>
+        &lt;/button&gt;<br>
+        &lt;h5 class="alert-heading">Warning!&lt;/h5&gt;<br>
+        Wrong credentials.<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+        &lt;!DOCTYPE html&gt;<br>
+      </div>
+
+      <div>
+        <html>
+
+        <head>
+          <title>Warning Alerts</title>
+          <meta charset="utf-8" />
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+          </script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+          </script>
+        </head>
+
+        <body>
+          <div class="container py-5">
+            <h4 class="text-center text-uppercase">
+              Bootstrap 5 warning messages
+            </h4>
+            <h6>Basic Warning alert</h6>
+            <div class="alert alert-warning">
+              <strong>Warning!</strong>
+              There was a problem with connection.
+            </div>
+            <h6>Warning alert with link</h6>
+            <div class="alert alert-warning">
+              <strong>Warning!</strong>
+              There was a problem with wifi connection<a href="#" class="alert-link">
+                Contact us</a>.
+            </div>
+            <h6>Warning alert with close button</h6>
+            <div class="alert alert-warning">
+              <button type="button" class="close" data-dismiss="alert">
+                ×
+              </button>
+              <strong>Warning!</strong>
+              There was a problem with wifi connection.
+            </div>
+            <h6>Warning alert with close button and fade animation</h6>
+            <div class="alert alert-warning alert-dismissible fade show">
+              <button type="button" class="close" data-dismiss="alert">
+                ×
+              </button>
+              <strong>Warning!</strong>
+              There was a problem with internet connection.
+            </div>
+            <h6>Warning alert with heading</h6>
+            <div class="alert alert-warning alert-dismissible fade show">
+              <button type="button" class="close" data-dismiss="alert">
+                ×
+              </button>
+              <h5 class="alert-heading">Warning!</h5>
+              Wrong credentials.
+            </div>
+          </div>
+        </body>
+
+        </html>
+        <!DOCTYPE html>
+
+      </div>
+
+      </main>
+
+    </div>
+    <!-- == question-9 End ==  -->
+
+
+    <!-- == Question-10 Start == -->
+
+    <div class="question-10">
+      <h2>What is a bootstrap card and how would you create one?</h2>
+
+      <p>A flexible and expandable content container is a <strong>card.</strong> It offers options for headers and
+        footers, a range of information, background colours that are appropriate for the context, and strong display
+        options.</p>
+
+      <p>The use of panels, wells, and thumbnails are all replaced by it. It can all be utilised in a single card-shaped
+        container.</p>
+
+      <p><strong>Basic Card:</strong> The card-body within the parent class card is the fundamental component of a card.
+      </p>
+
+      <p><strong>Example:</strong></p>
+
+      <h3></h3>
+
+      <div style="background-color: lightgrey; padding: 10px; border-radius: 3px;">
+        &lt;html lang="en"&gt; <br>
+        &lt;head&gt; <br>
+        &lt;title>Bootstrap Card&lt;/title&gt; <br>
+        &lt;meta charset="utf-8"&gt; <br>
+        &lt;meta name="viewport"
+        content="width=device-width, initial-scale=1"&gt; <br>
+        &lt;link rel="stylesheet" href=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt; <br>
+        &lt;script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt; <br>
+        &lt;/script&gt; <br>
+        &lt;script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"&gt; <br>
+        &lt;/script&gt; <br>
+        &lt;script src=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"&gt; <br>
+        &lt;/script&gt; <br>
+        &lt;/head&gt; <br>
+        &lt;body&gt; <br>
+        &lt;div class="container">
+        &lt;h2 class="text-success">GeeksforGeeks&lt;/h2&gt; <br>
+        &lt;div class="card"&gt; <br>
+        &lt;div class="card-body"&gt; <br>
+        A computer science portal for geeks
+        &lt;/div&gt; <br>
+        &lt;/div&gt; <br>
+        &lt;/div&gt; <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+        &lt;!DOCTYPE html&gt; <br>
+      </div>
+
+      <aside>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+          <title>Bootstrap Card</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+          </script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+          </script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+          </script>
+        </head>
+
+        <body>
+          <div class="container">
+            <h2 class="text-success">GeeksforGeeks</h2>
+            <div class="card">
+              <div class="card-body">
+                A computer science portal for geeks
+              </div>
+            </div>
+          </div>
+        </body>
+
+        </html>
+
+      </aside>
+    </div>
+    <!-- == question-10 End ==  -->
+
+    <!-- container End  -->
+  </div>
+</body>
+
+</html>
