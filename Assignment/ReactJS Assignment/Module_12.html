@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Router</title>
+    <link rel="stylesheet" href="assest/styleFile/style.css">
+    <link rel="shortcut icon" href="assest/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- === Container Start === -->
+    <div class="container">
+
+        <!-- === logo ===  -->
+        <div id="img">
+            <img src="assest/images/react.js-logo (1).png" class="img-logo" alt="ReactJS-LOGO" srcset="">
+        </div>
+
+        <!-- === question-1 START === -->
+        <div class="question-1">
+            <h2>
+                Q.1 Create React app with modules and lazy loading (Admin-user module
+                with child Router and outlet)
+            </h2>
+
+            <h3>What exactly is lazy loading?</h3>
+
+            <p> What exactly is lazy loading? Lazy loading is a design approach used to improve the performance of web and mobile apps. The idea behind lazy loading is straightforward: initialize things that are vital to the user interface immediately, then render noncritical stuff discreetly later.
+            </p>
+
+            <p> When you browse a website or use an app, you almost certainly aren't seeing all of the accessible content. You may never require certain components depending on how you explore and utilize the program, and loading unnecessary objects wastes time and processing resources. Lazy loading allows you to render components on demand, increasing the efficiency of your app and improving the user experience.
+            </p>
+
+            <h3>How to Implement Lazy Loading in React</h3>
+
+            <p> React offers two capabilities that enable applying code-splitting and lazy loading to React components relatively simple: React.lazy() and React.Suspense.
+            </p>
+            <p> The function React.lazy() allows you to render a dynamic import as a regular component. Dynamic imports are a kind of code-splitting that is essential for lazy loading. React.lazy(), a key feature of React 16.6, eliminates the requirement for a third-party library such as react-loadable.
+            </p>
+            <p> React.Suspense lets you specify the loading indicator if the components in the tree beneath it are not yet ready to render.
+            </p>
+
+            <p> Before we get into React.lazy and React.Suspense, let's go through code-splitting and dynamic imports, explain how they operate, and break down how they help with lazy loading in React.
+            </p>
+
+            <h3>React code splitting</h3>
+
+            <p> With the introduction of ES modules, transpilers like Babel, and bundlers like webpack and Browserify, it is now possible to develop JavaScript applications in a completely modular structure for easy maintenance. Each module is often imported and merged into a single file called a bundle, which is subsequently included on a webpage to load the complete app. As the software develops in size, so does the bundle size, which eventually affects page load speeds.
+            </p>
+            <p> The process of breaking a huge bundle of code into numerous bundles that may be loaded dynamically is known as code-splitting. This allows you to prevent performance difficulties caused by big bundles without lowering the amount of code in your program.
+            </p>
+
+            <h3>React dynamic imports</h3>
+            <p> Dynamic imports, which use the import() syntax, are one technique to separate code. Import() relies on JavaScript Promises to load a module. As a result, it provides a promise that is either fulfilled with the loaded module or denied if the module is unable to be loaded.
+            </p>
+
+            <p> Here's an example of dynamically importing a module for a webpack-bundled app:
+            </p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/dynamic-import-webpack-1.png" alt="img" />
+
+            <p> When webpack finds this syntax, it understands to construct a separate bundle file for the moment library dynamically.
+            </p>
+            <p> If you use a boilerplate like create-react-app or Next.js, code-splitting using dynamic import() happens on the fly for React projects. If you're using a custom webpack setup, you should see the webpack handbook for instructions on configuring code-splitting. To correctly parse dynamic import() in Babel, you must use the babel-plugin-syntax-dynamic-import plugin.
+            </p>
+            <p> Without further ado, let's get started with React.React and lazy().Suspense
+            </p>
+
+            <h3>Making use of React.lazy()</h3>
+
+            <p> React.lazy() makes it simple to create components that are loaded dynamically but rendered as regular components. When the component is rendered, the bundle containing it is automatically loaded.
+            </p>
+
+            <p> React.lazy() accepts as an argument a method that must deliver a promise after loading the component with import(). The resolved promise points to a module with a default export that includes the React component.
+            </p>
+
+            <p>The syntax for using React.lazy() is as follows:</p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.lazy_-1.png" alt="img" />
+            <h3>Making use of React.Suspense</h3>
+
+            <p> React.lazy() components are only loaded when they need to be rendered. As a result, while the lazy component is loading, you should show some form of placeholder content, such as a loading indicator. This is precisely what React.Suspense is intended for.
+            </p>
+            <p> React.Suspense is a component used to surround sluggish components. A single Suspense component can wrap several lazy components at different hierarchy levels.
+            </p>
+            <p> While all the lazy components are loaded, the Suspense component accepts a fallback prop that accepts the React elements you want rendered as placeholder content.
+            </p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.suspense-1.png" alt="img" />
+
+            <p> In this case, we developed a simple Loader component to provide as fallback content for the sluggish Calendar component. We also added an error barrier to show a message if the slow Calendar component does not load.
+            </p>
+            <p> I've wrapped the lazy Calendar import in another promise to mimic a five-second delay. I also used a condition to either import the Calendar component or deliver a promise that rejects to increase the odds of the Calendar component failing to load.
+            </p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/react.lazy-calendar-import-1.png"
+                alt="img" />
+
+            <p> The animation below demonstrates how the component will look when rendered with React.lazy() and React.Suspense.
+            </p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2018/10/react-lazy-load-demo.gif" alt="img" />
+
+            <h3>React components with named exports</h3>
+
+            <p> React.lazy() currently does not support named exports for React components. You must reexport named exports containing React components as default exports in separate intermediate modules if you want to use them.
+            </p>
+
+            <p> Assume you have OtherComponent as a named export in a module and want to load OtherComponent with React.lazy(). You'd make an intermediate module that reexports OtherComponent as the default export.
+            </p>
+
+            <p>Components.js:</p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/react-lazy-components-js-1.png" alt="img" />
+
+            <p>OtherComponent.js:</p>
+
+            <img src="https://blog.logrocket.com/wp-content/uploads/2020/11/react-lazy-other-components-js-1.png"
+                alt="img" />
+
+            <p> React.lazy() can now be used to load OtherComponent from the intermediate module.
+            </p>
+
+            <h3>React's route-based lazy loading</h3>
+
+            <p> You may implement route-based code splitting without utilizing an external package by using React.lazy() and React.Suspense. Simply transform your app's route components to lazy components and wrap all routes in a Suspense component.
+            </p>
+
+            <p>
+                The code snippet below demonstrates route-based code splitting with the
+                Reach Router framework.
+            </p>
+
+            <div class="">
+                <div class="">
+
+                    <code>
+                        import { Router } from '@reach/router'; <br />
+                        import Loading from './Loading'; <br />
+                        <br />
+                        const Home = React.lazy(() => import('./Home')); <br />
+                        const Dashboard = React.lazy(() => import('./Dashboard')); <br />
+                        const Overview = React.lazy(() => import('./Overview')); <br />
+                        const History = React.lazy(() => import('./History')); <br />
+                        const NotFound = React.lazy(() => import('./NotFound')); <br />
+                        <br />
+                        function App() { <br />
+                        return ( <br />
+                        &lt;div&gt; <br />
+                        &lt;Suspense fallback={
+                        <Loading />}&gt; <br />
+                        &lt;Router&gt; <br />
+                        &lt;Home path="/" /&gt; <br />
+                        &lt;Dashboard path="dashboard"&gt; <br />
+                        &lt;Overview path="/" /&gt; <br />
+                        &lt;History path="/history" /&gt; <br />
+                        &lt;/Dashboard&gt; <br />
+                        &lt;NotFound default /&gt; <br />
+                        &lt;/Router&gt; <br />
+                        &lt;/Suspense&gt; <br />
+                        &lt;/div&gt; <br />
+                        ) }
+                    </code>
+                </div>
+            </div>
+
+        </div>
+        <!-- === question-1 END === -->
+    </div>
+</body>
+
+</html>
