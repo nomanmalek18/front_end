@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,161 @@
     <link rel="shortcut icon" href="image/js.png" type="image/x-icon">
 
 </head>
+
 <body>
-    <div id="img">
-        <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+
+    <div class="container">
+        <div id="img">
+            <img src="image/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+            <h2>condition statement in javascript</h2>
+            <h3>JavaScript If-else</h3>
+            <p>The JavaScript if-else statement is used to execute the code whether condition is true or false.</p>
+            <p>There are three forms of if statement in JavaScript.</p>
+
+            <ul>
+                <li>If Statement</li>
+                <li>If else statement</li>
+                <li>if else if statement</li>
+            </ul>
+            <h3>JavaScript If statement</h3>
+            <p>It evaluates the content only if expression is true. The signature of JavaScript if statement is given
+                below.</p>
+
+            <div class="">
+                if(expression){ <br>
+                //content to be evaluated <br>
+                }
+            </div>
+
+            <p>Flowchart of JavaScript If statement</p>
+            <img src="image/if1.png" alt="example_images">
+            <p>Let’s see the simple example of if statement in javascript.</p>
+
+            <div class="">
+                &lt;html&gt;<br>
+                &lt;body&gt;<br>
+                &lt;script&gt; <br>
+                var a=20; <br>
+                if(a&gt;10){ <br>
+                document.write("value of a is greater than 10"); <br>
+                } <br>
+                &lt;/script&gt; <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+
+            <div class="">
+                <h3>Output of the above example</h3>
+                <div class="">
+                    value of a is greater than 10
+                </div>
+            </div>
+
+            <h3>JavaScript If...else Statement</h3>
+            <p>It evaluates the content whether condition is true of false. The syntax of JavaScript if-else statement
+                is given below.</p>
+
+            <div class="">
+                if(expression){ <br>
+                //content to be evaluated if condition is true <br>
+                } <br>
+                else{ <br>
+                //content to be evaluated if condition is false <br>
+                }
+            </div>
+
+            <p>Flowchart of JavaScript If...else statement</p>
+            <img src="image/if2.png" alt="example_images">
+
+            <p>Let’s see the example of if-else statement in JavaScript to find out the even or odd number.</p>
+            <div class="">
+                <html>
+
+                <body>
+                    <script>
+                        var a = 20;
+                        if (a % 2 == 0) {
+                            document.write("a is even number");
+                        }
+                        else {
+                            document.write("a is odd number");
+                        }  
+                    </script>
+                </body>
+
+                </html>
+
+            </div>
+
+            <div class="">
+                Output of the above example
+                <div class="">
+                    a is even number
+                </div>
+            </div>
+
+            <h3>JavaScript If...else if statement</h3>
+            <p>It evaluates the content only if expression is true from several expressions. The signature of JavaScript
+                if else if statement is given below.</p>
+
+            <div class="">
+                if(expression1){ <br>
+                //content to be evaluated if expression1 is true <br>
+                } <br>
+                else if(expression2){ <br>
+                //content to be evaluated if expression2 is true <br>
+                } <br>
+                else if(expression3){ <br>
+                //content to be evaluated if expression3 is true <br>
+                } <br>
+                else{ <br>
+                //content to be evaluated if no expression is true <br>
+                }
+            </div>
+            <p>Let’s see the simple example of if else if statement in javascript.</p>
+
+            <div class="">
+                <html>
+
+                <body>
+                    <script>
+                        var a = 20;
+                        if (a == 10) {
+                            document.write("a is equal to 10");
+                        }
+                        else if (a == 15) {
+                            document.write("a is equal to 15");
+                        }
+                        else if (a == 20) {
+                            document.write("a is equal to 20");
+                        }
+                        else {
+                            document.write("a is not equal to 10, 15 or 20");
+                        }  
+                    </script>
+                </body>
+
+                </html>
+            </div>
+
+            <div class="">
+                Output of the above example
+                <div class="">
+                    a is equal to 20
+                </div>
+            </div>
+
+            
+        </div>
     </div>
 
 
     <script>
 
         let marks = 65;
-        console.log(marks); 
+        console.log(marks);
         // if (marks > 50) {
         //     console.log("congratulations > ");
         // }
@@ -33,12 +179,13 @@
 
         if (marks >= 50 && marks < 60) {
             console.log("pass >=");
-        }else if(marks >= 60 && marks < 70) {
+        } else if (marks >= 60 && marks < 70) {
             console.log("first >=");
-        }else{
+        } else {
             console.log("try again");
         }
     </script>
-    
+
 </body>
+
 </html>
