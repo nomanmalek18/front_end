@@ -49,7 +49,7 @@ body {
     border: 2vmin solid #144272;
     padding: 1.2vmin;
     margin: 3vmin;
-    /* background-color: honeydew; */
+    background-color: honeydew;
 }
 
 .question-1 li {
@@ -556,7 +556,7 @@ table tr td {
 ul {
     padding: 1.2vmin;
     margin: 3vmin;
-    background-color: honeydew;
+    /* background-color: honeydew; */
 }
 li {
     font-size: 3vmin;
