@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nullish coalescing operator</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <div id="img">
             <img src="images/javascript.png" class="img-logo" alt="" srcset="">
         </div>
         <div class="container-items">
+            <h2>Nullish coalescing operator (??)</h2>
+            <p>The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when
+                its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.</p>
+
+            <h3>The result of a ?? b is:</h3>
+
+            <ul>
+                <li>if a is defined, then a,</li>
+                <li>if a isn’t defined, then b.</li>
+            </ul>
+
+            <p>In other words, ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.</p>
+
+            <p>The nullish coalescing operator isn’t anything completely new. It’s just a nice syntax to get the first
+                “defined” value of the two.</p>
+
+            <p>We can rewrite result = a ?? b using the operators that we already know, like this:</p>
+            <div class="">
+                <div class="">
+                    result = (a !== null && a !== undefined) ? a : b;
+                </div>
+            </div>
+
+            <p>Now it should be absolutely clear what ?? does. Let’s see where it helps.</p>
+
+            <p>The common use case for ?? is to provide a default value.</p>
+
+            <p>For example, here we show user if its value isn’t null/undefined, otherwise Anonymous:</p>
+
+            <div class="example">
+                <div class="example-code">
+                    <div class="numbers">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="example-code-bar">let user; <br> <br>
+                    alert(user ?? "Anonymous"); // Anonymous (user is undefined)</div>
+                </div>
+            </div>
+
+
             
         </div>
     </div>
+
+    <!-- <script>
+        // result = (a !== null && a !== undefined) ? a : b;
+        let user;
+        // let user="test";
+        alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+        
+    </script> -->
 </body>
+
 </html>
