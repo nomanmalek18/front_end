@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Arrow Functions in Javascript</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+            <h2>Arrow functions in JavaScript</h2>
+            <h3>What is Arrow Function ?</h3>
+            <p>
+                <b>Arrow function {()=>}</b> is concise way of writing JavaScript functions in shorter way. <b>Arrow
+                    functions</b> were introduced in the ES6 version. They make our code more structured and readable.
+            </p>
+
+            <p><b>Arrow functions</b> are anonymous functions i.e. functions without a name but they are often assigned
+                to any variable. They are also called <b>Lambda</b></p>
+
+            <h3>Functions.</h3>
+
+            <p>syntax:</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const Hello = () => { <br>
+                        console.log( "Hello world!" ); <br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <h3>Arrow Function without Parameters Javascript</h3>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const Hello = () => { <br>
+                        console.log( "Hello world good morning!" ); <br>
+                        } <br>
+                        <br>
+                        Hello();
+                    </div>
+                </div>
+            </div>
+
+            <h3>Output:</h3>
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        &gt;
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        Hello world good morning
+                    </div>
+                </div>
+            </div>
+
+            <h3>Arrow Function with Parameters Javascript</h3>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const counter = ( x, y, z ) => { <br>
+                        console.log( x + y + z ) <br>
+                        } <br>
+                        <br>
+                        counter( 10, 20, 30 ); <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Output:</h3>
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        &gt;
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        60
+                    </div>
+                </div>
+            </div>
+
+            <h3>Arrow Function with Default Parameters Javascript</h3>
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const counter = ( x, y, z = 30 ) => { <br>
+                        console.log( x + " " + y + " " + z); <br>
+                        } <br>
+                        <br>
+                        counter( 10, 20 );
+
+                    </div>
+                </div>
+            </div>
+
+            <h3>Output:</h3>
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        &gt;
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        10 20 30
+                    </div>
+                </div>
+            </div>
+
+            <h3>Arrow functions can be async by prefixing the expression with the async keyword.</h3>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        async param => expression <br>
+                        async (param1, param2, ...paramN) => { <br>
+                        statements <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Advantages of Arrow Functions</h3>
+
+            <ul>
+                <li>Arrow functions reduce the size of the code.</li>
+                <li>The return statement and function brackets are optional for single-line functions.</li>
+                <li>It increases the readability of the code.</li>
+                <li>
+                    Arrow functions provide a lexical this binding. It means, they inherit the value of “this” from the
+                    enclosing scope. This feature can be advantageous when dealing with event listeners or callback
+                    functions where the value of “this” can be uncertain.
+                </li>
+            </ul>
+
+            <h3>Limitations of Arrow Functions</h3>
+
+            <ul>
+                <li>Arrow functions do not have the prototype property.</li>
+                <li>Arrow functions cannot be used with the new keyword.</li>
+                <li>Arrow functions cannot be used as constructors.</li>
+                <li>These functions are anonymous and it is hard to debug the code.</li>
+                <li>Arrow functions cannot be used as generator functions that use the yield keyword to return multiple values over time.</li>
+            </ul>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
