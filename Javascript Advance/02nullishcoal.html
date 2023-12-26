@@ -34,7 +34,15 @@
             <p>We can rewrite result = a ?? b using the operators that we already know, like this:</p>
             <div class="">
                 <div class="">
-                    result = (a !== null && a !== undefined) ? a : b;
+                </div>
+            </div>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">result = (a !== null && a !== undefined) ? a : b;</div>
                 </div>
             </div>
 
@@ -44,20 +52,70 @@
 
             <p>For example, here we show user if its value isn’t null/undefined, otherwise Anonymous:</p>
 
-            <div class="example">
-                <div class="example-code">
-                    <div class="numbers">
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
                         1 <br>
                         2 <br>
                         3 <br>
                     </div>
-                    <div class="example-code-bar">let user; <br> <br>
-                    alert(user ?? "Anonymous"); // Anonymous (user is undefined)</div>
+                    <div class="nullish-exm-code-bar-2s">let user; <br> <br>
+                        alert(user ?? "Anonymous"); // Anonymous (user is undefined)</div>
+                </div>
+            </div>
+
+            <p>Here’s the example with user assigned to a name:</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let user = "John";<br> <br>
+                        alert(user ?? "Anonymous"); // John (user is not null/undefined)
+                    </div>
+                </div>
+            </div>
+
+            <p>We can also use a sequence of ?? to select the first value from a list that isn’t null/undefined.</p>
+
+            <p>Let’s say we have a user’s data in variables firstName, lastName or nickName. All of them may be not
+                defined, if the user decided not to fill in the corresponding values.</p>
+            <p>We’d like to display the user name using one of these variables, or show “Anonymous” if all of them are
+                null/undefined.</p>
+
+            <p>Let’s use the ?? operator for that:</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let firstName = null; <br>
+                        let lastName = null; <br>
+                        let nickName = "Supercoder"; <br>
+                        <br>
+                        // shows the first defined value: <br>
+                        alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+                    </div>
                 </div>
             </div>
 
 
-            
+
+
+
         </div>
     </div>
 

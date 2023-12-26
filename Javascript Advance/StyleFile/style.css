@@ -44,26 +44,26 @@ p {
     color: #144272;
     margin: 1.5vmin 5vmin;
 }
-.example {
-    width: 102vmin;
-    height: 25vmin;
+.nullish-exm-2 {
+    width: 510px;
+    height: auto;
     margin: 4vmin 3vmin;
     background-color: dimgray;
     padding: 10px 10px 10px 10px;
     border-radius: 6px;
 }
-.example-code {
+.nullish-exm-code-2 {
     margin: 14px;
     display: flex;
 }
-.numbers{
+.nullish-num-2{
     padding: 10px;
     text-align: center;
     width: 30px;
     background-color: black;
     color: wheat;
 }
-.example-code-bar{
+.nullish-exm-code-bar-2s{
     border-left: 5px solid dimgray;
     background-color: antiquewhite;
     padding: 10px;
