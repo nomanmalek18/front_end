@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>Destructuring in JavaScript</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+
+            <h2>Destructuring in JavaScript</h2>
+            <p>The two most used data structures in JavaScript are Object and Array.</p>
+
+            <p>Objects allow us to create a single entity that stores data items by key.</p>
+            <p>Arrays allow us to gather data items into an ordered list.</p>
+            <p> Although, when we pass those to a function, it may need not be an object/array as a whole. It may need
+                individual pieces.
+            </p>
+            <p>Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of
+                variables, as sometimes that’s more convenient.
+            </p>
+            <p>
+                Destructuring also works great with complex functions that have a lot of parameters, default values, and
+                so on.
+                Soon we’ll see that.
+            </p>
+            <script>
+                let arr = ["John", "Smith"]
+
+                // destructuring assignment
+                // sets firstName = arr[0]
+                // and surname = arr[1]
+                let [firstName, surname] = arr;
+
+                console.log(firstName); // John
+                console.log(surname);  // Smith
+
+
+                let options = {
+                    title: "Menu",
+                    width: 100,
+                    height: 200
+                };
+
+                let { title, width, height } = options;
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

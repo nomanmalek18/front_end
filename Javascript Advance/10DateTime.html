@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Web Page title  -->
+    <title>Date Time Get and Set</title>
+
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+
+            <h2>JavaScript Date Objects</h2>
+
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const d = new Date();
+                    </div>
+                </div>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const d = new Date("2022-03-25");
+                    </div>
+                </div>
+            </div>
+
+            <h3>Creating Date Objects</h3>
+
+            <p>Date objects are created with the new Date() constructor.</p>
+
+            <p>There are 9 ways to create a new date object:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+                        10 <br>
+                        11
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        new Date() <br>
+                        new Date(date string) <br>
+                        <br>
+                        new Date(year,month) <br>
+                        new Date(year,month,day) <br>
+                        new Date(year,month,day,hours) <br>
+                        new Date(year,month,day,hours,minutes) <br>
+                        new Date(year,month,day,hours,minutes,seconds) <br>
+                        new Date(year,month,day,hours,minutes,seconds,ms) <br>
+                        <br>
+                        new Date(milliseconds) <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3> JavaScript new Date()</h3>
+            <p> new Date() creates a date object with the current date and time:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const d = new Date();
+                    </div>
+                </div>
+            </div>
+
+            
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>getFullYear()</td>
+                        <td>Get <strong>year</strong> as a four digit number (yyyy)</td>
+                    </tr>
+                    <tr>
+                        <td>getMonth()</td>
+                        <td>Get <strong>month</strong> as a number (0-11)</td>
+                    </tr>
+                    <tr>
+                        <td>getDate()</td>
+                        <td>Get <strong>day</strong> as a number (1-31)</td>
+                    </tr>
+                    <tr>
+                        <td>getDay()</td>
+                        <td>Get <b>weekday</b> as a number (0-6)</td>
+                    </tr>
+                    <tr>
+                        <td>getHours()</td>
+                        <td>Get <strong>hour</strong> (0-23)</td>
+                    </tr>
+                    <tr>
+                        <td>getMinutes()</td>
+                        <td>Get <strong>minute</strong> (0-59)</td>
+                    </tr>
+                    <tr>
+                        <td>getSeconds()</td>
+                        <td>Get <strong>second</strong> (0-59)</td>
+                    </tr>
+                    <tr>
+                        <td>getMilliseconds()</td>
+                        <td>Get <strong>millisecond</strong> (0-999)</td>
+                    </tr>
+                    <tr>
+                        <td>getTime()</td>
+                        <td>Get <b>time</b> (milliseconds since January 1, 1970)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <script>
+                let now = new Date();
+                console.log(now); // shows current date/time
+                // 0 means 01.01.1970 UTC+0
+                let Jan01_1970 = new Date(0);
+                console.log(Jan01_1970);
+
+                // now add 24 hours, get 02.01.1970 UTC+0
+                let Jan02_1970 = new Date(24 * 3600 * 1000);
+                console.log(Jan02_1970);
+
+                new Date(2011, 0, 1, 0, 0, 0, 0); // 1 Jan 2011, 00:00:00
+                new Date(2011, 0, 1); // the same, hours etc are 0 by default
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>
