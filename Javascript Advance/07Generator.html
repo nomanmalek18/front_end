@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- webpage title -->
+    <title>javascript object keys values entries</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+
+            <h2>Generators</h2>
+
+            <p>Regular functions return only one, single value (or nothing).</p>
+            <p>Generators can return (“yield”) multiple values, one after another, on-demand. They work great with
+                iterables, allowing to create data streams with ease.</p>
+
+            <h3>Generator functions</h3>
+
+            <p> To create a generator, we need a special syntax construct: function*, so-called “generator function”.
+            </p>
+
+            <h3>It looks like this:</h3>
+
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function* generateSequence() { <br>
+                        yield 1; <br>
+                        yield 2; <br>
+                        return 3; <br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+            <p> Generator functions behave differently from regular ones. When such function is called, it doesn’t run
+                its code. Instead it returns a special object, called “generator object”, to manage the execution.
+            </p>
+            <h3>Here, take a look:</h3>
+
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function* generateSequence() { <br>
+                        yield 1; <br>
+                        yield 2; <br>
+                        return 3; <br>
+                        } <br>
+                        <br>
+                        // "generator function" creates "generator object" <br>
+                        let generator = generateSequence(); <br>
+                        alert(generator); // [object Generator] <br>
+                    </div>
+                </div>
+            </div>
+
+            <p>The main method of a generator is <code>next()</code>. When called, it runs the execution until the
+                nearest <code>yield &lt;value&gt;</code> statement (<code>value</code> can be omitted, then it’s
+                <code>undefined</code>). Then the function execution pauses, and the yielded <code>value</code> is
+                returned to the outer code.
+            </p>
+
+            <p>The result of next() is always an object with two properties:</p>
+            <ul>
+                <li>value: the yielded value.</li>
+                <li>done: true if the function code has finished, otherwise false.</li>
+            </ul>
+
+
+            <p>For instance, here we create the generator and get its first yielded value:</p>
+
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+                        10 <br>
+                        11 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function* generateSequence() { <br>
+                        yield 1; <br>
+                        yield 2; <br>
+                        return 3; <br>
+                        } <br>
+                        <br>
+                        let generator = generateSequence(); <br>
+                        <br>
+                        let one = generator.next(); <br>
+                        <br>
+                        alert(JSON.stringify(one)); // {value: 1, done: false} <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>Let’s call generator.next() again. It resumes the code execution and returns the next yield:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let two = generator.next(); <br>
+                        <br>
+                        alert(JSON.stringify(two)); // {value: 2, done: false}
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- script  -->
+            <script>
+                function* generateSequence() {
+                    yield 1;
+                    yield 2;
+                    return 3;
+                }
+
+                let generator = generateSequence();
+
+                let one = generator.next();
+
+                console.log(JSON.stringify(one)); // {value: 1, done: false}
+                console.log(JSON.stringify(one)); // {value: 1, done: false}
+                console.log(JSON.stringify(one)); // {value: 1, done: false}
+                console.log(generator.next()); // {value: 1, done: false}
+                console.log(generator.next()); // {value: 1, done: false}
+                console.log(generator.next()); // {value: 1, done: false}
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
