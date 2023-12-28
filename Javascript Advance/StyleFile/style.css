@@ -44,6 +44,17 @@ p {
     color: #144272;
     margin: 1.5vmin 5vmin;
 }
+ul {
+    padding: 1.2vmin;
+    margin: 3vmin;
+    background-color: honeydew;
+}
+
+li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
 .nullish-exm-2 {
     width: 510px;
     height: auto;
@@ -51,6 +62,9 @@ p {
     background-color: dimgray;
     padding: 10px 10px 10px 10px;
     border-radius: 6px;
+}
+.nullish-exm-2 h3{
+    color: black;
 }
 .nullish-exm-code-2 {
     margin: 14px;
@@ -67,4 +81,6 @@ p {
     border-left: 5px solid dimgray;
     background-color: antiquewhite;
     padding: 10px;
+    height: auto;
+    width: 480px;
 }

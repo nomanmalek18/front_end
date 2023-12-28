@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeOf in javascript</title>
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+        <div class="container-items">
+            <h2>JavaScript typeof</h2>
+            <p>In JavaScript there are 5 different data types that can contain values:</p>
+            <ul>
+                <li>string</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>object</li>
+                <li>function</li>
+            </ul>
+
+            <p>There are 6 types of objects:</p>
+            <ul>
+                <li>Object</li>
+                <li>Date</li>
+                <li>Array</li>
+                <li>String</li>
+                <li>Number</li>
+                <li>Boolean</li>
+            </ul>
+            <p>And 2 data types that cannot contain values:</p>
+            <ul>
+                <li>null</li>
+                <li>undefined</li>
+            </ul>
+
+            <h3>The typeof Operator</h3>
+            <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+                        10 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        typeof "John" // Returns "string" <br>
+                        typeof 3.14 // Returns "number" <br>
+                        typeof NaN // Returns "number" <br>
+                        typeof false // Returns "boolean" <br>
+                        typeof [1,2,3,4] // Returns "object" <br>
+                        typeof {name:'John', age:34} // Returns "object" <br>
+                        typeof new Date() // Returns "object" <br>
+                        typeof function () {} // Returns "function" <br>
+                        typeof myCar // Returns "undefined" * <br>
+                        typeof null // Returns "object" <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Primitive Data</h3>
+
+            <p>A primitive data value is a single simple data value with no additional properties and methods.</p>
+            <p>The typeof operator can return one of these primitive types:</p>
+            <ul>
+                <li>string</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>undefined</li>
+            </ul>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        typeof "John" // Returns "string" <br>
+                        typeof 3.14 // Returns "number" <br>
+                        typeof true // Returns "boolean" <br>
+                        typeof false // Returns "boolean" <br>
+                        typeof x // Returns "undefined" (if x has no value)
+                    </div>
+                </div>
+            </div>
+
+            <h3>Complex Data</h3>
+
+            <p>The typeof operator can return one of two complex types:</p>
+            <ul>
+                <li>function</li>
+                <li>object</li>
+            </ul>
+            <p>The typeof operator returns "object" for objects, arrays, and null.</p>
+            <p>The typeof operator does not return "object" for functions.</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        typeof {name:'John', age:34} // Returns "object" <br>
+                        typeof [1,2,3,4] // Returns "object" (not "array", see note below) <br>
+                        typeof null // Returns "object" <br>
+                        typeof function myFunc(){} // Returns "function" <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>The Data Type of typeof</h3>
+
+            <p>The typeofoperator is not a variable. It is an operator. Operators ( + - * / ) do not have any data type.
+            </p>
+            <p>But, the typeof operator always returns a string (containing the type of the operand).</p>
+
+            <h3>The constructor Property</h3>
+            <p>The constructor property returns the constructor function for all JavaScript variables.</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        "John".constructor // Returns function String() {[native code]} <br>
+                        (3.14).constructor // Returns function Number() {[native code]} <br>
+                        false.constructor // Returns function Boolean() {[native code]} <br>
+                        [1,2,3,4].constructor // Returns function Array() {[native code]} <br>
+                        {name:'John',age:34}.constructor // Returns function Object() {[native code]} <br>
+                        new Date().constructor // Returns function Date() {[native code]} <br>
+                        function () {}.constructor // Returns function Function(){[native code]} <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>You can check the constructor property to find out if an object is an Array (contains the word "Array"):
+            </p>
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function isArray(myArray) { <br>
+                        return myArray.constructor.toString().indexOf("Array") > -1; <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+
+            <p>Or even simpler, you can check if the object is an Array function:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function isArray(myArray) { <br>
+                        return myArray.constructor === Array; <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+
+            <p>You can check the constructor property to find out if an object is a Date (contains the word "Date"):</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function isDate(myDate) { <br>
+                        return myDate.constructor.toString().indexOf("Date") > -1; <br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <p>Or even simpler, you can check if the object is a Date function:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function isDate(myDate) { <br>
+                        return myDate.constructor === Date; <br>
+                        }
+                    </div>
+                </div>
+            </div>
+            <h3>Undefined:</h3>
+            <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let car; // Value is undefined, type is undefined
+                    </div>
+                </div>
+            </div>
+
+            <p>Any variable can be emptied, by setting the value to undefined. The type will also be undefined.</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        car = undefined; // Value is undefined, type is undefined
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>Empty Values:</h3>
+
+            <p>An empty value has nothing to do with undefined.</p>
+
+            <p>An empty string has both a legal value and a type.</p>
+
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let car = ""; // The value is "", the typeof is "string"
+                    </div>
+                </div>
+            </div>
+
+            <h3>Null</h3>
+            <p>In JavaScript null is "nothing". It is supposed to be something that doesn't exist.</p>
+
+            <p>Unfortunately, in JavaScript, the data type of null is an object.</p>
+            <p>You can consider it a bug in JavaScript that typeof null is an object. It should be null.</p>
+            <p>You can empty an object by setting it to null:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+                        person = null; // Now value is null, but type is still an object
+                    </div>
+                </div>
+            </div>
+
+            <p>You can also empty an object by setting it to undefined:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+                        person = undefined; // Now both value and type is undefined
+                    </div>
+                </div>
+            </div>
+
+            <h3>Difference Between Undefined and Null</h3>
+            <p>undefined and null are equal in value but different in type:</p>
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        typeof undefined // undefined <br>
+                        typeof null // object <br>
+                        <br>
+                        null === undefined // false <br>
+                        null == undefined // true <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>The instanceof Operator</h3>
+            <p>The instanceof operator returns true if an object is an instance of the specified object:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        const cars = ["Saab", "Volvo", "BMW"]; <br>
+                        <br>
+                        (cars instanceof Array); <br>
+                        (cars instanceof Object); <br>
+                        (cars instanceof String); <br>
+                        (cars instanceof Number); <br>
+                    </div>
+                </div>
+            </div>
+            <h3>The void Operator</h3>
+            <p>The void operator evaluates an expression and returns undefined. This operator is often used to obtain
+                the undefined primitive value, using "void(0)" (useful when evaluating an expression without using the
+                return value).
+            </p>
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        <a href="javascript:void(0);"> <br>
+                            Useless link <br>
+                        </a> <br>
+                        <br>
+                        <a href="javascript:void(document.body.style.backgroundColor='red');"> <br>
+                            Click me to change the background color of body to red <br>
+                        </a> <br>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
