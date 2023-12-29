@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>The static keyword</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+            <h2>The static keyword</h2>
+
+            <p>The static keyword defines a static method or field for a class, or a static initialization block. Static
+                properties cannot be directly accessed on instances of the class. Instead, they're accessed on the class
+                itself.
+            </p>
+            <p>Static methods are often utility functions, such as functions to create or clone objects, whereas static
+                properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated
+                across
+                instances.
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        class ClassWithStaticMethod {
+            static staticProperty = 'someValue';
+            // static staticMethod() {
+            //     return 'static method has been called.';
+            // }
+            // static {
+            //     console.log('Class static initialization block called');
+            // }
+        }
+        // let objectOfClass = new ClassWithStaticMethod
+        // console.log(objectOfClass.staticProperty);
+        console.log(ClassWithStaticMethod.staticProperty);
+
+    </script>
+
+
+</body>
+
+</html>

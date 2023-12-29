@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>OOPS Inheritance</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+
+            <h2>Inheritance</h2>
+            <p>inheritance is a concept where one class (child class) inherits properties and methods from another class(parent class).</p>
+            <p>in javascript inheritance is achieved through the use of the extends keyword.</p>
+            
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7
+                        8
+                        9
+                        10 
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                        24
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        // parent class  <br>
+                        class Animal { <br>
+                            constructor(name,age){ <br>
+                                this.name = name; <br>
+                                this.age = age; <br>
+                            } <br>
+                            eat(){ <br>
+                                console.log(`${this.name} is eating.`) <br>
+                            } <br>
+                        } <br>
+                        <br>
+                        // child class  <br>
+                        class Dog extends Animal { <br>
+                            constructor(name, age, breed){ <br>
+                                super(name,age); <br>
+                                this.breed = breed; <br>
+                            } <br>
+                            bark(){ <br>
+                                console.log(`${this.name} is barking.`) <br>
+                            } <br>
+                        } <br>
+        
+                        // usage 
+                        const myDog = new Dog ("cooper", 5 , "labrador");
+                        myDog.eat() // output: " cooper is eating. "
+                        myDog.bark() // output: " cooper is barking."
+                    </div>
+                </div>
+            </div>
+
+            <h3>TypeOf inheritance</h3>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7
+                        8
+                        9
+                        10 
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                        24
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        // Grand class  <br>
+                        class A{ <br>
+                            insidea(){ <br>
+                                return ("insidea"); <br>
+                            } <br>
+                        } <br>
+                        // parent class  <br>
+                        class B extends A{ <br>
+                            insideb(){ <br>
+                                return ("insideb"); <br>
+                            } <br>
+                        } <br>
+                        <br>
+                        // class C extends A,B{ //Uncaught SyntaxError: Unexpected token ','} <br>
+                        // class C extends A extends B{// Uncaught SyntaxError: Unexpected token 'extends'} <br>
+                        <br>
+                        // child class <br>
+                        class C extends B{ <br>
+                            insidec(){ <br>
+                                return ("insidec"); <br>
+                            } <br>
+                        } <br>
+                     <br>
+                        let ObjectOfC = new C <br>
+                        console.log(ObjectOfC); <br>
+                        console.log(ObjectOfC.insidea()); <br>
+                        console.log(ObjectOfC.insideb()); <br>
+                        console.log(ObjectOfC.insidec()); <br>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <p>Inheritance access parent properties to child with the help of extends key word</p>
+            <img src="images/typesOfInheritance.png" alt="">
+        </div>
+    </div>
+    <script>
+        class MathOp {
+            addition(a, b) {
+                console.log("inside addition", a, b);
+                return a + b // 1000 line
+            }
+            additionarrow = (a, b) => {
+                return a + b
+            }
+        }
+        class AdvMathOp extends MathOp {
+            averageafteraddition(p, q) {
+                console.log("inside average", p, q);
+                let sum = this.addition(p, q)
+                console.log(sum);
+                return sum / 2
+            }
+            additionarrow = (a, b) => {
+                return a + b
+            }
+        }
+
+        let MathOpClassOb = new AdvMathOp;
+        console.log(MathOpClassOb.averageafteraddition(5, 90));
+
+        // typeof inheritance 
+        class A{
+            insidea(){
+                return ("insidea");
+            }
+        }
+        class B extends A{
+            insideb(){
+                return ("insideb");
+            }
+        }
+        // class C extends A,B{ //Uncaught SyntaxError: Unexpected token ','
+        // class C extends A extends B{// Uncaught SyntaxError: Unexpected token 'extends'
+        class C extends B{
+            insidec(){
+                return ("insidec");
+            }
+        }
+
+        let ObjectOfC = new C
+        console.log(ObjectOfC);
+        console.log(ObjectOfC.insidea());
+        console.log(ObjectOfC.insideb());
+        console.log(ObjectOfC.insidec());
+
+    </script>
+
+</body>
+
+</html>

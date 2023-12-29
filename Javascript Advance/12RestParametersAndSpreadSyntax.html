@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- web paga title  -->
     <title>Rest parameters And spread syntax</title>
-
     <!-- link style sheet CSS  -->
     <link rel="stylesheet" href="StyleFile/style.css">
     <!-- link page favicon -->
@@ -62,7 +61,99 @@
                 </div>
             </div>
 
+            <p>There will be no error because of “excessive” arguments. But of course in the result only the first two will be counted, so the result in the code above is 3.
+            </p>
+            
+            <p>The rest of the parameters can be included in the function definition by using three dots ... followed by the name of the array that will contain them. The dots literally mean “gather the remaining parameters into an array”.
+            </p>
 
+            <p>For instance, to gather all arguments into array args:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+                        10  <br>
+                        11
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function sumAll(...args) { // args is the name for the array <br>
+                            let sum = 0;<br>
+                          <br>
+                            for (let arg of args) sum += arg; <br>
+                          <br>
+                            return sum; <br>
+                          } <br>
+                           <br>
+                          alert( sumAll(1) ); // 1 <br>
+                          alert( sumAll(1, 2) ); // 3 <br>
+                          alert( sumAll(1, 2, 3) ); // 6 <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>We can choose to get the first parameters as variables, and gather only the rest.</p>
+
+            <p>Here the first two arguments go into variables and the rest go into titles array:</p>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6 <br>
+                        7 <br>
+                        8 <br>
+                        9 <br>
+                        10 <br>
+                        11 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        function showName(firstName, lastName, ...titles) { <br>
+                            alert( firstName + ' ' + lastName ); // Julius Caesar <br>
+                           <br>
+                            // the rest go into titles array <br>
+                            // i.e. titles = ["Consul", "Imperator"] <br>
+                            alert( titles[0] ); // Consul <br>
+                            alert( titles[1] ); // Imperator <br>
+                            alert( titles.length ); // 2 <br>
+                          } <br>
+                          <br>
+                          showName("Julius", "Caesar", "Consul", "Imperator"); <br>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Spread syntax</h2>
+            <p>We’ve just seen how to get an array from the list of parameters.</p>
+            <p>For instance, there’s a built-in function Math.max that returns the greatest number from a list:</p>
+            
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        alert( Math.max(3, 5, 1) ); // 5
+                    </div>
+                </div>
+            </div>
             
         </div>
     </div>
