@@ -4,15 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- web page title  -->
+    <title>constructor</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
 </head>
 
 <body>
+    <!-- main conatainer  -->
+    <div class="container">
 
-    <p>constructor is a method which is invoked by default when objects are created.</p>
-    <p>constructor never return.</p>
-    <p>constructor is used for init some value</p>
-    <p>Parameterzied constructor pass arg while creating an object of class</p>
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+
+            <p>constructor is a method which is invoked by default when objects are created.</p>
+            <p>constructor never return.</p>
+            <p>constructor is used for init some value</p>
+            <p>Parameterzied constructor pass arg while creating an object of class</p>
+        </div>
+    </div>
     <script>
 
         // class MyClass{
@@ -48,8 +66,8 @@
                 console.log(this.database);
                 let data = "insert"; this.database
             }
-            update() { let  data = "update"; this.database }
-            delete() { let  data = "delete"; this.database }
+            update() { let data = "update"; this.database }
+            delete() { let data = "delete"; this.database }
         }
 
         var MyClassObject = new DataBaseOp("project1")

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polymorphism (OOPS)</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+            <h2>polymorphism</h2>
+            <p>The polymorphism is a core concept of an object-oriented paradigm that provides a way to perform a single
+                action in different forms. It provides an ability to call the same method on different JavaScript
+                objects.</p>
+
+
+            <p> Polymorphism is the ability of objects to use the same function in different forms .
+            </p>
+            <ul>
+                <li>This reduces repetition and makes the code snippet useful in many different cases .</li>
+                <li>In JavaScript , polymorphism is achieved through method overriding or method overloading .</li>
+                <li>Method overriding is where a subclass provides its own implementation of a method that is already
+                    defined in the parent class .</li>
+                <li>Method overloading is where a class has multiple methods with the same name but different parameters
+                    .
+                </li>
+            </ul>
+
+            <div class="nullish-exm-2">
+                <h3>Example:</h3>
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                        1 <br>
+                        2 <br>
+                        3 <br>
+                        4 <br>
+                        5 <br>
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                        24
+                        25
+                        26
+                        27
+                        28
+                        29
+                        30
+                        31
+                        32
+                        33
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        // Parent class <br>
+                        <br>
+                        class Shape { <br>
+                            constructor(color) { <br>
+                                this.color = color; <br>
+                            } <br>
+                        <br>
+                            draw() { <br>
+                        console.log("Drawing a shape."); <br>
+                            } <br>
+                        }<br>
+                        // Child classes <br>
+                        <br>
+                        class Circle extends Shape { <br>
+                        draw() { <br>
+                        console.log(`Drawing a ${this.color} circle.`); <br>
+                            } <br>
+                        }<br>
+                        class Rectangle extends Shape { <br>
+                        draw() { <br>
+                        console.log(`Drawing a ${this.color} rectangle."); <br>
+                            } <br>
+                        }<br>
+                        // Usage <br>
+                        <br>
+                        const myCircle = new Circle("red"); <br>
+                        <br>
+                        const myRectangle new Rectangle("blue");<br>
+                        <br>
+                        myCircle.draw(); // Output: "Drawing a red circle."<br>
+                        <br>
+                        myRectangle.draw(); // Output: "Drawing a blue rectangle."<br>
+
+                    </div>
+                </div>
+            </div>
+
+            <p>Here's an example of polymorphism in JavaScript using method overriding</p>
+
+
+            <p>Here both override the draw() method of the parent class, but provide their own implementation of it.</p>
+
+        </div>
+    </div>
+    <script>
+        var a = 5
+        a = 15
+        a = 55
+        a = 5
+
+        class MathOp {
+            SumForTwo() {
+                console.log("MathOp SumForTwo without arg");
+            }
+            SumForTwo(a) {
+                console.log("MathOp SumForTwo with arg", a);
+            }
+            SumForTwo(val1, val2) {
+                console.log("MathOp SumForTwo with tow arg", val1, val2);
+            }
+        }
+        class AdvMathOp extends MathOp {
+            SumForTwo() {
+                console.log("AdvMathOp SumForTwo");
+            }
+        }
+        // let Ob = new MathOp
+        let Ob = new AdvMathOp
+        Ob.SumForTwo(); // if we called this without any para init AdvMathOp SumForTwo
+        Ob.SumForTwo(50); // if we called this without any para init AdvMathOp SumForTwo
+        Ob.SumForTwo(50, 100); // if we called this without any para init AdvMathOp SumForTwo
+
+
+        // dispData = ""
+        // fetch("urlserversidedata")
+        // {
+        //     dispData = "abc"
+        // }
+        // dispData
+    </script>
+
+</body>
+
+</html>

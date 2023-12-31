@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>Abstraction in javascript</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="StyleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="images/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="images/javascript.png" class="img-logo" alt="" srcset="">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+            <h2>Abstraction</h2>
+            <p>Abstraction in computer programming is a way to reduce complexity and allow efficient design and
+                implementation
+                in complex software systems. It hides the technical complexity of systems behind simpler APIs.</p>
+
+                <div class="nullish-exm-2">
+                    <h3>Example:</h3>
+                    <div class="nullish-exm-code-2">
+                        <div class="nullish-num-2">
+                            1 <br>
+                            2 <br>
+                            3 <br>
+                            4 <br>
+                            5 <br>
+                            6
+                            7
+                            8
+                            9
+                            10
+                            11
+                            12
+                            13
+                            14
+                            15
+                            16
+                            17
+                            18
+                            19
+                            20
+                            21
+                            22
+                            23
+                            24
+                            25
+                            26
+                            27
+                            28
+                            29
+                            30
+                            31
+                            32
+                            33
+                        </div>
+                        <div class="nullish-exm-code-bar-2s">
+                            class Payment { <br>
+                                constructor(amount) { <br>
+                                    this.amount amount; <br>
+                                } <br>
+                                pay() { <br>
+                                    throw new Error("pay() method must be implemented"); <br>
+                                } <br>
+                            }  <br>   
+                            <br>
+                            <br>
+                            class StripePayment extends Payment { <br>
+                                constructor(amount, cardNumber) { <br>
+                                    super(amount); <br>
+                                }  <br>
+                                pay() { <br>
+                                console.log("Paying SS{this.amount} via Stripe); <br>
+                                // Stripe payment gateway implementation <br>
+                                } <br>
+                            } <br>
+                            <br>
+                            class Paypal Payment extends Payment { <br>
+                                constructor(amount) { <br>
+                                    super(amount); <br>
+                            }  <br>
+                            pay() { <br>
+                                console.log("Paying SS(this.amount) via Paypal'); <br>
+                                // Paypal payment gateway implementation <br>
+                            <br>
+                               } <br>
+                            } <br>
+                            const payment1 = new StripePayment(100); <br>
+                            <br>
+                            payment1.pay(); // Paying $108 via Stripe const payment2 new Paypal Payment(50); <br>
+                            <br>
+                            payment2.pay(); // Paying $50 via Paypal <br>
+                
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>In this example, the Payment class is the abstract class that defines the interface for making payments.
+                    </li>
+                    <li>It has a pay method that is abstract and must be implemented by its subclasses.</li>
+                    <li>The StripePayment and Paypal Payment classes are concrete classes that implement the pay method for their respective payment gateways.</li>
+                    <li>As always, I hope you enjoyed the post and learned something new.</li>
+                    <li>If you have any queries then let me know in the comment box.</li>
+                </ul>
+
+            <h3>Advantages of Data Abstraction</h3>
+            <ul>
+                <li>Helps the user to avoid writing low-level code.</li>
+                <li>Avoids code duplication and increases reusability.</li>
+                <li>Can change the internal implementation of a class independently without affecting the user.</li>
+                <li>Helps to increase the security of an application or program as only important details are provided
+                    to the user.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
