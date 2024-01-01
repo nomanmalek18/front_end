@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(36, 121, 232);
+    background-color: rgb(19, 69, 135);
 }
 
 .img-logo {
@@ -17,12 +17,11 @@ body {
 }
 
 .container {
-    width: 150vmin;
+    width: 325vmin;
     height: auto;
     background-color: #fff;
     margin: 20px;
     padding: 10px;
-    border-radius: 25px;
 }
 
 .container-items {
@@ -50,3 +49,47 @@ p {
 }
 
 
+ul {
+    padding: 1.2vmin;
+    margin: 3vmin;
+    background-color: honeydew;
+}
+
+li {
+    font-size: 3vmin;
+    color: #144272;
+    margin: 1.5vmin 7vmin 0 7vmin;
+}
+.nullish-exm-2 {
+    width: 510px;
+    height: auto;
+    margin: 4vmin 3vmin;
+    background-color: dimgray;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+}
+.nullish-exm-2 h3{
+    color: black;
+}
+.nullish-exm-code-2 {
+    margin: 14px;
+    display: flex;
+}
+.nullish-num-2{
+    padding: 10px;
+    text-align: center;
+    width: 33px;
+    background-color: black;
+    color: wheat;
+}
+.nullish-exm-code-bar-2s{
+    border-left: 5px solid dimgray;
+    background-color: antiquewhite;
+    padding: 10px;
+    height: auto;
+    width: 480px;
+}
+
+.images{
+    margin: 10px 0px 5px 50px;
+}

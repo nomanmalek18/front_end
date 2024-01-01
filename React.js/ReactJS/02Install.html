@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- web page title  -->
-    <title>installation react.Js</title>
+    <title>ReactJS Installation</title>
     <!-- link style sheet CSS  -->
-    <link rel="stylesheet" href="styleFile/style.css">
+    <link rel="stylesheet" href="Assest/styleFile/style.css">
     <!-- link page favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="Assest/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,14 +18,114 @@
 
         <!-- javascript logo  -->
         <div id="img">
-            <img src="" class="img-logo" alt="logo-reactJS">
+            <img src="Assest/images/react.js-logo.png" class="img-logo" alt="logo-reactJS">
         </div>
 
         <!-- container items  -->
         <div class="container-items">
             <!-- Notes heading -->
-            <h2>installation React.JS</h2>
+            <h2>React JS Installation:</h2>
+            <p>There are basically two methods for React JS Environment Setup</p>
+
+            <ul>
+                <li>Using create-react-app (faster method)</li>
+                <li>Using webpack and babel</li>
+            </ul>
+
+            <h3>Method 1: Using create-react-app (CRA commond)</h3>
+            <p><b>Step 1:</b> Navigate to the folder where you want to create the project and open it in terminal</p>
+            <p><b>Step 2:</b> In the terminal of the application directory type the following command</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        npx create-react-app &lt; &lt; Application_Name &gt; &gt;
+                    </div>
+                </div>
+            </div>
+
+            <p><b>Step 3:</b> Navigate to the newly created folder using the command</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-num-2">
+                    </div>
+                    <div class="nullish-exm-code-bar-2s">
+                        cd &lt; &lt; Application_Name &gt; &gt;
+                    </div>
+                </div>
+            </div>
+
+            <p><b>Step 4:</b> A default application will be created with the following project structure and dependencies</p>
+
+            <img src="Assest/images/react_file.png" class="images" alt="">
+
+             
+            <p>It will install some packages by default which can be seen in the dependencies in package.json file as follows:</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-exm-code-bar-2s">
+                        "dependencies": { <br>
+                            "@testing-library/jest-dom": "^5.17.0", <br>
+                            "@testing-library/react": "^13.4.0", <br>
+                            "@testing-library/user-event": "^13.5.0", <br>
+                            "react": "^18.2.0", <br>
+                            "react-dom": "^18.2.0", <br>
+                            "react-scripts": "5.0.1", <br>
+                            "web-vitals": "^2.1.4" <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+
+            <p><b>Step 5:</b> To run this application type the following command in terminal</p>
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-exm-code-bar-2s">
+                        npm start                    
+                    </div>
+                </div>
+            </div>
+
+            <p><b>Step 6:</b> The following output will be displayed in the browser</p>
+            <img src="Assest/images/reactwebstart.png" alt="" class="images" srcset="">
+
+            <p>You can modify the application according to your preferences and change the code accordingly.
+            </p>
+
+            <h3>Method 2: Using webpack and babel</h3>
+
+            <p>To setup a react development environment using webpack and babel is a long process and we have to import each package and create setup files ourselves.
+            </p>
+
+            <p>We have to create the setup using ‘npm init -y’  command and then import the necessary packages in the folder and then install react using the command.
+            </p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-exm-code-bar-2s">
+                        npm i react react-dom
+                    </div>
+                </div>
+            </div>
+
+            <p>To install the necessary packages in our project use the command</p>
+
+            <div class="nullish-exm-2">
+                <div class="nullish-exm-code-2">
+                    <div class="nullish-exm-code-bar-2s">
+                        npm i webpack webpack-cli @babel/core @babel/preset- <br>
+                        env@babel/preset-react <br>
+                        babel-loader html-webpack-plugin webpack-dev-server <br>
+                        --save-dev <br>
+                    </div>
+                </div>
+            </div>
             
+
         </div>
     </div>
 </body>
