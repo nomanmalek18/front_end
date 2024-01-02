@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>React Props</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="Assest/styleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="Assest/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="Assest/images/react.js-logo.png" class="img-logo" alt="logo-reactJS">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+            <h2>React Props</h2>
+            <p>Props are arguments passed into React components.</p>
+            <p>Props are passed to components via HTML attributes.</p>
+            <p>props stands for properties.</p>
+
+            <h3>props</h3>
+            <p>React Props are like function arguments in JavaScript and attributes in HTML.</p>
+            <p>To send props into a component, use the same syntax as HTML attributes:</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Add a "brand" attribute to the Car element:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                    </div>
+                    <div class="Example-code-syntex">
+                        const myElement = &lt;Car brand="Ford" /&gt;;
+                    </div>
+                </div>
+            </div>
+            
+            <p>The component receives the argument as a props object:</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Use the brand attribute in the component:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car(props) { <br>
+                            return &lt;h2&gt;I am a { props.brand }!&lt;/h2&gt;; <br>
+                          }
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Pass Data</h3>
+
+            
+
+
+        </div>
+    </div>
+</body>
+
+</html>
