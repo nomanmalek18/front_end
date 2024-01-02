@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web page title  -->
+    <title>ReactJS Installation</title>
+    <!-- link style sheet CSS  -->
+    <link rel="stylesheet" href="Assest/styleFile/style.css">
+    <!-- link page favicon -->
+    <link rel="shortcut icon" href="Assest/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main conatainer  -->
+    <div class="container">
+
+        <!-- javascript logo  -->
+        <div id="img">
+            <img src="Assest/images/react.js-logo.png" class="img-logo" alt="logo-reactJS">
+        </div>
+
+        <!-- container items  -->
+        <div class="container-items">
+            <!-- Notes heading -->
+            <h2>React Components</h2>
+            <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript
+                functions, but work in isolation and return HTML.</p>
+            <p>Components come in two types, Class components and Function components, in this tutorial we will
+                concentrate on Function components.</p>
+
+            <p>In older React code bases, you may find Class components primarily used. It is now suggested to use
+                Function components along with Hooks, which were added in React 16.8. There is an optional section on
+                Class components for your reference.</p>
+
+            <h3>Create Your First Component</h3>
+            <p>When creating a React component, the component's name MUST start with an upper case letter.</p>
+            <h3>Class Component</h3>
+            <p>A class component must include the <b>extends React.Component</b> statement. This statement creates an
+                inheritance to React.Component, and gives your component access to React.Component's functions.
+            </p>
+
+            <p>The component also requires a <b>render()</b> method, this method returns HTML.</p>
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Create a Class component called Car:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                    </div>
+                    <div class="Example-code-syntex">
+                        class Car extends React.Component { <br>
+                        render() { <br>
+                        return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;; <br>
+                        } <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Function Component</h3>
+            <p>A Function component also returns HTML, and behaves much the same way as a Class component, but Function
+                components can be written using much less code, are easier to understand, and will be preferred in this
+                tutorial.</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Create a Class component called Car:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car() { <br>
+                        return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;; <br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <h3>Rendering a Component</h3>
+
+            <p>Now your React application has a component called Car, which returns an &lt;h2&gt; element.</p>
+            <p>To use this component in your application, use similar syntax as normal HTML: &lt;Car /&gt;</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Display the Car component in the "root" element:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                    </div>
+                    <div class="Example-code-syntex">
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render(&lt;Car /&gt;);
+                    </div>
+                </div>
+            </div>
+
+            <h3>Props</h3>
+            <p>Components can be passed as props, which stands for properties.</p>
+            <p>Props are like function arguments, and you send them into the component as attributes.</p>
+
+            <div class="Example">
+                <h3>Use an attribute to pass a color to the Car component, and use it in the render() function:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car(props) {<br>
+                        return &lt;h2&gt;I am a {props.color} Car!&lt;/h2&gt;;<br>
+                        } <br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render(&lt;Car color="red"/&gt;);
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>Components in Components</h3>
+            <p>We can refer to components inside other components:</p>
+            <div class="Example">
+                <h3>Use the Car component inside the Garage component:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car() { <br>
+                        return &lt;h2&gt;I am a Car!&lt;/h2&gt;; <br>
+                        } <br>
+                        <br>
+                        function Garage() { <br>
+                        return ( <br>
+                        &lt; &gt; <br>
+                        &lt;h1&gt;Who lives in my Garage?&lt;/h1&gt; <br>
+                        &lt;Car /&gt; <br>
+                        &lt;/ &gt; <br>
+                        ); <br>
+                        } <br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render( <br>
+                        &lt;Garage /&gt;);
+                    </div>
+                </div>
+            </div>
+
+            <h3>Components in Files</h3>
+            <p>React is all about re-using code, and it is recommended to split your components into separate files.
+            </p>
+            <p>To do that, create a new file with a .jsx file extension and put the code inside it:</p>
+
+            <p>Note that the filename must start with an uppercase character.</p>
+
+            <div class="Example">
+                <h3>This is the new file, we named it "Car.jsx":</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car() { <br>
+                        return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt;;<br>
+                        } <br>
+                        <br>
+                        export default Car;
+                    </div>
+                </div>
+            </div>
+
+            <p>To be able to use the Car component, you have to import the file in your application.</p>
+
+            <div class="Example">
+                <h3>Now we import the "Car.js" file in the application, and we can use the Car component as if it was created here.</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                    </div>
+                    <div class="Example-code-syntex">
+                        import React from 'react'; <br>
+                        import ReactDOM from 'react-dom/client'; <br>
+                        import Car from './Car.js'; <br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render( <br>
+                        &lt;Car /&gt;);
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

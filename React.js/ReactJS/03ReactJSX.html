@@ -68,14 +68,14 @@
                 <h3>Without JSX:</h3>
                 <div class="Example-code">
                     <div class="Example-Number">
-                        1 <br>
-                        2 <br>
-                        3 <br>
-                        4 <br>
-                        5 <br>
-                        6 <br>
-                        7 <br>
-                        8 <br>
+                        1 
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7 
+                        8 
                         9
                     </div>
                     <div class="Example-code-syntex">
@@ -132,7 +132,7 @@
             <p>To write HTML on multiple lines, put the HTML inside parentheses:</p>
 
             <div class="Example">
-                <h3>Execute the expression 5 + 5:</h3>
+                <h3>Create a list with three list items:</h3>
                 <div class="Example-code">
                     <div class="Example-Number">
                         1
@@ -173,7 +173,7 @@
             <p>So if you like to write two paragraphs, you must put them inside a parent element, like a div element.</p>
 
             <div class="Example">
-                <h3>Execute the expression 5 + 5:</h3>
+                <h3>Wrap two paragraphs inside one DIV element:</h3>
                 <div class="Example-code">
                     <div class="Example-Number">
                         1
@@ -206,9 +206,105 @@
                     </div>
                 </div>
             </div>
-            
+    
+            <p>Alternatively, you can use a "fragment" to wrap multiple lines. This will prevent unnecessarily adding extra nodes to the DOM.</p>
+            <p>A fragment looks like an empty HTML tag: &lt;&gt; &lt;/&gt;.</p>
 
-        </div>
+            <div class="Example">
+                <h3>Wrap two paragraphs inside a fragment:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7 
+                        8 
+                        9
+                        10
+                        11
+                        12
+                        13
+                    </div>
+                    <div class="Example-code-syntex">
+                        import React from 'react'; <br>
+                        import ReactDOM from 'react-dom/client'; <br>
+                        <br>
+                        const myElement = ( <br>
+                            &lt;&gt; <br>
+                              &lt;p&gt;I am a paragraph.&lt;/p&gt; <br>
+                              &lt;p&gt;I am a paragraph too.&lt;/p&gt; <br>
+                            &lt;/&gt; <br>
+                          ); <br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render(myElement); <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Elements Must be Closed</h3>
+            <p>JSX follows XML rules, and therefore HTML elements must be properly closed.</p>
+
+            <div class="Example">
+                <h3>Close empty elements with /></h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7 
+                        8 
+                    </div>
+                    <div class="Example-code-syntex">
+                        import React from 'react'; <br>
+                        import ReactDOM from 'react-dom/client'; <br>
+                        <br>
+                        const myElement = &lt;input type="text" /&gt;;<br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root'));<br>
+                        root.render(myElement);
+                    </div>
+                </div>
+            </div>
+
+            <h3>Attribute class = className</h3>
+            <p>The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.</p>
+            <p>Use attribute className instead.</p>
+            <p>JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.</p>
+
+            <div class="Example">
+                <h3>Use attribute className instead of class in JSX:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7 
+                        8 
+                    </div>
+                    <div class="Example-code-syntex">
+                        import React from 'react'; <br>
+                        import ReactDOM from 'react-dom/client'; <br>
+                                 <br>
+                        const myElement = &lt;h1 className="myclass"&gt;Hello World&lt;/h1&gt;; <br>
+                                 <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render(myElement);
+                    </div>
+                </div>
+            </div>
+
+                    
+       </div>
     </div>
 
 
