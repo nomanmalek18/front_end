@@ -37,10 +37,10 @@
 
             <h3>Here are two examples. The first uses JSX and the second does not:</h3>
             <p>Example 1</p>
-            <div class="nullish-exm-2">
+            <div class="Example">
                 <h3>JSX:</h3>
-                <div class="nullish-exm-code-2">
-                    <div class="nullish-num-2">
+                <div class="Example-code">
+                    <div class="Example-Number">
                         1 <br>
                         2 <br>
                         3 <br>
@@ -50,7 +50,7 @@
                         7 <br>
                         8 <br>
                     </div>
-                    <div class="nullish-exm-code-bar-2s">
+                    <div class="Example-code-syntex">
                         import React from 'react'; <br>
                         import ReactDOM from 'react-dom/client'; <br>
                          <br>
@@ -64,10 +64,10 @@
 
             <p>Example 2</p>
 
-            <div class="nullish-exm-2">
+            <div class="Example">
                 <h3>Without JSX:</h3>
-                <div class="nullish-exm-code-2">
-                    <div class="nullish-num-2">
+                <div class="Example-code">
+                    <div class="Example-Number">
                         1 <br>
                         2 <br>
                         3 <br>
@@ -78,7 +78,7 @@
                         8 <br>
                         9
                     </div>
-                    <div class="nullish-exm-code-bar-2s">
+                    <div class="Example-code-syntex">
                         import React from 'react'; <br>
                         import ReactDOM from 'react-dom/client'; <br>
                         <br>
@@ -100,10 +100,10 @@
             <p>With JSX you can write expressions inside curly braces { }.</p>
             <p>The expression can be a React variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result:</p>
             
-            <div class="nullish-exm-2">
+            <div class="Example">
                 <h3>Execute the expression 5 + 5:</h3>
-                <div class="nullish-exm-code-2">
-                    <div class="nullish-num-2">
+                <div class="Example-code">
+                    <div class="Example-Number">
                         1 
                         2 
                         3 
@@ -113,9 +113,9 @@
                         7 
                         8 
                         9
-                        
+
                     </div>
-                    <div class="nullish-exm-code-bar-2s">
+                    <div class="Example-code-syntex">
                         import React from 'react'; <br>
                         import ReactDOM from 'react-dom/client'; <br>
                         <br>
@@ -131,11 +131,11 @@
             <h3>Inserting a Large Block of HTML</h3>
             <p>To write HTML on multiple lines, put the HTML inside parentheses:</p>
 
-            <div class="nullish-exm-2">
+            <div class="Example">
                 <h3>Execute the expression 5 + 5:</h3>
-                <div class="nullish-exm-code-2">
-                    <div class="nullish-num-2">
-                        1<br>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
                         2 
                         3 
                         4 
@@ -150,7 +150,7 @@
                         13
                         14
                     </div>
-                    <div class="nullish-exm-code-bar-2s">
+                    <div class="Example-code-syntex">
                         import React from 'react'; <br>
                         import ReactDOM from 'react-dom/client'; <br>
                         <br>
@@ -167,6 +167,47 @@
                     </div>
                 </div>
             </div>
+
+            <h3>One Top Level Element</h3>
+            <p>The HTML code must be wrapped in ONE top level element.</p>
+            <p>So if you like to write two paragraphs, you must put them inside a parent element, like a div element.</p>
+
+            <div class="Example">
+                <h3>Execute the expression 5 + 5:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2 
+                        3 
+                        4 
+                        5 
+                        6 
+                        7 
+                        8 
+                        9
+                        10
+                        11
+                        12
+                        13
+                    </div>
+                    <div class="Example-code-syntex">
+                        import React from 'react'; <br>
+                        import ReactDOM from 'react-do/client'; <br>
+                         <br>
+                        const myElement = ( <br>
+                          &lt;div&gt; <br>
+                            &lt;h1&gt;I am a Header.&lt;/h1&gt; <br>
+                            &lt;h1&gt;I am a Header too.&lt;/h1&gt; <br>
+                          &lt;/div&gt; <br>
+                        ); <br>
+                        <br>
+                        const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                        root.render(myElement); <br>
+                    </div>
+                </div>
+            </div>
+            
+
         </div>
     </div>
 
