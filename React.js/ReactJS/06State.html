@@ -35,6 +35,8 @@
 
             <h3>Creating the state Object</h3>
             <p>The state object is initialized in the constructor:</p>
+            
+            <!-- Example -->
             <h3>Example</h3>
             <div class="Example">
                 <h3>Specify the state object in the constructor method:</h3>
@@ -50,7 +52,9 @@
                         8
                         9
                         10
-                    
+                        11
+                        12
+                        13
                     </div>
                     <div class="Example-code-syntex">
                         class Car extends React.Component { <br>
@@ -62,6 +66,238 @@
                               return ( <br>
                                 &lt;div&gt; <br>
                                   &lt;h1&gt;My Car&lt;/h1&gt; <br>
+                                &lt;/div&gt; <br>
+                              ); <br>
+                            } <br>
+                          } <br>
+                    </div>
+                </div>
+            </div>
+
+            <p>The state object can contain as many properties as you like:</p>
+
+
+            <!-- Example -->
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Specify all the properties your component need:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+
+                    </div>
+                    <div class="Example-code-syntex">
+                        class Car extends React.Component {<br>
+                            constructor(props) {<br>
+                              super(props);<br>
+                              this.state = {<br>
+                                brand: "Ford",<br>
+                                model: "Mustang",<br>
+                                color: "red",<br>
+                                year: 1964<br>
+                              };<br>
+                            }<br>
+                            render() {<br>
+                              return (<br>
+                                &lt;div&gt;<br>
+                                  &lt;h1&gt;My Car&lt;/h1&gt;<br>
+                                &lt;/div&gt;<br>
+                              );<br>
+                            }<br>
+                          }<br>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <h3>Using the state Object</h3>
+            
+            <p>Refer to the state object anywhere in the component by using the this.state.propertyname syntax:</p>
+            
+            <!-- Example -->
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Specify the state object in the constructor method:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                    </div>
+                    <div class="Example-code-syntex">
+                        class Car extends React.Component { <br>
+                            constructor(props) { <br>
+                              super(props); <br>
+                              this.state = {brand: "Ford"}; <br>
+                            } <br>
+                            render() { <br>
+                              return ( <br>
+                                &lt;div&gt; <br>
+                                  &lt;h1&gt;My Car&lt;/h1&gt; <br>
+                                &lt;/div&gt; <br>
+                              ); <br>
+                            } <br>
+                          } <br>
+                    </div>
+                </div>
+            </div>
+
+            <p>The state object can contain as many properties as you like:</p>
+
+
+            <!-- Example -->
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Specify all the properties your component need:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                    </div>
+                    <div class="Example-code-syntex">
+                        class Car extends React.Component { <br>
+                            constructor(props) { <br>
+                              super(props); <br>
+                              this.state = { <br>
+                                brand: "Ford", <br>
+                                model: "Mustang", <br>
+                                color: "red", <br>
+                                year: 1964 <br>
+                              }; <br>
+                            } <br>
+                            render() { <br>
+                              return ( <br>
+                                &lt;div&gt; <br>
+                                  &lt;h1&gt;My {this.state.brand}&lt;/h1&gt; <br>
+                                  &lt;p&gt; <br>
+                                    It is a {this.state.color} <br>
+                                    {this.state.model} <br>
+                                    from {this.state.year}. <br>
+                                  &lt;/p&gt; <br>
+                                &lt;/div&gt; <br>
+                              ); <br>
+                            } <br>
+                          } <br>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Changing the state Object</h3>
+            <p>To change a value in the state object, use the <b>this.setState()</b> method.</p>
+            <p>When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value(s).</p>
+
+            <!-- Example -->
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Add a button with an onClick event that will change the color property:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                        24
+                        25
+                        26
+                        27
+                        28
+                        29
+                        30
+                    </div>
+                    <div class="Example-code-syntex">
+                        class Car extends React.Component { <br>
+                            constructor(props) { <br>
+                              super(props); <br>
+                              this.state = { <br>
+                                brand: "Ford", <br>
+                                model: "Mustang", <br>
+                                color: "red", <br>
+                                year: 1964 <br>
+                              }; <br>
+                            } <br>
+                            changeColor = () => { <br>
+                              this.setState({color: "blue"}); <br>
+                            } <br>
+                            render() { <br>
+                              return ( <br>
+                                &lt;div&gt; <br>
+                                  &lt;h1&gt;My {this.state.brand}&lt;/h1&gt; <br>
+                                  &lt;p> <br>
+                                    It is a {this.state.color} <br>
+                                    {this.state.model} <br>
+                                    from {this.state.year}. <br>
+                                  &lt;/p&gt; <br>
+                                  &lt;button <br>
+                                    type="button" <br>
+                                    onClick={this.changeColor} <br>
+                                  &gt;Change color&lt;/button&gt; <br>
                                 &lt;/div&gt; <br>
                               ); <br>
                             } <br>
