@@ -66,10 +66,146 @@
             </div>
             
             <h3>Pass Data</h3>
+            <p>Props are also how you pass data from one component to another, as parameters.</p>
+            
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Send the "brand" property from the Garage component to the Car component:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car(props) { <br>
+                            return &lt;h2&gt;I am a { props.brand }!&lt;/h2&gt;; <br>
+                          } <br>
+                           <br>
+                          function Garage() { <br>
+                            return ( <br>
+                              &lt;&gt; <br>
+                                &lt;h1&gt;Who lives in my garage?&lt;/h1&gt; <br>
+                                &lt;Car brand="Ford" /&gt; <br>
+                                &lt;/&gt; <br>
+                            ); <br>
+                          } <br>
+                           <br>
+                          const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                          root.render(&lt;Garage /&gt;); <br>
+                    </div>
+                </div>
+            </div>
+            
+            <p>If you have a variable to send, and not a string as in the example above, you just put the variable name inside curly brackets:</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Create a variable named carName and send it to the Car component:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car(props) { <br>
+                            return &lt;h2&gt;I am a { props.brand }!&lt;/h2&gt;; <br>
+                          } <br>
+                           <br>
+                          function Garage() { <br>
+                            const carName = "Ford"; <br>
+                            return ( <br>
+                              &lt;&gt; <br>
+                                &lt;h1>Who lives in my garage?&lt;/h1&gt; <br>
+                                &lt;Car brand={ carName } /&gt; <br>
+                              &lt;/&gt; <br>
+                            ); <br>
+                          } <br>
+                           <br>
+                          const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                          root.render(&lt;Garage /&gt;); <br>
+                    </div>
+                </div>
+            </div>
+            
+            <p>Or if it was an object:</p>
+
+            <h3>Example</h3>
+            <div class="Example">
+                <h3>Create an object named <b>carInfo</b> and send it to the <b>Car</b> component:</h3>
+                <div class="Example-code">
+                    <div class="Example-Number">
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                    </div>
+                    <div class="Example-code-syntex">
+                        function Car(props) { <br>
+                            return &lt;h2&gt;I am a { props.brand.model }!&lt;/h2&gt;; <br>
+                          } <br>
+                           <br>
+                          function Garage() { <br>
+                            const carInfo = { name: "Ford", model: "Mustang" }; <br>
+                            return ( <br>
+                              &lt;&gt; <br>
+                                &lt;h1&gt;Who lives in my garage?&lt;/h1&gt; <br>
+                                &lt;Car brand={ carInfo } /&gt; <br>
+                              &lt;/&gt; <br>
+                            ); <br>
+                          } <br>
+                           <br>
+                          const root = ReactDOM.createRoot(document.getElementById('root')); <br>
+                          root.render(&lt;Garage /&gt;); <br>
+                    </div>
+                </div>
+            </div>
+
+
+
 
             
-
-
         </div>
     </div>
 </body>
